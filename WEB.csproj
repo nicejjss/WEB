@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NewFolder1\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
