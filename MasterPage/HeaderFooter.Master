@@ -1,15 +1,56 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderFooter.master.cs" Inherits="WEB.MasterPage.HeaderFooter" %>
-<!DOCTYPE html>
-<html>
-<head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
-<body>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderFooter.master.cs"
+    Inherits="WEB.MasterPage.HeaderFooter" %>
+    <!DOCTYPE html>
+    <html>
+
+    <head runat="server">
+        <link rel="stylesheet" href="./assets/css/gridview.css">
+        <link rel="stylesheet" href="./assets/css/headerfooter.css">
+        <title>MAGZ</title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+
+    <body>
+        <header class="header">
+              <section class="header-sec row">
+                <section class="col-3 logo">
+                    <a href="../index.aspx"><img class="logoimg" src="./assets/img/logo.png" alt="logo.png"></a> </section>
+                <section class="col-6 search">
+                    <form class="searchform" action="./search.aspx" method="get">
+                        <input class="searchinput" type="text" placeholder="Search somthing...">
+                         <button class="searchbtn">
+                            <img class="searchimg" src="./assets/img/search.png" alt="search">
+                         </button>
+                    </form>
+                </section>
+                <section class="col-3 user">
+                     <ul class="user-functions">
+                        <li class="user-function">
+                            <a href="./Dangky.aspx">ĐĂNG KÝ</a>
+                        </li>
+                        <li class="user-function">
+                           <a href="./Dangnhap.aspx">ĐĂNG NHẬP</a>
+                        </li>
+                     </ul>
+                </section>
+               
+              </section>
+        </header>
+        <section class="navigation">
+            <ul class="list-categories">
+                <li class="item-category"><a href="#">Category 1</a></li>
+                <li class="item-category"><a href="#">Category 2</a></li>
+                <li class="item-category"><a href="#">Category 3</a></li>
+                <li class="item-category"><a href="#">Category 4</a></li>
+                <li class="item-category"><a href="#">Category 5</a></li>
+            </ul>
+        </section>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-</body>
-</html>
+        <footer></footer>
+    </body>
+
+    </html>
