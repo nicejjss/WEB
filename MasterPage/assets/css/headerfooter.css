@@ -1,9 +1,8 @@
 :root{
     --primary-color:#fc624d;
+    --max-width: 1200px;
 }
-body{
-    max-width: 1200px ;
-}
+
 *{
     margin: 0 auto;
     padding: 0;
@@ -13,10 +12,11 @@ body{
 
 
 /* HEADER */
-
-.header{
-  margin: 20px 0 ;
+header{
+    max-width: var(--max-width);
+    margin: 20px auto ;
 }
+
 .header-sec{
     max-width: 100%;
 }
@@ -87,11 +87,11 @@ body{
     list-style: none;
 }
 
-.list-categories::after,
-.list-categories::before{
+.navigation::after,
+.navigation::before{
     content: "";
     display: block;
     width: 100%;
     height: 1px;
-    color: rgb(185, 185, 185);
+    background-color: #a0a0a0;
 }

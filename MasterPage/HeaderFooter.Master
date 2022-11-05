@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <header class="header">
+        <header>
               <section class="header-sec row">
                 <section class="col-3 logo">
                     <a href="../index.aspx"><img class="logoimg" src="./assets/img/logo.png" alt="logo.png"></a> </section>

@@ -67,7 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\search.png" />
     <Content Include="index.aspx" />
+    <Content Include="MasterPage\assets\css\gridview.css" />
+    <Content Include="MasterPage\assets\css\headerfooter.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
