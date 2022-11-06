@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\index.css" />
     <Content Include="assets\img\logo.png" />
     <Content Include="assets\img\search.png" />
     <Content Include="index.aspx" />

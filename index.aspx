@@ -2,5 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>Day là Thu nghiem</p>
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <div class="container" id="container" runat="server">
+
+        asdasdkajsbdas
+    </div>
+
 </asp:Content>

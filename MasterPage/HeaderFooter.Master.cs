@@ -9,9 +9,12 @@ namespace WEB.MasterPage
 {
     public partial class HeaderFooter : System.Web.UI.MasterPage
     {
+       public string btn;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
+
+       
     }
 }

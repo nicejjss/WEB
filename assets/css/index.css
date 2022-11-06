@@ -1,0 +1,8 @@
+:root{
+    --primary-color:#fc624d;
+    --max-width: 1200px;
+}
+p{
+    max-width: var(--max-width);
+    color: var(--primary-color);
+}

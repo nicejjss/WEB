@@ -13,44 +13,122 @@
 
     <body>
         <header>
-              <section class="header-sec row">
+            <section class="header-sec row">
                 <section class="col-3 logo">
-                    <a href="../index.aspx"><img class="logoimg" src="./assets/img/logo.png" alt="logo.png"></a> </section>
+                    <a href="../index.aspx"><img class="logoimg" src="./assets/img/logo.png" alt="logo.png"></a>
+                </section>
                 <section class="col-6 search">
                     <form class="searchform" action="./search.aspx" method="get">
                         <input class="searchinput" type="text" placeholder="Search somthing...">
-                         <button class="searchbtn">
+                        <button class="searchbtn">
                             <img class="searchimg" src="./assets/img/search.png" alt="search">
-                         </button>
+                        </button>
                     </form>
                 </section>
                 <section class="col-3 user">
-                     <ul class="user-functions">
+                    <!-- <section class="user-function user-link user-logined">Nguoi dung</section> -->
+                    <ul class="user-functions">
                         <li class="user-function">
-                            <a href="./Dangky.aspx">ĐĂNG KÝ</a>
+                            <a class="user-link" href="./Dangky.aspx">ĐĂNG KÝ</a>
                         </li>
                         <li class="user-function">
-                           <a href="./Dangnhap.aspx">ĐĂNG NHẬP</a>
+                            <a class="user-link" href="./Dangnhap.aspx">ĐĂNG NHẬP</a>
                         </li>
-                     </ul>
+                    </ul>
                 </section>
-               
-              </section>
+
+            </section>
         </header>
         <section class="navigation">
-            <ul class="list-categories">
-                <li class="item-category"><a href="#">Category 1</a></li>
-                <li class="item-category"><a href="#">Category 2</a></li>
-                <li class="item-category"><a href="#">Category 3</a></li>
-                <li class="item-category"><a href="#">Category 4</a></li>
-                <li class="item-category"><a href="#">Category 5</a></li>
-            </ul>
+            <section class="cate-width">
+                <ul class="list-categories">
+                    <li class="item-category"><a href="./Category.aspx?id=1">
+                            <section class="item-category-text"> Category 1</section>
+                        </a></li>
+                    <li class="item-category"><a href="./Category.aspx?id=2">
+                            <section class="item-category-text">Category 2</section>
+                        </a></li>
+                    <li class="item-category"><a href="./Category.aspx?id=3">
+                            <section class="item-category-text"> Category 3</section>
+                        </a></li>
+                    <li class="item-category"><a href="./Category.aspx?id=4">
+                            <section class="item-category-text"> Category 4</section>
+                        </a></li>
+                    <li class="item-category"><a href="./Category.aspx?id=5">
+                            <section class="item-category-text"> Category 5</section>
+                        </a></li>
+                </ul>
+            </section>
         </section>
-        <div>
+        <section>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
-        <footer></footer>
+        </section>
+        <footer>
+            <section class="footer-container row">
+                   <section class="col-3 item-footer">
+                                  <section class="item-header">Thông Tin</section>
+                                  <section class="item-body">
+                                    <section class="img-logo">
+                                        <a href="../index.aspx">
+                                            <img src="../assets/img/logo-footer.png" alt="">
+                                        </a>
+                                    </section>
+                                    <section class="infomation text">
+                                        MAGZ chúng tôi cung cấp cho các bạn các tin tức mới nhất về GenZ.
+                                    </section> 
+                                    <a href="./About.aspx">
+                                        <button class="infor-btn">
+                                              Aubout Us
+                                        </button>
+                                    </a>
+                                  </section>
+                   </section>
+                   <section class="col-3 item-footer">
+                          <section class="item-header">Nhận Thông Báo</section>
+                          <section class="item-body">
+                            <section class="text">Đăng ký để nhận được tin tức mới nhất.</section>
+                            <form action="" method="">
+                                <input class="sub-input" type="text" placeholder="Your email" >
+                               <input type="submit" class="sub-btn" value="Subcribe">
+                            </form>
+                          </section>
+                   </section>
+                   <section class="col-3 item-footer">
+                          <section class="item-header">Tin Mới Nhất</section>
+                          <section class="item-body">
+                                <ul class="list-news">
+                                    <li class="item-new">
+                                        <a class="item-img" href="../Post.aspx?id=">
+                                            <img src="../assets/img/posts/maytinh.jpg" alt="">
+                                        </a>
+                                        <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue Pharetra</a>
+                                    </li>
+                                    <li class="item-new">
+                                        <a class="item-img" href="../Post.aspx?id=">
+                                            <img src="../assets/img/posts/maytinh.jpg" alt="">
+                                        </a>
+                                        <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue Pharetra</a>
+                                    </li>
+                                    <li class="item-new">
+                                        <a class="item-img" href="../Post.aspx?id=">
+                                            <img src="../assets/img/posts/maytinh.jpg" alt="">
+                                        </a>
+                                        <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue Pharetra</a>
+                                    </li>
+                                    <li class="item-new">
+                                        <a class="item-img" href="../Post.aspx?id=">
+                                            <img src="../assets/img/posts/maytinh.jpg" alt="">
+                                        </a>
+                                        <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue Pharetra</a>
+                                    </li>
+                                </ul>
+                          </section>
+                   </section>
+                   <section class="col-3 item-footer">
+                          <section class="item-header">Theo Dõi</section>
+                   </section>
+            </section>
+        </footer>
     </body>
-
     </html>
