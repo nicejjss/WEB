@@ -107,7 +107,7 @@
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                     veniam.</section>
                                 <section class="post-footer">
-                                    <a class="post-footer-link" href="./Post.aspx?id">
+                                    <a class="post-footer-link" href="./Post.aspx?id=">
                                         <button>Đọc Tiếp</button>
                                     </a>
                                 </section>
@@ -121,15 +121,99 @@
                 <section class="another-news">
                     <section class="another-new">
                           <section class="new-header">
-                            <img src="./assets/img/posts/xedap.jpg" alt="">
+                            <a href="./Post?id=">
+                                <img src="./assets/img/posts/xedap.jpg" alt="">
+                            </a>
+                          
                           </section>
                           <section class="new-body">
-                            <a href="./Category?id=">Xe đạp</a>
-                            <span>04/04/2002</span>
+                            <a class="post-cate new-cate" href="./Category?id=">Xe đạp</a>
+                            <span class="new-date post-date">04/04/2002</span>
                             <section class="new-title">Donec consequat arcu at ultrices sodales quam erat aliquet diam</section>
                             <section class="new-detail">Donec consequat, arcu at ultrices sodales, quam erat aliquet diam, sit amet interdum libero nunc accumsan nisi.</section>
                           </section>
+                          <section class="new-footer">
+                            <a class="new-footer-link" href="./Post.aspx?id=">
+                                <button>Đọc Tiếp</button>
+                            </a>
+                        </section>
                     </section>
+                    <section class="another-new">
+                        <section class="new-header">
+                          <a href="./Post?id=">
+                              <img src="./assets/img/posts/xedap.jpg" alt="">
+                          </a>
+                        
+                        </section>
+                        <section class="new-body">
+                          <a class="post-cate new-cate" href="./Category?id=">Xe đạp</a>
+                          <span class="new-date post-date">04/04/2002</span>
+                          <section class="new-title">Donec consequat arcu at ultrices sodales quam erat aliquet diam</section>
+                          <section class="new-detail">Donec consequat, arcu at ultrices sodales, quam erat aliquet diam, sit amet interdum libero nunc accumsan nisi.</section>
+                        </section>
+                        <section class="new-footer">
+                          <a class="new-footer-link" href="./Post.aspx?id=">
+                              <button>Đọc Tiếp</button>
+                          </a>
+                      </section>
+                  </section>
+                  <section class="another-new">
+                    <section class="new-header">
+                      <a href="./Post?id=">
+                          <img src="./assets/img/posts/xedap.jpg" alt="">
+                      </a>
+                    
+                    </section>
+                    <section class="new-body">
+                      <a class="post-cate new-cate" href="./Category?id=">Xe đạp</a>
+                      <span class="new-date post-date">04/04/2002</span>
+                      <section class="new-title">Donec consequat arcu at ultrices sodales quam erat aliquet diam</section>
+                      <section class="new-detail">Donec consequat, arcu at ultrices sodales, quam erat aliquet diam, sit amet interdum libero nunc accumsan nisi.</section>
+                    </section>
+                    <section class="new-footer">
+                      <a class="new-footer-link" href="./Post.aspx?id=">
+                          <button>Đọc Tiếp</button>
+                      </a>
+                  </section>
+              </section>
+              <section class="another-new">
+                <section class="new-header">
+                  <a href="./Post?id=">
+                      <img src="./assets/img/posts/xedap.jpg" alt="">
+                  </a>
+                
+                </section>
+                <section class="new-body">
+                  <a class="post-cate new-cate" href="./Category?id=">Xe đạp</a>
+                  <span class="new-date post-date">04/04/2002</span>
+                  <section class="new-title">Donec consequat arcu at ultrices sodales quam erat aliquet diam</section>
+                  <section class="new-detail">Donec consequat, arcu at ultrices sodales, quam erat aliquet diam, sit amet interdum libero nunc accumsan nisi.</section>
+                </section>
+                <section class="new-footer">
+                  <a class="new-footer-link" href="./Post.aspx?id=">
+                      <button>Đọc Tiếp</button>
+                  </a>
+              </section>
+          </section>
+          <section class="another-new">
+            <section class="new-header">
+              <a href="./Post?id=">
+                  <img src="./assets/img/posts/xedap.jpg" alt="">
+              </a>
+            
+            </section>
+            <section class="new-body">
+              <a class="post-cate new-cate" href="./Category?id=">Xe đạp</a>
+              <span class="new-date post-date">04/04/2002</span>
+              <section class="new-title">Donec consequat arcu at ultrices sodales quam erat aliquet diam</section>
+              <section class="new-detail">Donec consequat, arcu at ultrices sodales, quam erat aliquet diam, sit amet interdum libero nunc accumsan nisi.</section>
+            </section>
+            <section class="new-footer">
+              <a class="new-footer-link" href="./Post.aspx?id=">
+                  <button>Đọc Tiếp</button>
+              </a>
+          </section>
+      </section>
                 </section>
             </section>
             <section style="background-color: purple" class="display-news col-4"></section>
