@@ -164,7 +164,7 @@ header{
 
   /* Footer */
 footer{
-    border-top: 3px solid var(--primary-color);
+    border-top: 7px solid var(--primary-color);
     background-color: #252e38;
     padding: 10px 0;
 }
@@ -233,6 +233,12 @@ footer{
     border: none;
     cursor: pointer;
     border-radius: 2px;
+    transition: all 0.2s ease;
+}
+.sub-btn:hover,
+.sub-btn:active{
+    background-color: #df1e04;
+    transition: all 0.2s ease;
 }
 .list-news{
     list-style: none;
@@ -267,4 +273,69 @@ footer{
 .item-text:hover,
 .item-text:active{
    text-decoration: underline;
+}
+
+.list-media{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.media-item{
+    width: 40px;
+    height: 40px;
+    margin: 0 2.5px;
+    position: relative;
+    cursor: pointer;
+}
+.face-media{
+    background-color: #3b5998;
+}
+.twitter-media{
+    background-color: #4099ff;
+}
+.insta-media{
+    background-color: #885343;
+}
+.media-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+    opacity: 0.2;
+    transition: all 0.2 ease;
+}
+.media-item:hover .media-overlay,
+.media-item:active .media-overlay{
+    z-index: 1;
+    transition: all 0.2 ease;
+}
+.media-link{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.media-link img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.right{
+    max-width: var(--max-width);
+    border-top: 1px solid black;
+    padding-top: 25px;
+    font-size: 12px;
+}
+.content-right{
+    text-align: center;
+    color: var(--footer-color);
+    line-height: 25px;
+    cursor: context-menu;
+}
+.span-text:hover,
+.span-text:active{
+    color: var(--primary-color);
 }

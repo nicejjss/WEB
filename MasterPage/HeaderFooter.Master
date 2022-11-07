@@ -127,7 +127,37 @@
                    </section>
                    <section class="col-3 item-footer">
                           <section class="item-header">Theo Dõi</section>
+                          <section class="item-body">
+                            <section class="text">Theo dõi chúng tôi để biết thêm thông tin.</section>
+                             <section class="list-media">
+                                   <section class="media-item face-media">
+                                    <section class="media-overlay"></section>
+                                    <a class="media-link" href="#">
+                                        <img src="../assets/img/media/facebook.png" alt="facebook">
+                                    </a>
+                                   </section>
+                                   <section class="media-item twitter-media">
+                                    <section class="media-overlay"></section>
+                                    <a class="media-link" href="#">
+                                        <img src="../assets/img/media/twitter.png" alt="twitter">
+                                    </a>
+                                   </section>
+                                   <section class="media-item insta-media">
+                                    <section class="media-overlay"></section>
+                                    <a class="media-link" href="#">
+                                        <img src="../assets/img/media/instagram.png" alt="instagram">
+                                    </a>
+                                   </section>
+                             </section>
+                          </section>
                    </section>
+            </section>
+            <section class="right">
+                    <section class="content-right">
+                        COPYRIGHT © MAGZ 2022. ALL RIGHT RESERVED.
+                        <br>
+                        MADE BY <span class="span-text">FITEAM</span>
+                    </section>
             </section>
         </footer>
     </body>

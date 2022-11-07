@@ -1,8 +1,221 @@
-:root{
-    --primary-color:#fc624d;
+:root {
+    --primary-color: #fc624d;
     --max-width: 1200px;
 }
-p{
+
+.content {
     max-width: var(--max-width);
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+
+/* MOST WATCHED */
+
+.most-watched {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    /* background-color: black; */
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.overlay {
+    /* background-image: url("../img/posts/maytinh.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.overlay img {
+    height: 100%;
+}
+
+.title-detail {
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+}
+
+.category {
+    width: fit-content;
+    margin-left: 0;
+}
+
+.category a {
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.category:hover a,
+.category:active a {
+    background-color: rgb(228, 228, 228);
+}
+
+.title-detail .link {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    display: block;
+    margin: 15px 0;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.562);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+/* Lastest News LINE----- */
+
+.line {
+    margin: 10px 0;
+    position: relative;
+}
+
+.line-text {
+    text-align: center;
+    padding: 0 10px;
+    width: fit-content;
+    background-color: white;
+}
+
+.line::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: #d9d9d9;
+    z-index: -1;
+    transform: translateY(50%);
+    bottom: 50%;
+}
+
+/* Latest News */
+.lastest-news {
+    /* background-color: yellow; */
+    /* padding: 5px; */
+    margin: -15px;
+}
+
+.list-posts {
+    /* background-color: red; */
+    /* padding: 0; */
+}
+
+.post {
+    margin-top: 25px;
+    /* background-color: palegreen; */
+    padding: 0;
+    box-shadow: 0px 0px 1px 0px black;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.post-body {
+    margin-top: 8px;
+    padding: 0 15px;
+}
+
+.post-date {
+    display: inline-block;
+}
+
+.post-cate {
+    display: inline-block;
     color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.post-cate:hover,
+.post-cate:active {
+    text-decoration: underline;
+}
+
+.post-title {
+    margin: 10px 0;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.post-title a:hover,
+.post-title a:active {
+    color: var(--primary-color);
+    transition: all 0.2s ease;
+}
+
+.post-detail {
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+.post-footer {
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.post-footer-link button {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background: white;
+    color: var(--primary-color);
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.post-footer-link button:active,
+.post-footer-link button:hover {
+    color: white;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease;
+}
+
+
+/* Line Another News */
+
+.line-another-news {
+    margin-top: 40px;
+}
+
+/* Another News */
+
+.another-news{
+    width: 100%;
+    background-color: red;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.another-new{
+    display: flex;
+}
+.new-header{
+    width: 30%;
+    margin: 0;
+}
+.new-header img{
+    width: 100%;
 }
