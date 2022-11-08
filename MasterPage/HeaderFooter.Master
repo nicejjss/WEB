@@ -4,20 +4,27 @@
     <html>
 
     <head runat="server">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/gridview.css">
         <link rel="stylesheet" href="./assets/css/headerfooter.css">
         <title>MAGZ</title>
         <asp:ContentPlaceHolder ID="head" runat="server">
         </asp:ContentPlaceHolder>
     </head>
-
+    <script>
+        var myValue = "<%= mail %>";
+        if (myValue!="")
+         alert(myValue);
+    </script>
     <body>
         <header>
             <section class="header-sec row">
-                <section class="col-3 logo">
+                <section class="col-3 col-m-12 logo">
                     <a href="../index.aspx"><img class="logoimg" src="./assets/img/logo.png" alt="logo.png"></a>
                 </section>
-                <section class="col-6 search">
+                <section class="col-6 col-m-12 search">
                     <form class="searchform" action="./search.aspx" method="get">
                         <input class="searchinput" type="text" placeholder="Search somthing...">
                         <button class="searchbtn">
@@ -25,41 +32,42 @@
                         </button>
                     </form>
                 </section>
-                <section class="col-3 user">
-                    <!-- <section class="user-function user-link user-logined">Nguoi dung</section> -->
-                    <ul class="user-functions">
+                <section class="col-3 col-m-12 user">
+                    <section class="user-function user-link user-logined">Nguoi dung</section>
+                    <!-- <ul class="user-functions">
                         <li class="user-function">
                             <a class="user-link" href="./Dangky.aspx">ĐĂNG KÝ</a>
                         </li>
                         <li class="user-function">
                             <a class="user-link" href="./Dangnhap.aspx">ĐĂNG NHẬP</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </section>
 
             </section>
-        </header>
-        <section class="navigation">
-            <section class="cate-width">
-                <ul class="list-categories">
-                    <li class="item-category"><a href="./Category.aspx?id=1">
-                            <section class="item-category-text"> Category 1</section>
-                        </a></li>
-                    <li class="item-category"><a href="./Category.aspx?id=2">
-                            <section class="item-category-text">Category 2</section>
-                        </a></li>
-                    <li class="item-category"><a href="./Category.aspx?id=3">
-                            <section class="item-category-text"> Category 3</section>
-                        </a></li>
-                    <li class="item-category"><a href="./Category.aspx?id=4">
-                            <section class="item-category-text"> Category 4</section>
-                        </a></li>
-                    <li class="item-category"><a href="./Category.aspx?id=5">
-                            <section class="item-category-text"> Category 5</section>
-                        </a></li>
-                </ul>
+            <section class="navigation">
+                <section class="cate-width">
+                    <ul class="list-categories">
+                        <li class="item-category"><a href="./Category.aspx?id=1">
+                                <section class="item-category-text"> Category 1</section>
+                            </a></li>
+                        <li class="item-category"><a href="./Category.aspx?id=2">
+                                <section class="item-category-text">Category 2</section>
+                            </a></li>
+                        <li class="item-category"><a href="./Category.aspx?id=3">
+                                <section class="item-category-text"> Category 3</section>
+                            </a></li>
+                        <li class="item-category"><a href="./Category.aspx?id=4">
+                                <section class="item-category-text"> Category 4</section>
+                            </a></li>
+                        <li class="item-category"><a href="./Category.aspx?id=5">
+                                <section class="item-category-text"> Category 5</section>
+                            </a></li>
+                    </ul>
+                </section>
             </section>
-        </section>
+        </header>
+        
         <section>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
@@ -88,8 +96,8 @@
                           <section class="item-header">Nhận Thông Báo</section>
                           <section class="item-body">
                             <section class="text">Đăng ký để nhận được tin tức mới nhất.</section>
-                            <form action="" method="">
-                                <input class="sub-input" type="text" placeholder="Your email" >
+                            <form action="" method="get">
+                                <input class="sub-input" type="text" placeholder="Your email" name="email"  id="email" >
                                <input type="submit" class="sub-btn" value="Subcribe">
                             </form>
                           </section>
