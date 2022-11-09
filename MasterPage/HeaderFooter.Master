@@ -13,22 +13,17 @@
         <asp:ContentPlaceHolder ID="head" runat="server">
         </asp:ContentPlaceHolder>
     </head>
-    <script>
-        var myValue = "<%= mail %>";
-        if (myValue!="")
-         alert(myValue);
-    </script>
     <body>
         <header>
             <section class="header-sec row">
                 <section class="col-3 col-m-12 logo">
-                    <a href="../index.aspx"><img class="logoimg" src="./assets/img/logo.png" alt="logo.png"></a>
+                    <a href="../index.aspx"><img class="logoimg" src="../MasterPage/assets/img/logo.png" alt="logo.png"></a>
                 </section>
                 <section class="col-6 col-m-12 search">
                     <form class="searchform" action="./search.aspx" method="get">
-                        <input class="searchinput" type="text" placeholder="Search somthing...">
+                        <input name="searchinput" class="searchinput" type="text" placeholder="Search somthing...">
                         <button class="searchbtn">
-                            <img class="searchimg" src="./assets/img/search.png" alt="search">
+                            <img class="searchimg" src="../MasterPage/assets/img/search.png" alt="search">
                         </button>
                     </form>
                 </section>
@@ -47,6 +42,7 @@
             </section>
             <section class="navigation">
                 <section class="cate-width">
+                    <button id="sbtn-open-nav" onclick="ShowHideNav()"><img src="../MasterPage/assets/img/stripes.png" alt=""></button>
                     <ul class="list-categories">
                         <li class="item-category"><a href="./Category.aspx?id=1">
                                 <section class="item-category-text">Máy tính</section>
@@ -65,6 +61,33 @@
                             </a></li>
                     </ul>
                 </section>
+                <section class="soverlay" id="soverlay" onclick="ShowHideNav()"></section>
+                <section class="side-navigation" id="side-navigation">
+                    <button id="sbtn-close-nav" onclick="ShowHideNav()">
+                        <img src="../MasterPage/assets/img/close.png" alt="">
+                    </button>
+                    <ul class="list-categories side-categories">
+                        <li class="item-category"><a href="./Category.aspx?id=1">
+                                <section class="item-category-text">Máy tính</section>
+                            </a></li>
+                        <li class="item-category"><a href="./Category.aspx?id=2">
+                                <section class="item-category-text">Category 2</section>
+                            </a></li>
+                        <li class="item-category"><a href="./Category.aspx?id=3">
+                                <section class="item-category-text"> Category 3</section>
+                            </a></li>
+                        <li class="item-category"><a href="./Category.aspx?id=4">
+                                <section class="item-category-text"> Category 4</section>
+                            </a></li>
+                       
+                            <li class="item-category"><a href="./Dangky.aspx">
+                                <section class="item-category-text">ĐĂNG KÝ</section>
+                            </a></li>
+                            <li class="item-category"><a href="./Dangnhap.aspx">
+                                <section class="item-category-text">ĐĂNG NHẬP</section>
+                            </a></li>
+                    </ul>
+                </section>
             </section>
         </header>
         
@@ -74,12 +97,12 @@
         </section>
         <footer>
             <section class="footer-container row">
-                   <section class="col-3 col-m-6 item-footer ">
+                   <section class="col-3 col-m-6 col-s-12 item-footer ">
                                   <section class="item-header">Thông Tin</section>
                                   <section class="item-body">
                                     <section class="img-logo">
                                         <a href="../index.aspx">
-                                            <img src="../assets/img/logo-footer.png" alt="">
+                                            <img src="../MasterPage/assets/img/logo-footer.png" alt="">
                                         </a>
                                     </section>
                                     <section class="infomation text">
@@ -92,7 +115,7 @@
                                     </a>
                                   </section>
                    </section>
-                   <section class="col-3 col-m-6 item-footer ">
+                   <section class="col-3 col-m-6 col-s-12 item-footer ">
                           <section class="item-header">Nhận Thông Báo</section>
                           <section class="item-body">
                             <section class="text">Đăng ký để nhận được tin tức mới nhất.</section>
@@ -102,7 +125,7 @@
                             </form>
                           </section>
                    </section>
-                   <section class="col-3 col-m-6 item-footer ">
+                   <section class="col-3 col-m-6 col-s-12 item-footer ">
                           <section class="item-header">Tin Mới Nhất</section>
                           <section class="item-body">
                                 <ul class="list-news">
@@ -133,7 +156,7 @@
                                 </ul>
                           </section>
                    </section>
-                   <section class="col-3 col-m-6 item-footer ">
+                   <section class="col-3 col-m-6 col-s-12 item-footer ">
                           <section class="item-header">Theo Dõi</section>
                           <section class="item-body">
                             <section class="text">Theo dõi chúng tôi để biết thêm thông tin.</section>
@@ -141,19 +164,19 @@
                                    <section class="media-item face-media">
                                     <section class="media-overlay"></section>
                                     <a class="media-link" href="#">
-                                        <img src="../assets/img/media/facebook.png" alt="facebook">
+                                        <img src="../MasterPage/assets/img/media/facebook.png" alt="facebook">
                                     </a>
                                    </section>
                                    <section class="media-item twitter-media">
                                     <section class="media-overlay"></section>
                                     <a class="media-link" href="#">
-                                        <img src="../assets/img/media/twitter.png" alt="twitter">
+                                        <img src="../MasterPage/assets/img/media/twitter.png" alt="twitter">
                                     </a>
                                    </section>
                                    <section class="media-item insta-media">
                                     <section class="media-overlay"></section>
-                                    <a class="media-link" href="#">
-                                        <img src="../assets/img/media/instagram.png" alt="instagram">
+                                    <a class="media-link" href="../index.aspx?name=instagram">
+                                        <img src="../MasterPage/assets/img/media/instagram.png" alt="instagram">
                                     </a>
                                    </section>
                              </section>
@@ -168,8 +191,6 @@
                     </section>
             </section>
         </footer>
-        <a id="bookmark" href="#">
-            <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
-        </a>
+      <script src="../MasterPage/assets/js/headerfooter.js"></script>
     </body>
     </html>
