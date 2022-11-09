@@ -6,13 +6,13 @@
     </asp:Content>
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section class="content row">
-            <section class="display-news col-8">
+            <section class="display-news col-m-12 col-8">
                 <section class="most-watched">
                     <section class="overlay">
                         <img src="./assets/img/posts/maytinh.jpg" alt="">
                     </section>
                     <section class="title-detail">
-                        <section class="category">
+                        <section class="category" id="cate" runat="server">
                             <a href="./Category?id=">Máy Tính</a>
                         </section>
                         <a class="link" href="./Post.aspx?id=">
@@ -26,7 +26,7 @@
                     <h2 class="newsest line-text">Tin Mới Nhất</h2>
                 </section>
                 <section class="lastest-news row">
-                    <section class="list-posts col-6 row">
+                    <section class="list-posts col-s-12 col-6 row">
                         <section class="post col-12">
                             <section class="post-header">
                                 <img class="post-img" src="./assets/img/posts/maytinh.jpg" alt="">
@@ -70,7 +70,7 @@
                             </section>
                         </section>
                     </section>
-                    <section class="list-posts col-6 row">
+                    <section class="list-posts col-s-12 col-6 row">
                         <section class="post col-12">
                             <section class="post-header">
                                 <img class="post-img" src="./assets/img/posts/maytinh.jpg" alt="">
@@ -236,7 +236,7 @@
                     </section>
                 </section>
             </section>
-            <section class="display-news col-4">
+            <section class="display-news col-s-12 col-m-6 col-4">
                 <aside class="popular-news">
                     <section class="aside-title">
                         <section class="item-header aside-title-header">Tin Nổi Bật</section>

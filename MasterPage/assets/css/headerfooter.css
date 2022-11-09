@@ -11,6 +11,13 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Book Mark */
+#bookmark{
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
 
 /* HEADER */
 header{
@@ -342,12 +349,18 @@ footer{
 .span-text:active{
     color: var(--primary-color);
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:950px) {
     .cate-width{
         max-width: 100%;
         /* min-width: fit-content; */
     }
     .searchform{
         justify-content: center;
+    }
+    .item-footer {
+        margin: 10px 0;
+    }
+    .item-new{
+        justify-content: space-around;
     }
 }

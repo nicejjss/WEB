@@ -41,6 +41,7 @@
     z-index: 3;
     bottom: 30px;
     left: 20px;
+    right: 20px;
     color: white;
 }
 
@@ -400,4 +401,25 @@
 .subcribe-box p{
     margin-top: 15px;
     color: var(--footer-color);
+}
+
+@media screen and (max-width:950px) {
+    .user{
+        padding-left: 65%;
+    margin: 10px auto;
+    }
+    .content{
+        max-width: 750px;
+    }
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .subcribe-box{
+        height: fit-content;
+    }
+    
 }

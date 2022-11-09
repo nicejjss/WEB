@@ -33,15 +33,15 @@
                     </form>
                 </section>
                 <section class="col-3 col-m-12 user">
-                    <section class="user-function user-link user-logined">Nguoi dung</section>
-                    <!-- <ul class="user-functions">
+                    <!-- <section class="user-function user-link user-logined">Nguoi dung</section> -->
+                    <ul class="user-functions">
                         <li class="user-function">
                             <a class="user-link" href="./Dangky.aspx">ĐĂNG KÝ</a>
                         </li>
                         <li class="user-function">
                             <a class="user-link" href="./Dangnhap.aspx">ĐĂNG NHẬP</a>
                         </li>
-                    </ul> -->
+                    </ul>
                 </section>
 
             </section>
@@ -49,7 +49,7 @@
                 <section class="cate-width">
                     <ul class="list-categories">
                         <li class="item-category"><a href="./Category.aspx?id=1">
-                                <section class="item-category-text"> Category 1</section>
+                                <section class="item-category-text">Máy tính</section>
                             </a></li>
                         <li class="item-category"><a href="./Category.aspx?id=2">
                                 <section class="item-category-text">Category 2</section>
@@ -74,7 +74,7 @@
         </section>
         <footer>
             <section class="footer-container row">
-                   <section class="col-3 item-footer">
+                   <section class="col-3 col-m-6 item-footer ">
                                   <section class="item-header">Thông Tin</section>
                                   <section class="item-body">
                                     <section class="img-logo">
@@ -83,7 +83,7 @@
                                         </a>
                                     </section>
                                     <section class="infomation text">
-                                        MAGZ chúng tôi cung cấp cho các bạn các tin tức mới nhất về GenZ.
+                                        MAGZ chúng tôi cung cấp cho các bạn các tin tức mới nhất.
                                     </section> 
                                     <a href="./About.aspx">
                                         <button class="infor-btn">
@@ -92,7 +92,7 @@
                                     </a>
                                   </section>
                    </section>
-                   <section class="col-3 item-footer">
+                   <section class="col-3 col-m-6 item-footer ">
                           <section class="item-header">Nhận Thông Báo</section>
                           <section class="item-body">
                             <section class="text">Đăng ký để nhận được tin tức mới nhất.</section>
@@ -102,7 +102,7 @@
                             </form>
                           </section>
                    </section>
-                   <section class="col-3 item-footer">
+                   <section class="col-3 col-m-6 item-footer ">
                           <section class="item-header">Tin Mới Nhất</section>
                           <section class="item-body">
                                 <ul class="list-news">
@@ -133,7 +133,7 @@
                                 </ul>
                           </section>
                    </section>
-                   <section class="col-3 item-footer">
+                   <section class="col-3 col-m-6 item-footer ">
                           <section class="item-header">Theo Dõi</section>
                           <section class="item-body">
                             <section class="text">Theo dõi chúng tôi để biết thêm thông tin.</section>
@@ -168,5 +168,8 @@
                     </section>
             </section>
         </footer>
+        <a id="bookmark" href="#">
+            <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+        </a>
     </body>
     </html>
