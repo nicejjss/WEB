@@ -11,7 +11,7 @@ namespace WEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            p.InnerHtml = ""+Request.QueryString["id"];
+            p.InnerHtml = ""+Request.QueryString["name"];
         }
     }
 }
