@@ -3,6 +3,7 @@
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="stylesheet" href="./assets/css/gridview.css">
         <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/asidenews.css">
     </asp:Content>
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section class="content row">
@@ -13,7 +14,7 @@
                     </section>
                     <section class="title-detail">
                         <section class="category" id="cate" runat="server">
-                            <a href="./Category?id=">Máy Tính</a>
+                            <a href="./Category?name=maytinh">Máy Tính</a>
                         </section>
                         <a class="link" href="./Post.aspx?id=">
                             Xem nhiều dựa vào lượt xem của POST.
@@ -240,7 +241,7 @@
                 <aside class="popular-news">
                     <section class="aside-title">
                         <section class="item-header aside-title-header">Tin Nổi Bật</section>
-                        <a class="aside-see-all" href="#">Xem Tất Cả</a>
+                        <!-- <a class="aside-see-all" href="#">Xem Tất Cả</a> -->
                     </section>
                     <section class="aside-body">
                        <section class="aside-item">

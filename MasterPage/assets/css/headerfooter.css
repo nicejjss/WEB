@@ -402,6 +402,10 @@ footer {
 }
 
 @media screen and (max-width:950px) {
+    .user{
+        padding-left: 65% !important;
+    margin: 10px auto !important;
+    }
     .cate-width {
         max-width: 100%;
         /* min-width: fit-content; */

@@ -70,12 +70,29 @@
     <Content Include="assets\css\index.css" />
     <Content Include="assets\img\logo.png" />
     <Content Include="assets\img\search.png" />
+    <Content Include="Category.aspx" />
     <Content Include="index.aspx" />
     <Content Include="MasterPage\assets\css\gridview.css" />
     <Content Include="MasterPage\assets\css\headerfooter.css" />
+    <Content Include="MasterPage\assets\img\close.png" />
+    <Content Include="MasterPage\assets\img\logo-footer.png" />
+    <Content Include="MasterPage\assets\img\logo.png" />
+    <Content Include="MasterPage\assets\img\media\facebook.png" />
+    <Content Include="MasterPage\assets\img\media\instagram.png" />
+    <Content Include="MasterPage\assets\img\media\twitter.png" />
+    <Content Include="MasterPage\assets\img\search.png" />
+    <Content Include="MasterPage\assets\img\stripes.png" />
+    <Content Include="MasterPage\assets\js\headerfooter.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
