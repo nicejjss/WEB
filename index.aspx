@@ -36,7 +36,7 @@
                                 <section class="post-date">
                                     04/03/2002
                                 </section>
-                                <span> <a class="post-cate" href="./Categogy?id=">Máy tính</a></span>
+                                <span> <a class="post-cate" href="./Categogy.aspx?name=">Máy tính</a></span>
                                 <section class="post-title"><a href="./Post?id=">Duis Aute Irure Dolor In Reprehenderit
                                         In Voluptate</a></section>
                                 <section class="post-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -57,8 +57,8 @@
                                 <section class="post-date">
                                     04/03/2002
                                 </section>
-                                <span> <a class="post-cate" href="./Categogy?id=">Máy tính</a></span>
-                                <section class="post-title"><a href="./Post?id=">Duis Aute Irure Dolor In Reprehenderit
+                                <span> <a class="post-cate" href="./Categogy.aspx?name=">Máy tính</a></span>
+                                <section class="post-title"><a href="./Post.aspx?id=">Duis Aute Irure Dolor In Reprehenderit
                                         In Voluptate</a></section>
                                 <section class="post-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -80,7 +80,7 @@
                                 <section class="post-date">
                                     04/03/2002
                                 </section>
-                                <span> <a class="post-cate" href="./Categogy?id=">Máy tính</a></span>
+                                <span> <a class="post-cate" href="./Categogy.aspx?name=">Máy tính</a></span>
                                 <section class="post-title"><a href="./Post?id=">Duis Aute Irure Dolor In Reprehenderit
                                         In Voluptate</a></section>
                                 <section class="post-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -128,7 +128,7 @@
 
                         </section>
                         <section class="new-body">
-                            <a class="post-cate new-cate" href="./Category.aspx?id=">Xe đạp</a>
+                            <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Xe đạp</a>
                             <span class="new-date post-date">04/04/2002</span>
                             <section class="new-title">
                                 <a class="new-link" href="./Post.aspx?id=">Donec consequat arcu at ultrices sodales quam
@@ -151,7 +151,7 @@
 
                         </section>
                         <section class="new-body">
-                            <a class="post-cate new-cate" href="./Category.aspx?id=">Xe đạp</a>
+                            <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Xe đạp</a>
                             <span class="new-date post-date">04/04/2002</span>
                             <section class="new-title">
                                 <a class="new-link" href="./Post.aspx?id=">Donec consequat arcu at ultrices sodales quam
@@ -174,7 +174,7 @@
 
                         </section>
                         <section class="new-body">
-                            <a class="post-cate new-cate" href="./Category.aspx?id=">Xe đạp</a>
+                            <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Xe đạp</a>
                             <span class="new-date post-date">04/04/2002</span>
                             <section class="new-title">
                                 <a class="new-link" href="./Post.aspx?id=">Donec consequat arcu at ultrices sodales quam
@@ -197,7 +197,7 @@
 
                         </section>
                         <section class="new-body">
-                            <a class="post-cate new-cate" href="./Category.aspx?id=">Xe đạp</a>
+                            <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Xe đạp</a>
                             <span class="new-date post-date">04/04/2002</span>
                             <section class="new-title">
                                 <a class="new-link" href="./Post.aspx?id=">Donec consequat arcu at ultrices sodales quam
@@ -220,7 +220,7 @@
 
                         </section>
                         <section class="new-body">
-                            <a class="post-cate new-cate" href="./Category.aspx?id=">Xe đạp</a>
+                            <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Xe đạp</a>
                             <span class="new-date post-date">04/04/2002</span>
                             <section class="new-title">
                                 <a class="new-link" href="./Post.aspx?id=">Donec consequat arcu at ultrices sodales quam

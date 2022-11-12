@@ -44,7 +44,7 @@
                 <section class="cate-width">
                     <button id="sbtn-open-nav" onclick="ShowHideNav()"><img src="../MasterPage/assets/img/stripes.png" alt=""></button>
                     <ul class="list-categories">
-                        <li class="item-category"><a href="./Category.aspx?name=">
+                        <li class="item-category"><a href="./Category.aspx?name=Máy Tính">
                                 <section class="item-category-text">Máy tính</section>
                             </a></li>
                         <li class="item-category"><a href="./Category.aspx?name=">
@@ -67,7 +67,7 @@
                         <img src="../MasterPage/assets/img/close.png" alt="">
                     </button>
                     <ul class="list-categories side-categories">
-                        <li class="item-category"><a href="./Category.aspx?name=">
+                        <li class="item-category"><a href="./Category.aspx?name=Máy Tính">
                                 <section class="item-category-text">Máy tính</section>
                             </a></li>
                         <li class="item-category"><a href="./Category.aspx?name=">

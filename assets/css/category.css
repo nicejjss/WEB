@@ -2,3 +2,10 @@
     --primary-color: #fc624d;
     --max-width: 1200px;
 }
+.content{
+    width: var(--max-width);
+}
+#catetitle{
+    font-size: 40px;
+    margin-top: 40px;
+}
