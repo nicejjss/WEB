@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #fc624d;
+    --max-width: 1200px;
+}
+
+.content {
+    max-width: var(--max-width);
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:950px) {
+    .content {
+        max-width: 750px;
+    }
+}

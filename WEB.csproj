@@ -68,8 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\index.css" />
-    <Content Include="assets\img\logo.png" />
-    <Content Include="assets\img\search.png" />
     <Content Include="Category.aspx" />
     <Content Include="index.aspx" />
     <Content Include="MasterPage\assets\css\gridview.css" />
@@ -83,6 +81,7 @@
     <Content Include="MasterPage\assets\img\search.png" />
     <Content Include="MasterPage\assets\img\stripes.png" />
     <Content Include="MasterPage\assets\js\headerfooter.js" />
+    <Content Include="Post.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +106,13 @@
     <Compile Include="MasterPage\HeaderFooter.Master.designer.cs">
       <DependentUpon>HeaderFooter.Master</DependentUpon>
     </Compile>
+    <Compile Include="Post.aspx.cs">
+      <DependentUpon>Post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Post.aspx.designer.cs">
+      <DependentUpon>Post.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -119,7 +125,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="assets\img\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

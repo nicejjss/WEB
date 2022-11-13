@@ -2,8 +2,9 @@
     CodeBehind="index.aspx.cs" Inherits="WEB.index" %>
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="stylesheet" href="./assets/css/gridview.css">
-        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/listnews.css">
         <link rel="stylesheet" href="./assets/css/asidenews.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
     </asp:Content>
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section class="content row">
@@ -37,7 +38,7 @@
                                     04/03/2002
                                 </section>
                                 <span> <a class="post-cate" href="./Categogy.aspx?name=">Máy tính</a></span>
-                                <section class="post-title"><a href="./Post?id=">Duis Aute Irure Dolor In Reprehenderit
+                                <section class="post-title"><a href="./Post.aspx?id=">Duis Aute Irure Dolor In Reprehenderit
                                         In Voluptate</a></section>
                                 <section class="post-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -81,7 +82,7 @@
                                     04/03/2002
                                 </section>
                                 <span> <a class="post-cate" href="./Categogy.aspx?name=">Máy tính</a></span>
-                                <section class="post-title"><a href="./Post?id=">Duis Aute Irure Dolor In Reprehenderit
+                                <section class="post-title"><a href="./Post.aspx?id=">Duis Aute Irure Dolor In Reprehenderit
                                         In Voluptate</a></section>
                                 <section class="post-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -122,7 +123,7 @@
                 <section class="another-news">
                     <section class="another-new">
                         <section class="new-header">
-                            <a href="./Post?id=">
+                            <a href="./Post.aspx?id=">
                                 <img src="./assets/img/posts/xedap.jpg" alt="">
                             </a>
 
@@ -145,7 +146,7 @@
                     </section>
                     <section class="another-new">
                         <section class="new-header">
-                            <a href="./Post?id=">
+                            <a href="./Post.aspx?id=">
                                 <img src="./assets/img/posts/xedap.jpg" alt="">
                             </a>
 
@@ -168,7 +169,7 @@
                     </section>
                     <section class="another-new">
                         <section class="new-header">
-                            <a href="./Post?id=">
+                            <a href="./Post.aspx?id=">
                                 <img src="./assets/img/posts/xedap.jpg" alt="">
                             </a>
 
@@ -191,7 +192,7 @@
                     </section>
                     <section class="another-new">
                         <section class="new-header">
-                            <a href="./Post?id=">
+                            <a href="./Post.aspx?id=">
                                 <img src="./assets/img/posts/xedap.jpg" alt="">
                             </a>
 
@@ -214,7 +215,7 @@
                     </section>
                     <section class="another-new">
                         <section class="new-header">
-                            <a href="./Post?id=">
+                            <a href="./Post.aspx?id=">
                                 <img src="./assets/img/posts/xedap.jpg" alt="">
                             </a>
 

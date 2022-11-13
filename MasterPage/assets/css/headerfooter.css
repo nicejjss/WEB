@@ -414,7 +414,10 @@ footer {
     .searchform {
         justify-content: center;
     }
-
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .item-footer {
         margin: 10px 0;
     }
@@ -422,6 +425,7 @@ footer {
     .item-new {
         justify-content: space-around;
     }
+    
 }
 
 
