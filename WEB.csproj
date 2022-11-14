@@ -70,6 +70,7 @@
     <Content Include="assets\css\index.css" />
     <Content Include="Category.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="index.html" />
     <Content Include="MasterPage\assets\css\gridview.css" />
     <Content Include="MasterPage\assets\css\headerfooter.css" />
     <Content Include="MasterPage\assets\img\close.png" />
