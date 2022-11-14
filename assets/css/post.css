@@ -2,13 +2,37 @@
     --primary-color: #fc624d;
     --max-width: 1200px;
 }
-
 .content {
     max-width: var(--max-width);
     padding: 10px 0;
     margin-top: 10px;
 }
-
+.post-relate{
+    font-weight: 600;
+}
+.post-cate{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 0 20px;
+}
+.post-cate:hover,
+.post-cate:active{
+    text-decoration: underline;
+}
+.post-title{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.post-img{
+    margin: 25px 0;
+}
+.post-img img{
+    width: 100%;
+}
+.post-content{
+    font-size: 25px;
+}
 @media screen and (max-width:950px) {
     .content {
         max-width: 750px;

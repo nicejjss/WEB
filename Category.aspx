@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true" CodeBehind="Category.aspx.cs" Inherits="WEB.Category" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="./assets/css/gridview.css">
-    <link rel="stylesheet" href="./assets/css/listnews.css">
     <link rel="stylesheet" href="./assets/css/asidenews.css">
     <link rel="stylesheet" href="./assets/css/category.css">
+    <link rel="stylesheet" href="./assets/css/listnews.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <section class="content row">
@@ -14,12 +14,11 @@
                     <section class="another-new">
                       <section class="new-header">
                           <a href="./Post.aspx?id=1">
-                              <img src="./assets/img/posts/xedap.jpg" alt="">
+                              <img src="./assets/img/posts/maytinh.jpg" alt="">
                           </a>
-
                       </section>
                       <section class="new-body">
-                          <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Xe đạp</a>
+                          <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Máy tính</a>
                           <span class="new-date post-date">04/04/2002</span>
                           <section class="new-title">
                               <a class="new-link" href="./Post.aspx?id=1">Donec consequat arcu at ultrices sodales quam
@@ -42,7 +41,6 @@
                           <a href="./Post?id=">
                               <img src="./assets/img/posts/xedap.jpg" alt="">
                           </a>
-
                       </section>
                       <section class="new-body">
                           <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Xe đạp</a>
