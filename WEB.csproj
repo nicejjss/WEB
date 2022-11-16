@@ -73,6 +73,7 @@
     <Content Include="assets\css\index.css" />
     <Content Include="assets\css\listnews.css" />
     <Content Include="assets\css\post.css" />
+    <Content Include="assets\css\signin_signup.css" />
     <Content Include="assets\img\mail.png" />
     <Content Include="assets\img\paperairplane.png" />
     <Content Include="assets\img\posts\chaybo.jpg" />
@@ -80,6 +81,8 @@
     <Content Include="assets\img\posts\maytinh.jpg" />
     <Content Include="assets\img\posts\xedap.jpg" />
     <Content Include="Category.aspx" />
+    <Content Include="Dangky.aspx" />
+    <Content Include="Dangnhap.aspx" />
     <Content Include="index.aspx" />
     <Content Include="MasterPage\assets\css\gridview.css" />
     <Content Include="MasterPage\assets\css\headerfooter.css" />
@@ -102,6 +105,20 @@
     </Compile>
     <Compile Include="Category.aspx.designer.cs">
       <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dangky.aspx.cs">
+      <DependentUpon>Dangky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dangky.aspx.designer.cs">
+      <DependentUpon>Dangky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dangnhap.aspx.cs">
+      <DependentUpon>Dangnhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.aspx.designer.cs">
+      <DependentUpon>Dangnhap.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

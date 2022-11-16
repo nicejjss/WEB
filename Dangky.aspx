@@ -27,7 +27,7 @@
                         <p id="messageErrNLMK"></p>
                     </p>
                     <p>
-                        <asp:Button id="btnSubmit" class="btnSubmit" Text="Đăng Ký" runat="server" OnClick="btnSubmit_Click"/>
+                        <asp:Button id="btnSubmit" class="btnSubmit" Text="Đăng Ký" runat="server" />
                     </p>
                        
 

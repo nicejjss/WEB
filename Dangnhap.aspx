@@ -22,7 +22,7 @@
                 </p>
 
 			    <p class="fieldset">
-				    <asp:Button id="btnSubmit" class="btnSubmit" Text="Đăng Nhập" runat="server" OnClick="btnSubmit_Click"/>
+				    <asp:Button id="btnSubmit" class="btnSubmit" Text="Đăng Nhập" runat="server" />
 			    </p>
 
                 <div class="btnThree">
