@@ -5,30 +5,30 @@
  </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-         <form id="form" class="form" runat="server">
+         <form id="form" class="form" runat="server" >
                 <p class="news">NEWS</p>
                     <p class="fieldset">
-                        <input type="text" placeholder="Nhập Tên Đăng Nhập" class="txtTenTK" id="txtTenTK"  onblur="check_register()"/>
+                        <input type="text" placeholder="Nhập Tên Đăng Nhập" class="txtTenTK" id="txtTenTK" name="txtTenTK" onblur="check_register()"/>
                         <p id="messageErrTK"></p>
                     </p>
                      <p class="fieldset">
-       
-                        <input type="text" placeholder="Nhập Email của bạn" class="txtEmail" id="txtEmail"  onblur="check_register()" />
+                        <input type="text" placeholder="Nhập Email của bạn" class="txtEmail" id="txtEmail" name="txtEmail"  onblur="check_register()" />
                         <p id="messageErrEmail"></p>
+                         
                     </p>
                      <p class="fieldset">
                    
-                        <input type="password" placeholder="Nhập mật khẩu của bạn" class="txtMatKhau" id="txtMatKhau"  onblur="check_register()"/>
+                        <input type="password" placeholder="Nhập mật khẩu của bạn" class="txtMatKhau" id="txtMatKhau" name="txtMatKhau" onblur="check_register()"/>
                         <p id="messageErrMK"></p>
                     </p>
 
                     <p class="fieldset">
                    
-                        <input type="password" placeholder="Nhập lại mật khẩu của bạn" class="txtNLMatKhau" id="txtNLMatKhau"  onblur="check_register()"/>
+                        <input type="password" placeholder="Nhập lại mật khẩu của bạn" class="txtNLMatKhau" id="txtNLMatKhau" name="txtNLMatKhau" onblur="check_register()"/>
                         <p id="messageErrNLMK"></p>
                     </p>
                     <p>
-                        <button type="submit" value="true" id="btnSubmit" class="btnSubmit">Đăng Ký</button>
+                        <asp:Button id="btnSubmit" class="btnSubmit" Text="Đăng Ký" runat="server" OnClick="btnSubmit_Click"/>
                     </p>
                        
 

@@ -8,22 +8,22 @@
         <form id="form" class="form" runat="server">   
             <p class="news">NEWS</p>
                 <p class="fieldset">
-                    <input type="text" placeholder="Nhập Tên Đăng Nhập" class="txtTenTK" id="txtTenTK" />
+                    <input type="text" placeholder="Nhập Tên Đăng Nhập" class="txtTenTK" id="txtTenTK"  name="txtTenTK" onblur="check_login()"/>
                     <p id="messageErrTK"></p>
                 </p>
                  <p class="fieldset">
        
-                    <input type="text" placeholder="Nhập Email của bạn" class="txtEmail" id="txtEmail" />
+                    <input type="text" placeholder="Nhập Email của bạn" class="txtEmail" id="txtEmail" name="txtEmail" onblur="check_login()"/>
                     <p id="messageErrEmail"></p>
                 </p>
                  <p class="fieldset">
                    
-                    <input type="password" placeholder="Nhập mật khẩu của bạn" class="txtMatKhau" id="txtMatKhau"/>
+                    <input type="password" placeholder="Nhập mật khẩu của bạn" class="txtMatKhau" id="txtMatKhau" name="txtMatKhau" onblur="check_login()"/>
                     <p id="messageErrMK"></p>
                 </p>
 
 			    <p class="fieldset">
-				    <input class="btnSubmit" id="btnSubmit" type="button" value="Đăng Nhập" onclick="check_login()">
+				    <asp:Button id="btnSubmit" class="btnSubmit" Text="Đăng Nhập" runat="server" OnClick="btnSubmit_Click"/>
 			    </p>
 
                 <div class="btnThree">

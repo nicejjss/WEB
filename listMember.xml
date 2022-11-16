@@ -1,9 +1,21 @@
-﻿<?xml version="1.0"  ?>
+<?xml version="1.0"?>
 <ArrayOfMember xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<Member>
-		<TenTK>Thang</TenTK>
-		<Email>admin@gmail.com</Email>
-		<Password>123</Password>
-		<Id>0</Id>
-	</Member>
+  <Member>
+    <TenTK>Thang</TenTK>
+    <Email>Admin@gmail.com</Email>
+    <Password>123</Password>
+    <Id>0</Id>
+  </Member>
+  <Member>
+    <TenTK>AAA</TenTK>
+    <Email>asdasd</Email>
+    <Password>111</Password>
+    <Id>1</Id>
+  </Member>
+  <Member>
+    <TenTK>TrongThang17</TenTK>
+    <Email>thang17062002@gmail.com</Email>
+    <Password>1234</Password>
+    <Id>2</Id>
+  </Member>
 </ArrayOfMember>
