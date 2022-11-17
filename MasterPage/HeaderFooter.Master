@@ -13,11 +13,13 @@
         <asp:ContentPlaceHolder ID="head" runat="server">
         </asp:ContentPlaceHolder>
     </head>
+
     <body>
         <header>
             <section class="header-sec row">
                 <section class="col-3 col-m-12 logo">
-                    <a href="../index.aspx"><img class="logoimg" src="../MasterPage/assets/img/logo.png" alt="logo.png"></a>
+                    <a href="../index.aspx"><img class="logoimg" src="../MasterPage/assets/img/logo.png"
+                            alt="logo.png"></a>
                 </section>
                 <section class="col-6 col-m-12 search">
                     <form class="searchform" action="./search.aspx" method="get">
@@ -27,8 +29,8 @@
                         </button>
                     </form>
                 </section>
-                <section class="col-3 col-m-12 user">
-                    <!-- <section class="user-function user-link user-logined">Nguoi dung</section> -->
+                <section class="col-3 col-m-12 user" id="user" runat="server">
+                  <!-- <section class='user-function user-link user-logined' runat='server' id='name'><a href='../User.aspx'></a></section> -->
                     <ul class="user-functions">
                         <li class="user-function">
                             <a class="user-link" href="./Dangky.aspx">ĐĂNG KÝ</a>
@@ -42,7 +44,8 @@
             </section>
             <section class="navigation">
                 <section class="cate-width">
-                    <button id="sbtn-open-nav" onclick="ShowHideNav()"><img src="../MasterPage/assets/img/stripes.png" alt=""></button>
+                    <button id="sbtn-open-nav" onclick="ShowHideNav()"><img src="../MasterPage/assets/img/stripes.png"
+                            alt=""></button>
                     <ul class="list-categories">
                         <li class="item-category"><a href="./Category.aspx?name=Máy Tính">
                                 <section class="item-category-text">Máy tính</section>
@@ -79,118 +82,123 @@
                         <li class="item-category"><a href="./Category.aspx?name=">
                                 <section class="item-category-text"> Category 4</section>
                             </a></li>
-                       
-                            <li class="item-category"><a href="./Dangky.aspx">
+
+                        <li class="item-category"><a href="./Dangky.aspx">
                                 <section class="item-category-text">ĐĂNG KÝ</section>
                             </a></li>
-                            <li class="item-category"><a href="./Dangnhap.aspx">
+                        <li class="item-category"><a href="./Dangnhap.aspx">
                                 <section class="item-category-text">ĐĂNG NHẬP</section>
                             </a></li>
                     </ul>
                 </section>
             </section>
         </header>
-        
+
         <section>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </section>
         <footer>
             <section class="footer-container row">
-                   <section class="col-3 col-m-6 col-s-12 item-footer ">
-                                  <section class="item-header">Thông Tin</section>
-                                  <section class="item-body">
-                                    <section class="img-logo">
-                                        <a href="../index.aspx">
-                                            <img src="../MasterPage/assets/img/logo-footer.png" alt="">
-                                        </a>
-                                    </section>
-                                    <section class="infomation text">
-                                        MAGZ chúng tôi cung cấp cho các bạn các tin tức mới nhất.
-                                    </section> 
-                                    <a href="./About.aspx">
-                                        <button class="infor-btn">
-                                              Aubout Us
-                                        </button>
-                                    </a>
-                                  </section>
-                   </section>
-                   <section class="col-3 col-m-6 col-s-12 item-footer ">
-                          <section class="item-header">Nhận Thông Báo</section>
-                          <section class="item-body">
-                            <section class="text">Đăng ký để nhận được tin tức mới nhất.</section>
-                            <form action="" method="get">
-                                <input class="sub-input" type="text" placeholder="Your email" name="email"  id="email" >
-                               <input type="submit" class="sub-btn" value="Subcribe">
-                            </form>
-                          </section>
-                   </section>
-                   <section class="col-3 col-m-6 col-s-12 item-footer ">
-                          <section class="item-header">Tin Mới Nhất</section>
-                          <section class="item-body">
-                                <ul class="list-news">
-                                    <li class="item-new">
-                                        <a class="item-img" href="../Post.aspx?id=">
-                                            <img src="../assets/img/posts/maytinh.jpg" alt="">
-                                        </a>
-                                        <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue Pharetra</a>
-                                    </li>
-                                    <li class="item-new">
-                                        <a class="item-img" href="../Post.aspx?id=">
-                                            <img src="../assets/img/posts/maytinh.jpg" alt="">
-                                        </a>
-                                        <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue Pharetra</a>
-                                    </li>
-                                    <li class="item-new">
-                                        <a class="item-img" href="../Post.aspx?id=">
-                                            <img src="../assets/img/posts/maytinh.jpg" alt="">
-                                        </a>
-                                        <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue Pharetra</a>
-                                    </li>
-                                    <li class="item-new">
-                                        <a class="item-img" href="../Post.aspx?id=">
-                                            <img src="../assets/img/posts/maytinh.jpg" alt="">
-                                        </a>
-                                        <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue Pharetra</a>
-                                    </li>
-                                </ul>
-                          </section>
-                   </section>
-                   <section class="col-3 col-m-6 col-s-12 item-footer ">
-                          <section class="item-header">Theo Dõi</section>
-                          <section class="item-body">
-                            <section class="text">Theo dõi chúng tôi để biết thêm thông tin.</section>
-                             <section class="list-media">
-                                   <section class="media-item face-media">
-                                    <section class="media-overlay"></section>
-                                    <a class="media-link" href="#">
-                                        <img src="../MasterPage/assets/img/media/facebook.png" alt="facebook">
-                                    </a>
-                                   </section>
-                                   <section class="media-item twitter-media">
-                                    <section class="media-overlay"></section>
-                                    <a class="media-link" href="#">
-                                        <img src="../MasterPage/assets/img/media/twitter.png" alt="twitter">
-                                    </a>
-                                   </section>
-                                   <section class="media-item insta-media">
-                                    <section class="media-overlay"></section>
-                                    <a class="media-link" href="../index.aspx?name=instagram">
-                                        <img src="../MasterPage/assets/img/media/instagram.png" alt="instagram">
-                                    </a>
-                                   </section>
-                             </section>
-                          </section>
-                   </section>
+                <section class="col-3 col-m-6 col-s-12 item-footer ">
+                    <section class="item-header">Thông Tin</section>
+                    <section class="item-body">
+                        <section class="img-logo">
+                            <a href="../index.aspx">
+                                <img src="../MasterPage/assets/img/logo-footer.png" alt="">
+                            </a>
+                        </section>
+                        <section class="infomation text">
+                            MAGZ chúng tôi cung cấp cho các bạn các tin tức mới nhất.
+                        </section>
+                        <a href="./About.aspx">
+                            <button class="infor-btn">
+                                Aubout Us
+                            </button>
+                        </a>
+                    </section>
+                </section>
+                <section class="col-3 col-m-6 col-s-12 item-footer ">
+                    <section class="item-header">Nhận Thông Báo</section>
+                    <section class="item-body">
+                        <section class="text">Đăng ký để nhận được tin tức mới nhất.</section>
+                        <form action="" method="get">
+                            <input class="sub-input" type="text" placeholder="Your email" name="email" id="email">
+                            <input type="submit" class="sub-btn" value="Subcribe">
+                        </form>
+                    </section>
+                </section>
+                <section class="col-3 col-m-6 col-s-12 item-footer ">
+                    <section class="item-header">Tin Mới Nhất</section>
+                    <section class="item-body">
+                        <ul class="list-news">
+                            <li class="item-new">
+                                <a class="item-img" href="../Post.aspx?id=">
+                                    <img src="../assets/img/posts/maytinh.jpg" alt="">
+                                </a>
+                                <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue
+                                    Pharetra</a>
+                            </li>
+                            <li class="item-new">
+                                <a class="item-img" href="../Post.aspx?id=">
+                                    <img src="../assets/img/posts/maytinh.jpg" alt="">
+                                </a>
+                                <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue
+                                    Pharetra</a>
+                            </li>
+                            <li class="item-new">
+                                <a class="item-img" href="../Post.aspx?id=">
+                                    <img src="../assets/img/posts/maytinh.jpg" alt="">
+                                </a>
+                                <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue
+                                    Pharetra</a>
+                            </li>
+                            <li class="item-new">
+                                <a class="item-img" href="../Post.aspx?id=">
+                                    <img src="../assets/img/posts/maytinh.jpg" alt="">
+                                </a>
+                                <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue
+                                    Pharetra</a>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="col-3 col-m-6 col-s-12 item-footer ">
+                    <section class="item-header">Theo Dõi</section>
+                    <section class="item-body">
+                        <section class="text">Theo dõi chúng tôi để biết thêm thông tin.</section>
+                        <section class="list-media">
+                            <section class="media-item face-media">
+                                <section class="media-overlay"></section>
+                                <a class="media-link" href="#">
+                                    <img src="../MasterPage/assets/img/media/facebook.png" alt="facebook">
+                                </a>
+                            </section>
+                            <section class="media-item twitter-media">
+                                <section class="media-overlay"></section>
+                                <a class="media-link" href="#">
+                                    <img src="../MasterPage/assets/img/media/twitter.png" alt="twitter">
+                                </a>
+                            </section>
+                            <section class="media-item insta-media">
+                                <section class="media-overlay"></section>
+                                <a class="media-link" href="../index.aspx?name=instagram">
+                                    <img src="../MasterPage/assets/img/media/instagram.png" alt="instagram">
+                                </a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
             </section>
             <section class="right">
-                    <section class="content-right">
-                        COPYRIGHT © MAGZ 2022. ALL RIGHT RESERVED.
-                        <br>
-                        MADE BY <span class="span-text">FITEAM</span>
-                    </section>
+                <section class="content-right">
+                    COPYRIGHT © MAGZ 2022. ALL RIGHT RESERVED.
+                    <br>
+                    MADE BY <span class="span-text">FITEAM</span>
+                </section>
             </section>
         </footer>
-      <script src="../MasterPage/assets/js/headerfooter.js"></script>
+        <script src="../MasterPage/assets/js/headerfooter.js"></script>
     </body>
+
     </html>

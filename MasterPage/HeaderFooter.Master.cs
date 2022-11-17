@@ -9,14 +9,17 @@ namespace WEB.MasterPage
 {
     public partial class HeaderFooter : System.Web.UI.MasterPage
     {
-       public string mail;
         protected void Page_Load(object sender, EventArgs e)
         {
-        
-        }
-         void btn1_Click(object sender, EventArgs e)
-        {
-
+            if (!IsPostBack)
+            {
+                if (Session["name"] != null)
+                {
+                    string ten = Session["name"].ToString();
+                    user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a href='../User.aspx'>" +
+                                             "Welcome: "+ten+"</a></section>";
+                }
+            }
         }
     }
 }

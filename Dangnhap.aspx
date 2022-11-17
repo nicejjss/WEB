@@ -4,8 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="content">
-        <form id="form" class="form" runat="server">   
-            <p class="news">NEWS</p>
+        <form action="./index.aspx" id="form" class="form" runat="server">   
+            <p class="news">Đăng Nhập</p>
                 <p class="fieldset">
                     <input type="text" placeholder="Nhập Tên Đăng Nhập" class="txtTenTK" id="txtTenTK"  name="txtTenTK" onblur="check_login()"/>
                     <p id="messageErrTK"></p>
@@ -23,13 +23,7 @@
 
 			    <p class="fieldset">
 				    <asp:Button id="btnSubmit" class="btnSubmit" Text="Đăng Nhập" runat="server" />
-			    </p>
-
-                <div class="btnThree">
-                    <button class="btnQuenmk" id="btnQuenmk"><p><a href="#0">Đổi Mật Khẩu?</a></p></button>
-                    <button class="btnDangky" id="btnDangky"> <p> <a href="Dangky.aspx">Đăng ký</a></p></button>
-                    <button class="btnQuaylai" id="btnQuaylai"><p><a href="index.aspx">Quay lại</a></p></button>
-                </div>       	    	    
+			    </p>   	    	    
         </form>
      </div>
 </asp:Content>

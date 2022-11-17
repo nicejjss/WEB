@@ -91,16 +91,16 @@ header {
     display: flex;
 }
 
-.user-link {
+.user-link a{
+    display: block;
     text-decoration-line: none;
     color: black;
     font-weight: 700;
     font-size: medium;
     transition: all 0.2s ease;
 }
-
-.user-link:hover,
-.user-link:active {
+.user-link:hover a,
+.user-link:active a{
     color: var(--primary-color);
     transition: all 0.2s ease;
 }
