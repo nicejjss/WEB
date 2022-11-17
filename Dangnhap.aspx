@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="./assets/css/signin_signup.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container">
+     <div class="content">
         <form id="form" class="form" runat="server">   
             <p class="news">NEWS</p>
                 <p class="fieldset">
