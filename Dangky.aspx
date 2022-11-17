@@ -32,4 +32,5 @@
                      <p class="login">Đã Có Tài Khoản <a href="./Dangnhap.aspx">Đăng Nhập</a></p>
             </form>
      </div>
+     <script src="./assets/js/signin_signup.js"></script>
 </asp:Content>
