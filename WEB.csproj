@@ -80,6 +80,7 @@
     <Content Include="assets\img\posts\hacom.jpg" />
     <Content Include="assets\img\posts\maytinh.jpg" />
     <Content Include="assets\img\posts\xedap.jpg" />
+    <Content Include="assets\js\signin_signup.js" />
     <Content Include="Category.aspx" />
     <Content Include="Dangky.aspx" />
     <Content Include="Dangnhap.aspx" />
