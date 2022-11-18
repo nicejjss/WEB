@@ -27,7 +27,7 @@ namespace WEB
                 }
                 if (dem == 0)
                 {
-                    p.InnerText = "*Sai ten Tai Khoan hoac Mat Khau";
+                    p.InnerText = "*Tai khoan chua duoc dang ky";
                 }
                 else
                 {

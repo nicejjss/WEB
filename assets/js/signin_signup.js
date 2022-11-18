@@ -28,7 +28,7 @@ function CheckError() {
     let txtLMatKhau = document.getElementById("txtNLMatKhau").value;
     let error = document.getElementById("p");
     switch (true) {
-        case (txtMatKhau == "" || txtEmail == ""|| txtTenTK == ""||txtLMatKhau == ""):
+        case (txtMatKhau == "" || txtEmail == "" || txtTenTK == "" || txtLMatKhau == ""):
             error.innerText = "*Khong duoc de trong Du Lieu";
             return false; break;
         case (txtMatKhau !== txtLMatKhau):

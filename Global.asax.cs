@@ -14,15 +14,16 @@ namespace WEB
         {
           
             List<User> Users = new List<User>();
-            Users.Add(new User("daoducloc","locdaoduc2002@gmail.com","123456"));
-            Users.Add(new User("nguyena", "nguyena@gmail.com", "123456"));
-            Users.Add(new User("tranb", "tranb@gmail.com", "123456"));
+            Users.Add(new User("daoducloc","locdaoduc2002@gmail.com","123456",true));
+            Users.Add(new User("nguyena", "nguyena@gmail.com", "123456",false));
+            Users.Add(new User("tranb", "tranb@gmail.com", "123456",false));
             Application["Users"] = Users;
         }
 
         protected void Session_Start(object sender, EventArgs e)
         {
             Session["name"] = null;
+            Session["admin"] = false;
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

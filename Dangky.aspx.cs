@@ -32,9 +32,10 @@ namespace WEB
                 }
                 else
                 {
-                    User user = new User(ten, mail, matkhau);
+                    User user = new User(ten, mail, matkhau,false);
                     users.Add(user);
                     Session["name"] = user.Ten;
+                    Session["admin"] = user.IsAdmin;
                     Response.Redirect("index.aspx");
                 }
             }

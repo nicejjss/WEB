@@ -17,10 +17,11 @@ namespace WEB.MasterPage
                 if (Session["name"] != null)
                 {
                     string ten = Session["name"].ToString();
-                    user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' href='../User.aspx'>" +
+                    user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='u-link' href='../User.aspx'>" +
                                              "Welcome: " + ten + "</a></section>" +
-                                      "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' href='Dangxuat.aspx" +
-                                      "'>Đăng Xuất</a></section>"; ;
+                                      "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='logout-link' href='Dangxuat.aspx" +
+                                      "'>Đăng Xuất</a></section>";
+                    sidelist.
                 }
             }
         }

@@ -141,10 +141,6 @@ body {
        color: #FFF;
        font-weight: bold;
        border: none;
-       -webkit-appearance: none;
-       -moz-appearance: none;
-       -ms-appearance: none;
-       -o-appearance: none;
        /* appearance: none; */
        margin: 20px 0;
        transition: all 0.30s ease-in-out;
