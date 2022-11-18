@@ -106,11 +106,13 @@ header {
 }
 .u-link {
     display:block;
+    margin-bottom: 10px;
     text-decoration-line: none;
     color: black;
     font-weight: 700;
     font-size: medium;
     transition: all 0.2s ease;
+
 }
 .u-link:active,
 .u-link:hover{

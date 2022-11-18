@@ -83,6 +83,7 @@
     <Content Include="Category.aspx" />
     <Content Include="Dangky.aspx" />
     <Content Include="Dangnhap.aspx" />
+    <Content Include="Dangxuat.aspx" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
     <Content Include="MasterPage\assets\css\gridview.css" />
@@ -121,6 +122,13 @@
     </Compile>
     <Compile Include="Dangnhap.aspx.designer.cs">
       <DependentUpon>Dangnhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dangxuat.aspx.cs">
+      <DependentUpon>Dangxuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dangxuat.aspx.designer.cs">
+      <DependentUpon>Dangxuat.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -14,7 +14,7 @@
         </asp:ContentPlaceHolder>
     </head>
 
-    <body onload="User()">
+    <body>
         <header>
             <section class="header-sec row">
                 <section class="col-3 col-m-12 logo">

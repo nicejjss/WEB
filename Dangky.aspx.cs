@@ -14,15 +14,16 @@ namespace WEB
             if (IsPostBack)
             {
                 int dem = 0;
-                string ten = Request.Form["txtTenTK"];
-                string mail = Request.Form["txtEmail"];
-                string matkhau = Request.Form["txtMatKhau"];
+                string ten = Request.Form["txtTenTK"].Trim();
+                string mail = Request.Form["txtEmail"].Trim();
+                string matkhau = Request.Form["txtMatKhau"].Trim();
                 List<User> users = (List<User>)Application["Users"];
                 for(int i = 0; i < users.Count; i++)
                 {
-                    if(users[i].Mail== mail || users[i].Ten==ten)
+                    if(users[i].Mail.ToLower()== mail.ToLower() || users[i].Ten.ToLower()==ten.ToLower())
                     {
                         dem++;
+                        break;
                     }
                 }
                 if (dem > 0)

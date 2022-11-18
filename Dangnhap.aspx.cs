@@ -11,7 +11,30 @@ namespace WEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (IsPostBack)
+            {
+                int dem = 0;
+                string ten = Request.Form["txtTenTK"].Trim();
+                string matkhau = Request.Form["txtMatKhau"].Trim();
+                List<User> users = (List<User>)Application["Users"];
+                for (int i = 0; i < users.Count; i++)
+                {
+                    if (users[i].Ten.ToLower() == ten.ToLower() &&  users[i].Matkhau==matkhau)
+                    {
+                        dem++;
+                        break;
+                    }
+                }
+                if (dem == 0)
+                {
+                    p.InnerText = "*Sai ten Tai Khoan hoac Mat Khau";
+                }
+                else
+                {
+                    Session["name"] = ten;
+                    Response.Redirect("index.aspx");
+                }
+            }
         }
     }
 }
