@@ -21,7 +21,8 @@ namespace WEB.MasterPage
                                              "Welcome: " + ten + "</a></section>" +
                                       "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='logout-link' href='Dangxuat.aspx" +
                                       "'>Đăng Xuất</a></section>";
-                    sidelist.
+                    dangky.InnerHtml = "<a href='./User.aspx'><section class='item-category-text'>Welcome: "+ten+"</section></a>";  
+                    dangnhap.InnerHtml= "<a href='./Dangxuat.aspx'><section class='item-category-text'>Đăng Xuất</section></a>";
                 }
             }
         }

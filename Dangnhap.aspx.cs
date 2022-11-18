@@ -17,11 +17,13 @@ namespace WEB
                 string ten = Request.Form["txtTenTK"].Trim();
                 string matkhau = Request.Form["txtMatKhau"].Trim();
                 List<User> users = (List<User>)Application["Users"];
+                User user = new User();
                 for (int i = 0; i < users.Count; i++)
                 {
                     if (users[i].Ten.ToLower() == ten.ToLower() &&  users[i].Matkhau==matkhau)
                     {
                         dem++;
+                        user = users[i];
                         break;
                     }
                 }
@@ -31,7 +33,8 @@ namespace WEB
                 }
                 else
                 {
-                    Session["name"] = ten;
+                    Session["name"] = user.Ten;
+                    Session["admin"] = user.IsAdmin;
                     Response.Redirect("index.aspx");
                 }
             }

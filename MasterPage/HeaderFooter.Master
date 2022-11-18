@@ -69,7 +69,7 @@
                     <button id="sbtn-close-nav" onclick="ShowHideNav()">
                         <img src="../MasterPage/assets/img/close.png" alt="">
                     </button>
-                    <ul class="list-categories side-categories" runat="server" id="sidelist">
+                    <ul class="list-categories side-categories">
                         <li class="item-category"><a href="./Category.aspx?name=Máy Tính">
                                 <section class="item-category-text">Máy tính</section>
                             </a></li>
@@ -83,12 +83,13 @@
                                 <section class="item-category-text"> Category 4</section>
                             </a></li>
 
-                        <li class="item-category user-link"><a href="./Dangky.aspx">
+                        <li class="item-category " runat="server" id="dangky"><a href="./Dangky.aspx">
                                 <section class="item-category-text">ĐĂNG KÝ</section>
                             </a></li>
-                        <li class="item-category user-link"><a href="./Dangnhap.aspx">
+                        <li class="item-category " runat="server" id="dangnhap"><a href="./Dangnhap.aspx">
                                 <section class="item-category-text">ĐĂNG NHẬP</section>
                             </a></li>
+
                     </ul>
                 </section>
             </section>
