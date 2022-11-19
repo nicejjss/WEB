@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true"
-    CodeBehind="index.aspx.cs" Inherits="WEB.index" %>
+﻿<%@Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true"CodeBehind="index.aspx.cs" Inherits="WEB.index" %>
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="stylesheet" href="./assets/css/gridview.css">
         <link rel="stylesheet" href="./assets/css/listnews.css">

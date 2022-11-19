@@ -374,13 +374,13 @@ footer {
     z-index: -1;
     background-color: black;
     opacity: 0.2;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
 
 .media-item:hover .media-overlay,
 .media-item:active .media-overlay {
     z-index: 1;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
 
 .media-link {

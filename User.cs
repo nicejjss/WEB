@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WEB
 {
-    public class User
+    public partial class User
     {
         string ten;
         string mail;
