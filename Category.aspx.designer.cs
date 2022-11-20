@@ -11,7 +11,7 @@ namespace WEB
 {
 
 
-    public partial class Category
+    public partial class Category1
     {
 
         /// <summary>
