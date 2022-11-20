@@ -15,6 +15,7 @@ namespace WEB
         int luotxem;
         string anh;
 
+
         public string Tieude { get => tieude; set => tieude = value; }
         public string Tacgia { get => tacgia; set => tacgia = value; }
         public DateTime Ngay { get => ngay; set => ngay = value; }

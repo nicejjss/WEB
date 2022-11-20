@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WEB
 {
-    public partial class Category : System.Web.UI.Page
+    public partial class Category1 : System.Web.UI.Page
     {
         public List<Post> postscate=new List<Post>();
        public int dem=0;
