@@ -24,22 +24,44 @@ namespace WEB.MasterPage
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
-        /// user_member control.
+
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl user_member;
+
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl user;
 
         /// <summary>
-        /// btnLogout control.
+        /// name control.
+
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnLogout;
+
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl name;
+
+        /// <summary>
+        /// dangky control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dangky;
+
+        /// <summary>
+        /// dangnhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dangnhap;
+
 
         /// <summary>
         /// ContentPlaceHolder1 control.

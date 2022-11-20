@@ -104,6 +104,21 @@ header {
     color: var(--primary-color);
     transition: all 0.2s ease;
 }
+.u-link {
+    display:block;
+    margin-bottom: 10px;
+    text-decoration-line: none;
+    color: black;
+    font-weight: 700;
+    font-size: medium;
+    transition: all 0.2s ease;
+
+}
+.u-link:active,
+.u-link:hover{
+    color: var(--primary-color);
+    transition: all 0.2s ease;
+}
 
 .user-logined {
     text-align: right;
@@ -359,13 +374,13 @@ footer {
     z-index: -1;
     background-color: black;
     opacity: 0.2;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
 
 .media-item:hover .media-overlay,
 .media-item:active .media-overlay {
     z-index: 1;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
 
 .media-link {

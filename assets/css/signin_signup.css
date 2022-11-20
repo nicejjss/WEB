@@ -1,0 +1,225 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+}
+.content{
+    margin: 50px 0;
+}
+.news {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0;
+    /* margin: 10px; */
+    align-self: flex-start;
+}
+#p{
+    margin: 10px 0;
+}
+.btnThree {
+    width: 100%;
+}
+
+.btnThree p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btnQuenmk {
+    width: 125px;
+    background-color: #F64747;
+    border-radius: 8px;
+}
+
+.btnDangky,
+.btnQuaylai {
+    width: 100px;
+    background-color: #F64747;
+    border-radius: 8px;
+}
+
+.form {
+       /* text-align: center; */
+       width: 500px;
+       /* height: 100%; */
+       padding: 40px 45px;
+       /* padding-left: 3%; */
+       border: 1px solid #848f9a21;
+       /* margin: 50px auto; */
+       /* display: inline; */
+       display: flex;
+       flex-direction: column;
+       box-shadow: 0 0 6px #0000005e;
+       /* align-items: center; */
+       width: 100;
+}
+
+.form .fieldset {
+    position: relative;
+    /* margin: 1.4em 0; */
+    /* text-align: center; */
+    width: 100%;
+    align-self: center;
+}
+
+.form .fieldset:first-child {
+    margin-top: 0;
+}
+
+.form .fieldset:last-child {
+    margin-bottom: 0;
+}
+
+.form label {
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.btnSubmit {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+       /* margin: 0; */
+    /* padding: 0; */
+    /* border-radius: 0.25em; */
+    height: 40px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    outline: none;
+    border: 1px solid var(--footer-color);
+    padding-right: 10px;
+    /* border-radius: unset; */
+    /* outline: #2c7ec5; */
+    /* outline: 1px solid var(--primary-color);
+}
+
+.form input.full-width {
+    width: 100%;
+}
+
+.form input.has-padding {
+    padding: 12px 20px 12px 50px;
+}
+
+.form input.has-border {
+    border: 1px solid #d2d8d8;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.form input.has-border:focus {
+    border-color: #343642;
+    box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
+    outline: none;
+}
+
+.form input.has-error {
+    border: 1px solid #d76666;
+}
+
+.form input[type=password] {
+    /* space left for the HIDE button */
+}
+
+.form input[type=submit] {
+       /* padding: 16px 0; */
+       cursor: pointer;
+       /* text-align: center; */
+       background: var(--primary-color);
+       padding: 0;
+       color: #FFF;
+       font-weight: bold;
+       border: none;
+       /* appearance: none; */
+       margin: 20px 0;
+       transition: all 0.30s ease-in-out;
+}
+
+.form input[type=submit]:hover {
+    background: #d83d3d;
+}
+
+.form-bottom-message {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.form-bottom-message a {
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .0);
+    padding: 0 0 0 2px;
+    transition: all 0.30s ease-in-out;
+}
+
+.form-bottom-message a:hover {
+    -webkit-animation: borderslide-3px .5s;
+    animation: borderslide-3px .5s;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    padding-bottom: 3px;
+}
+.login{
+    margin: 0;
+}
+.login a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.login a:hover,
+.login a:active{
+    text-decoration: underline;
+}
+/* 
+@media only screen and (min-width: 600px) {
+    .form {
+        padding: 2em;
+    }
+
+    .form .fieldset {
+        margin: 2em 0;
+    }
+
+    .form .fieldset:first-child {
+        margin-top: 0;
+    }
+
+    .form .fieldset:last-child {
+        margin-bottom: 0;
+    }
+
+    .form input.has-padding {
+        padding: 16px 20px 16px 50px;
+    }
+
+    .form input[type=submit] {
+        padding: 16px 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .form-message {
+        padding: 2em 2em 0;
+    }
+} */
+
+@media only screen and (max-width: 600px) {
+    .form{
+       width: 100%;
+    }
+}

@@ -10,32 +10,36 @@
           <section class="display-news col-m-12 col-8">
             <h1 runat="server" id="catetitle"></h1>
             <section class="list-display row">
-                   <section class="col-12 item-display">
+                <%if (dem > 0) {
+                        for (int i = 0; i < postscate.Count; i++)
+                        {
+                %>
+                 <section class="col-12 item-display">
                     <section class="another-new">
                       <section class="new-header">
-                          <a href="./Post.aspx?id=1">
-                              <img src="./assets/img/posts/maytinh.jpg" alt="">
+                          <a href="./Post.aspx?name=<%=postscate[i].Tieude%>">
+                              <img src="./assets/img/posts/<%=postscate[i].Anh%>" alt="">
                           </a>
                       </section>
                       <section class="new-body">
-                          <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Máy tính</a>
-                          <span class="new-date post-date">04/04/2002</span>
+                          <a class="post-cate new-cate" href="./Category.aspx?name=<%= postscate[i].Theloai%>"><%=postscate[i].Theloai%></a>
+                          <span class="new-date post-date"><%=postscate[i].Ngay.ToString("d")%></span>
                           <section class="new-title">
-                              <a class="new-link" href="./Post.aspx?id=1">Donec consequat arcu at ultrices sodales quam
-                                  erat aliquet diam</a>
+                              <a class="new-link" href="./Post.aspx?name=<%=postscate[i].Tieude%>"><%=postscate[i].Tieude %></a>
                           </section>
-                          <section class="new-detail">
-                            Donec consequat, arcu at ultrices sodales, quam erat aliquet
-                              diam, sit amet interdum libero nunc accumsan nisi.</section>
+                          <section class="new-detail"><%=postscate[i].Noidung%></section>
                       </section>
                       <section class="new-footer">
-                          <a class="new-footer-link" href="./Post.aspx?id=1">
+                          <a class="new-footer-link" href="./Post.aspx?name=<%=postscate[i].Tieude%>">
                               <button>Đọc Tiếp</button>
                           </a>
                       </section>
                   </section>
                    </section>
-                   <section class="col-12 item-display">
+               <% }
+
+                  } %>
+<%--                   <section class="col-12 item-display">
                     <section class="another-new">
                       <section class="new-header">
                           <a href="./Post?id=">
@@ -46,7 +50,7 @@
                           <a class="post-cate new-cate" href="./Category.aspx?name=Xe Đạp">Xe đạp</a>
                           <span class="new-date post-date">04/04/2002</span>
                           <section class="new-title">
-                              <a class="new-link" href="./Post.aspx?id=">Donec consequat arcu at ultrices sodales quam
+                              <a class="new-link" href="./Post.aspx?name=">Donec consequat arcu at ultrices sodales quam
                                   erat aliquet diam</a>
                           </section>
                           <section class="new-detail">
@@ -54,12 +58,12 @@
                               diam, sit amet interdum libero nunc accumsan nisi.</section>
                       </section>
                       <section class="new-footer">
-                          <a class="new-footer-link" href="./Post.aspx?id=">
+                          <a class="new-footer-link" href="./Post.aspx?name=">
                               <button>Đọc Tiếp</button>
                           </a>
                       </section>
                   </section>
-                   </section>
+                   </section>--%>
             </section>
           </section>
           <section class="display-news col-s-12 col-m-6 col-4">
@@ -71,36 +75,36 @@
                 <section class="aside-body">
                    <section class="aside-item">
                       <section class="aside-item-img">
-                        <a href="./Post.aspx?id=">
+                        <a href="./Post.aspx?name=">
                             <img class="aside-img-link" src="./assets/img/posts/chaybo.jpg" alt="">
                         </a>
                       </section>
                       <section class="aside-item-title">
-                        <a href="./Post.aspx?id=">
+                        <a href="./Post.aspx?name=">
                             Fusce Ullamcorper Elit At Felis Cursus Suscipit
                         </a>
                       </section>
                    </section>
                    <section class="aside-item">
                     <section class="aside-item-img">
-                      <a href="./Post.aspx?id=">
+                      <a href="./Post.aspx?name=">
                           <img class="aside-img-link" src="./assets/img/posts/chaybo.jpg" alt="">
                       </a>
                     </section>
                     <section class="aside-item-title">
-                      <a href="./Post.aspx?id=">
+                      <a href="./Post.aspx?name=">
                           Fusce Ullamcorper Elit At Felis Cursus Suscipit
                       </a>
                     </section>
                  </section>
                  <section class="aside-item">
                     <section class="aside-item-img">
-                      <a href="./Post.aspx?id=">
+                      <a href="./Post.aspx?name=">
                           <img class="aside-img-link" src="./assets/img/posts/chaybo.jpg" alt="">
                       </a>
                     </section>
                     <section class="aside-item-title">
-                      <a href="./Post.aspx?id=">
+                      <a href="./Post.aspx?name=">
                           Fusce Ullamcorper Elit At Felis Cursus Suscipit
                       </a>
                     </section>

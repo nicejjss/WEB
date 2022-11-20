@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+
 using System.Linq;
+using System.Web;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace WEB
@@ -10,85 +12,34 @@ namespace WEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-             /*if ((bool)Session["login"] == true)
-             {
-                 Response.Redirect("index.aspx");
-             }*/
 
-        }
-
-        protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-            string path = "listMember.xml";
-
-
-            List<Member> members = new List<Member>();
-            if (File.Exists(Server.MapPath(path)))
+            if (IsPostBack)
             {
-                // Read file
-                System.Xml.Serialization.XmlSerializer reader = new System.Xml.Serialization.XmlSerializer(typeof(List<Member>));
-                StreamReader file = new StreamReader(Server.MapPath(path));
-
-                members = (List<Member>)reader.Deserialize(file);
-                members = members.OrderBy(Member => Member.Id).ToList();
-                file.Close();
-            }
-
-            Member mb = new Member();
-
-            mb.TenTK = Request.Form["txtTenTK"];
-            mb.Email = Request.Form["txtEmail"];
-            mb.Password = Request.Form["txtMatKhau"];
-            mb.Id = members.Count;
-
-
-            bool checktrung = false;
-            foreach (Member mem in members)
-            {
-                if (mem.TenTK.Equals(mb.TenTK))
+                int dem = 0;
+                string ten = Request.Form["txtTenTK"].Trim();
+                string mail = Request.Form["txtEmail"].Trim();
+                string matkhau = Request.Form["txtMatKhau"].Trim();
+                List<User> users = (List<User>)Application["Users"];
+                for(int i = 0; i < users.Count; i++)
                 {
-                    checktrung = true;
-                    break;
-                }
-            }
-
-            if (!checktrung)
-            {
-                foreach (Member mem in members)
-                {
-                    if (mem.Id == mb.Id)
+                    if(users[i].Mail.ToLower()== mail.ToLower() || users[i].Ten.ToLower()==ten.ToLower())
                     {
-                        mb.Id++;
+                        dem++;
+                        break;
                     }
                 }
-
-                members.Add(mb);
-
-                //write file
-                System.Xml.Serialization.XmlSerializer writer = new System.Xml.Serialization.XmlSerializer(typeof(List<Member>));
-
-                System.IO.FileStream _file = System.IO.File.Create(Server.MapPath(path));
-
-                writer.Serialize(_file, members);
-                _file.Close();
-
-                //create session
-                Session["login"] = true;
-                Session["id"] = mb.Id;
-                Session["tentk"] = mb.TenTK;
-                Session["email"] = mb.Email;
-                Session["password"] = mb.Password;
-
-                if ((bool)Session["login"] == true)
+                if (dem > 0)
                 {
+                    p.InnerText = "*Da co Tai Khoan Trung Email Hoac Ten Dang Nhap";
+                }
+                else
+                {
+                    User user = new User(ten, mail, matkhau,false);
+                    users.Add(user);
+                    Session["name"] = user.Ten;
+                    Session["admin"] = user.IsAdmin;
                     Response.Redirect("index.aspx");
                 }
-            }
-            else
-            {
-                string alert = "";
-                alert += "<script>alert('Tài khoản đã tồn tại!');</script>";
-                Response.Write(alert);
             }
         }
     }

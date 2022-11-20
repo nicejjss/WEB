@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+
+
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,68 +13,34 @@ namespace WEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           /* if ((bool)Session["login"] == true)
+            if (IsPostBack)
             {
-                Response.Redirect("index.aspx");
-            }*/
-        }
-
-        protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-            string path = "listMember.xml";
-
-           
-                List<Member> list = new List<Member>();
-
-                if (File.Exists(Server.MapPath(path)))
+                int dem = 0;
+                string ten = Request.Form["txtTenTK"].Trim();
+                string matkhau = Request.Form["txtMatKhau"].Trim();
+                List<User> users = (List<User>)Application["Users"];
+                User user = new User();
+                for (int i = 0; i < users.Count; i++)
                 {
-                    // Đọc file
-                    System.Xml.Serialization.XmlSerializer reader = new System.Xml.Serialization.XmlSerializer(typeof(List<Member>));
-                    StreamReader file = new StreamReader(Server.MapPath(path));
-
-                    list = (List<Member>)reader.Deserialize(file);
-                    list = list.OrderBy(Member => Member.Id).ToList();
-                    file.Close();
-                }
-
-                Member mb = new Member();
-                mb.Id = list.Count;
-                mb.TenTK = Request.Form["txtTenTK"];
-                mb.Email = Request.Form["txtEmail"];
-                mb.Password = Request.Form["txtMatKhau"];
-
-            bool checktrung = false;
-                foreach (Member mem in list)
-                {
-                    if (mem.TenTK.Equals(mb.TenTK) && mem.Password.Equals(mb.Password))
+                    if (users[i].Ten.ToLower() == ten.ToLower() &&  users[i].Matkhau==matkhau)
                     {
-                        checktrung = true;
-                        mb.Id = mem.Id;
+                        dem++;
+                        user = users[i];
                         break;
                     }
                 }
-
-                if (checktrung == false)
+                if (dem == 0)
                 {
-                    string alert = "";
-                    alert += "<script>alert('Tài khoản hoặc mật khẩu không đúng!');</script>";
-                    Response.Write(alert);
+                    p.InnerText = "*Tai khoan chua duoc dang ky";
                 }
                 else
                 {
-                    // Tạo session
-                    Session["login"] = true;
-                    Session["id"] = mb.Id;
-                    Session["tentk"] = mb.TenTK;
-                    Session["email"] = mb.Email;
-                    Session["password"] = mb.Password;
-                }
-
-                if ((bool)Session["login"] == true)
-                {
+                    Session["name"] = user.Ten;
+                    Session["admin"] = user.IsAdmin;
                     Response.Redirect("index.aspx");
                 }
-            
+            }
+
         }
     }
 }

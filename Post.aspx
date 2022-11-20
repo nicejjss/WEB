@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true"
-    CodeBehind="Post.aspx.cs" Inherits="WEB.Post" %>
+    CodeBehind="Post.aspx.cs" Inherits="WEB.Post1" %>
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="stylesheet" href="./assets/css/gridview.css">
         <link rel="stylesheet" href="./assets/css/asidenews.css">
@@ -10,34 +10,20 @@
         <section class="content row">
             <section class="post col-m-12 col-8">
                 <section class="post-relate">
-                    <span class="post-date">04/03/2002</span>
-                    <a class="post-cate" href="./Category.aspx?name=may tinh">Máy Tính</a>
-                    <span class="post-author">ADMIN</span>
+                    <span class="post-date"><%=post.Ngay.ToString("d")%></span>
+                    <a class="post-cate" href="./Category.aspx?name=<%=post.Theloai %>"><%=post.Theloai %></a>
+                    <span class="post-author"><%=post.Tacgia %></span>
                 </section>
-                <h1 class="post-title">HACOM thay đổi nhận diện thương hiệu</h1>
+                <h1 class="post-title"><%=post.Tieude %></h1>
                 <section class="post-body">
                     <section class="post-img">
-                        <img src="./assets/img/posts/hacom.jpg" alt="">
+                        <img src="./assets/img/posts/<%=post.Anh %>" alt="">
                     </section>
                     <section class="post-content">
-                        Đơn vị thành lập từ năm 2001 với tiền thân là Công ty TNHH Máy tính Hà Nội. Ban đầu, công ty kinh doanh máy tính và linh kiện phục vụ học tập, làm việc. Đến nay, nhóm khách hàng đã mở rộng gồm cá nhân và doanh nghiệp, tập đoàn trong lẫn ngoài nước. Công ty cũng đa dạng dịch vụ và giải pháp chuyên sâu về máy tính, thiết bị văn phòng, thiết bị siêu thị, giải pháp camera và thiết bị an ninh, trở thành đối tác chiến lược của nhiều thương hiệu toàn cầu.
-                        HACOM hướng tới mục tiêu nâng cao chất lượng, đưa sản phẩm đến với khách hàng nhanh nhất, không
-                        ngừng cải thiện dịch vụ, hậu mãi. Cùng với sự thay đổi nhận diện thương hiệu, đơn vị kỳ vọng trở
-                        thành hệ thống siêu thị phát triển về kinh doanh máy tính phủ rộng, chuyên sâu, lớn mạnh trên
-                        toàn quốc.
-
-                        Sau 20 năm, logo đã trở thành thương hiệu quen thuộc với khách hàng. Tuy vậy, với những mục tiêu
-                        và định hướng trong giai đoạn phát triển mới, ban lãnh đạo quyết định thay đổi logo kể từ ngày
-                        1/9.
-
-                        Biểu tượng mới gồm chấm tròn đỏ: tượng trưng cho sự tập trung, kiên định với định hướng phát
-                        triển. Chữ C cách điệu trong hình tròn liên tưởng tới bánh xe, sự chuyển động không ngừng, thể
-                        hiện tinh thần luôn thay đổi, tiếp thu và luôn tiến về phía trước.
-
-                        HACOM vẫn giữ nguyên màu sắc đã sử dụng ở logo cũ với màu xanh đậm: thể hiện sự tin cậy, chắc
-                        chắn; màu đỏ thể hiện nhiệt huyết và khát vọng tuổi trẻ.
+                       <%=post.Noidung %>
                     </section>
                 </section>
+                <section style="margin-top: 20px;">Lượt xem: <%=post.Luotxem%></section>
             </section>
             <section class="display-news col-s-12 col-m-6 col-4">
                 <aside class="popular-news">

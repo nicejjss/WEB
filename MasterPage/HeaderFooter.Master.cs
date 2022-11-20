@@ -10,35 +10,24 @@ namespace WEB.MasterPage
 {
     public partial class HeaderFooter : System.Web.UI.MasterPage
     {
-       public string mail;
         protected void Page_Load(object sender, EventArgs e)
         {
-            string html = "";
-            if((bool)Session["login"] == true)
+
+            if (!IsPostBack)
             {
-                html += "Xin Chào " + Session["tentk"];
-                user_member.InnerHtml = html;
+
+
+                if (Session["name"] != null)
+                {
+                    string ten = Session["name"].ToString();
+                    user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='u-link' href='../User.aspx'>" +
+                                             "Welcome: " + ten + "</a></section>" +
+                                      "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='logout-link' href='Dangxuat.aspx" +
+                                      "'>Đăng Xuất</a></section>";
+                    dangky.InnerHtml = "<a href='./User.aspx'><section class='item-category-text'>Welcome: "+ten+"</section></a>";  
+                    dangnhap.InnerHtml= "<a href='./Dangxuat.aspx'><section class='item-category-text'>Đăng Xuất</section></a>";
+                }
             }
-            else
-            {
-                html += "USER";
-                user_member.InnerHtml = html;
-            }
-
-            if (Request.QueryString["btnLogout"] == "true")
-            {
-                Session["login"] = false;
-                Session.Abandon();
-
-                Response.Redirect("Dangnhap.aspx");
-            }
-
-
-
-        }
-         void btn1_Click(object sender, EventArgs e)
-        {
-
         }
 
         protected void logout_Click(object sender, EventArgs e)

@@ -58,6 +58,7 @@
 .new-detail {
     margin: 10px 0;
     height: 42px;
+    overflow:hidden;
 }
 
 .new-footer {
