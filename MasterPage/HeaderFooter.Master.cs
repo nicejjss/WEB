@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,8 +12,10 @@ namespace WEB.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
+
 
                 if (Session["name"] != null)
                 {
@@ -25,6 +28,11 @@ namespace WEB.MasterPage
                     dangnhap.InnerHtml= "<a href='./Dangxuat.aspx'><section class='item-category-text'>Đăng Xuất</section></a>";
                 }
             }
+        }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

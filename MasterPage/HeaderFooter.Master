@@ -29,14 +29,22 @@
                         </button>
                     </form>
                 </section>
+
                 <section class="col-3 col-m-12 user" id="user" runat="server">
                   <!-- <section class='user-function user-link user-logined' runat='server' id='name'><a href='../User.aspx'></a></section> -->
+
                     <ul class="user-functions">
                         <li class="user-function">
-                            <a class="user-link" href="./Dangky.aspx">ĐĂNG KÝ</a>
+                            <a class="user-link" href="./Dangky.aspx" >ĐĂNG KÝ</a>
                         </li>
                         <li class="user-function">
-                            <a class="user-link" href="./Dangnhap.aspx">ĐĂNG NHẬP</a>
+                            <a class="user-link" href="./Dangnhap.aspx" >ĐĂNG NHẬP</a>
+                        </li>
+                         <li class="user-function">
+                             <form>
+                                 <button class="user-link" type="submit" value="true" name="btnLogout" id="btnLogout" runat="server">THOÁT</button>
+                             </form>
+                            
                         </li>
                     </ul>
                 </section>

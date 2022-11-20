@@ -9,6 +9,7 @@ namespace WEB
 {
     public class Global : System.Web.HttpApplication
     {
+
         protected void Application_Start(object sender, EventArgs e)
         {
             List<User> Users = new List<User>();
@@ -37,6 +38,7 @@ namespace WEB
             Session["name"] = null;
             Session["admin"] = false;
         }
+
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
 
