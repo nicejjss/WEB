@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,8 +13,10 @@ namespace WEB.MasterPage
        public List<Category> cate = new List<Category>();
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
+
 
                 if (Session["name"] != null)
                 {
@@ -32,6 +35,11 @@ namespace WEB.MasterPage
             {
                 listcate.InnerHtml += "<li class='item-category'><a href='./Category.aspx?name="+cate[i].Ten+"'><section class='item-category-text'>"+cate[i].Ten+"</section></a></li>";
             }
+        }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

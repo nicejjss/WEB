@@ -18,7 +18,7 @@
                             <a href="./Category.aspx?name=maytinh">Máy Tính</a>
                         </section>
                         <a class="link" href="./Post.aspx?id=">
-                            Xem nhiều dựa vào lượt xem của POST.
+                            Xem nhiều dựa vào lượt xem của POSTTTTT.
                         </a>
                         <section class="date">04/03/2002</section>
                     </section>
