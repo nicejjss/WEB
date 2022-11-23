@@ -16,7 +16,7 @@
 
     <body>
         <header>
-            <section class="header-sec row">
+            <section class="header-sec row" >
                 <section class="col-3 col-m-12 logo">
                     <a href="../index.aspx"><img class="logoimg" src="../MasterPage/assets/img/logo.png"
                             alt="logo.png"></a>
@@ -30,7 +30,11 @@
                     </form>
                 </section>
 
-                <section class="col-3 col-m-12 user" id="user" runat="server">
+                <section id="postNews" runat="server" >
+                       
+                 </section>
+
+                <section class="col-3 col-m-12 user" id="user" runat="server" >
                   <!-- <section class='user-function user-link user-logined' runat='server' id='name'><a href='../User.aspx'></a></section> -->
 
                     <ul class="user-functions">

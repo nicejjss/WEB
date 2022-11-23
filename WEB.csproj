@@ -74,6 +74,8 @@
     <Content Include="assets\css\listnews.css" />
     <Content Include="assets\css\post.css" />
     <Content Include="assets\css\signin_signup.css" />
+    <Content Include="assets\css\waitingForNews.css" />
+    <Content Include="assets\css\writePost.css" />
     <Content Include="assets\img\mail.png" />
     <Content Include="assets\img\paperairplane.png" />
     <Content Include="assets\img\posts\chaybo.jpg" />
@@ -86,12 +88,9 @@
     <Content Include="Category.aspx" />
     <Content Include="Dangky.aspx" />
     <Content Include="Dangnhap.aspx" />
-
     <Content Include="Dangxuat.aspx" />
-
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
-    <Content Include="listMember.xml" />
     <Content Include="MasterPage\assets\css\gridview.css" />
     <Content Include="MasterPage\assets\css\headerfooter.css" />
     <Content Include="MasterPage\assets\img\close.png" />
@@ -104,10 +103,10 @@
     <Content Include="MasterPage\assets\img\stripes.png" />
     <Content Include="MasterPage\assets\js\headerfooter.js" />
     <Content Include="Post.aspx" />
-
     <Content Include="User.aspx" />
-
+    <Content Include="waitingForNews.aspx" />
     <Content Include="Web.config" />
+    <Content Include="writePost.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Category.aspx.cs">
@@ -132,7 +131,6 @@
     <Compile Include="Dangnhap.aspx.designer.cs">
       <DependentUpon>Dangnhap.aspx</DependentUpon>
     </Compile>
-
     <Compile Include="Dangxuat.aspx.cs">
       <DependentUpon>Dangxuat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -140,7 +138,6 @@
     <Compile Include="Dangxuat.aspx.designer.cs">
       <DependentUpon>Dangxuat.aspx</DependentUpon>
     </Compile>
-
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -176,6 +173,20 @@
       <DependentUpon>User.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="waitingForNews.aspx.cs">
+      <DependentUpon>waitingForNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="waitingForNews.aspx.designer.cs">
+      <DependentUpon>waitingForNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="writePost.aspx.cs">
+      <DependentUpon>writePost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writePost.aspx.designer.cs">
+      <DependentUpon>writePost.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage\HeaderFooter.Master" />

@@ -17,7 +17,7 @@
                 <h1 class="post-title"><%=post.Tieude %></h1>
                 <section class="post-body">
                     <section class="post-img">
-                        <img src="./assets/img/posts/<%=post.Anh %>" alt="">
+                        <img src="./assets/img/posts/<%=post.Anh %>" alt="" />
                     </section>
                     <section class="post-content">
                        <%=post.Noidung %>
