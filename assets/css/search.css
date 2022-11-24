@@ -1,0 +1,26 @@
+﻿:root {
+    --primary-color: #fc624d;
+    --max-width: 1200px;
+}
+.content {
+    max-width: var(--max-width);
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+#searchtitle {
+    font-size: 40px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid #d9d9d9;
+}
+.new-cate {
+    margin: 0;
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight:600;
+}
+.item-display{
+    padding:0;
+}

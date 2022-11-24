@@ -1,37 +1,37 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true" CodeBehind="Category.aspx.cs" Inherits="WEB.Category1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="WEB.Search" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="./assets/css/gridview.css">
     <link rel="stylesheet" href="./assets/css/asidenews.css">
-    <link rel="stylesheet" href="./assets/css/category.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
     <link rel="stylesheet" href="./assets/css/listnews.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <section class="content row">
-          <section class="display-news col-m-12 col-8">
-            <h1 runat="server" id="catetitle"></h1>
-            <section class="list-display row">
+      <section class="content row">
+           <section class="display-news col-m-12 col-8">
+               <h1 runat="server" id="searchtitle"></h1>
+                           <section class="list-display row">
                 <%if (dem > 0)
                     {
-                        for (int i = 0; i < postscate.Count; i++)
+                        for (int i = 0; i < postssearch.Count; i++)
                         {
                 %>
                  <section class="col-12 item-display">
                     <section class="another-new">
                       <section class="new-header">
-                          <a href="./Post.aspx?name=<%=postscate[i].Tieude%>">
-                              <img src="./assets/img/posts/<%=postscate[i].Anh%>" alt="">
+                          <a href="./Post.aspx?name=<%=postssearch[i].Tieude%>">
+                              <img src="./assets/img/posts/<%=postssearch[i].Anh%>" alt="">
                           </a>
                       </section>
                       <section class="new-body">
-                          <a class="post-cate new-cate" href="./Category.aspx?name=<%=postscate[i].Theloai%>"><%=postscate[i].Theloai%></a>
-                          <span class="new-date post-date"><%=postscate[i].Ngay.ToString("d")%></span>
+                          <a class="post-cate new-cate" href="./Category.aspx?name=<%=postssearch[i].Theloai%>"><%=postssearch[i].Theloai%></a>
+                          <span class="new-date post-date"><%=postssearch[i].Ngay.ToString("d")%></span>
                           <section class="new-title">
-                              <a class="new-link" href="./Post.aspx?name=<%=postscate[i].Tieude%>"><%=postscate[i].Tieude %></a>
+                              <a class="new-link" href="./Post.aspx?name=<%=postssearch[i].Tieude%>"><%=postssearch[i].Tieude %></a>
                           </section>
-                          <section class="new-detail"><%=postscate[i].Noidung%></section>
+                          <section class="new-detail"><%=postssearch[i].Noidung%></section>
                       </section>
                       <section class="new-footer">
-                          <a class="new-footer-link" href="./Post.aspx?name=<%=postscate[i].Tieude%>">
+                          <a class="new-footer-link" href="./Post.aspx?name=<%=postssearch[i].Tieude%>">
                               <button>Đọc Tiếp</button>
                           </a>
                       </section>
@@ -70,8 +70,8 @@
                    </section>--%>
             </section>
           </section>
-          <section class="display-news col-s-12 col-m-6 col-4">
-            <aside class="popular-news">
+           <section class="display-news col-s-12 col-m-6 col-4">
+                  <aside class="popular-news">
                 <section class="aside-title">
                     <section class="item-header aside-title-header">Tin Nổi Bật</section>
                     <!-- <a class="aside-see-all" href="#">Xem Tất Cả</a> -->
@@ -129,6 +129,6 @@
                 </form>
                 <p>By subscribing you will receive new articles in your email.</p>
             </section>
-        </section>
-     </section>
+           </section>
+      </section>
 </asp:Content>

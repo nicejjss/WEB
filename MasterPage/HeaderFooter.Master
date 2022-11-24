@@ -22,7 +22,7 @@
                             alt="logo.png"></a>
                 </section>
                 <section class="col-6 col-m-12 search">
-                    <form class="searchform" action="./search.aspx" method="get">
+                    <form class="searchform" action="./Search.aspx" method="get">
                         <input name="searchinput" class="searchinput" type="text" placeholder="Search somthing...">
                         <button class="searchbtn">
                             <img class="searchimg" src="../MasterPage/assets/img/search.png" alt="search">
@@ -40,12 +40,12 @@
                         <li class="user-function">
                             <a class="user-link" href="./Dangnhap.aspx" >ĐĂNG NHẬP</a>
                         </li>
-                         <li class="user-function">
+                         <%--<li class="user-function">
                              <form>
                                  <button class="user-link" type="submit" value="true" name="btnLogout" id="btnLogout" runat="server">THOÁT</button>
                              </form>
                             
-                        </li>
+                        </li>--%>
                     </ul>
                 </section>
 
