@@ -21,13 +21,45 @@ namespace WEB.MasterPage
                 if (Session["name"] != null)
                 {
                     string ten = Session["name"].ToString();
-                    postNews.InnerHtml = "<button style=\"font-size:30px; background-color:coral; margin-top:14px; margin-left:45px\"><a style=\" text-decoration:none;\" href=\"writePost.aspx\">POST NEWS</a></button>";
-                    user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='u-link' href='../User.aspx'>" +
+                    if ((bool)Session["admin"] == true)
+                    {
+                        user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='u-link' href='../User.aspx'>" +
+                                            "<nav class=\"navbar\">" +
+                                            "<ul>" +
+                                                " <li><a>Xin Chào :"+ten+"</a>" +
+                                                    "<ul>" +
+                                                    "<li><a href=\"writePost.aspx\">POST NEWS</a></li>\r\n" +
+                                                    " <li><a>UPDATE NEWS</a></li>" +
+                                                    "<li><a>DELETE NEWS</a></li>" +
+                                                    "<li><a href=\"waitingForNews.aspx\">MANAGEMENT NEWS</a></li>" +
+                                                    "<li><a href=\"Dangxuat.aspx\">LOGOUT</a></li>" +
+                                                    "</ul>" +
+                                                   "</li>" +
+                                             "</ul>" +
+                                             "</nav> </section>";
+                    }
+                    else
+                    {
+                        user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='u-link' href='../User.aspx'>" +
+                                           "<nav class=\"navbar\">" +
+                                           "<ul>" +
+                                               " <li><a>Xin Chào :" + ten + "</a>" +
+                                                   "<ul>" +
+                                                   "<li><a href=\"writePost.aspx\">POST NEWS</a></li>" +
+                                                   " <li><a>UPDATE NEWS</a></li>" +
+                                                   "<li><a>DELETE NEWS</a></li>" +
+                                                   "<li><a href=\"Dangxuat.aspx\">LOGOUT</a></li>" +
+                                                   " </ul>" +
+                                                  " </li>" +
+                                            "</ul>" +
+                                            "  </nav> </section>";
+                    }
+                   /* user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='u-link' href='../User.aspx'>" +
                                              "Xin Chào : " + ten + "</a></section>" +
                                       "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='logout-link' href='Dangxuat.aspx" +
                                       "'>Đăng Xuất</a></section>";
                     dangky.InnerHtml = "<a href='./User.aspx'><section class='item-category-text'> Xin Chào : "+ten+"</section></a>";  
-                    dangnhap.InnerHtml= "<a href='./Dangxuat.aspx'><section class='item-category-text'>Đăng Xuất</section></a>";
+                    dangnhap.InnerHtml= "<a href='./Dangxuat.aspx'><section class='item-category-text'>Đăng Xuất</section></a>";*/
                 }
             }
                 cate = (List<Category>)Application["Categories"];

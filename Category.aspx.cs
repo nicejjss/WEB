@@ -9,7 +9,7 @@ namespace WEB
 {
     public partial class Category1 : System.Web.UI.Page
     {
-        public List<Post> postscate=new List<Post>();
+       public List<Post> postscate=new List<Post>();
        public int dem=0;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,7 +17,7 @@ namespace WEB
             string theloai = Request.QueryString["name"];
             catetitle.InnerHtml = "Danh Mục: " + theloai;
 
-            List<Post>  posts = (List<Post>)Application["Posts"];
+            List<Post> posts = (List<Post>)Application["Posts"];
             //postscate = (List<Post>)Application["Posts"];
             for (int i = 0; i < posts.Count; i++)
             {

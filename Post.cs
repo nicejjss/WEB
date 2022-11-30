@@ -7,6 +7,7 @@ namespace WEB
 {
     public class Post
     {
+        int id;
         string tieude;
         string tacgia;
         string theloai;
@@ -15,7 +16,7 @@ namespace WEB
         int luotxem;
         string anh;
 
-
+        public int Id { get => id; set => id = value; }
         public string Tieude { get => tieude; set => tieude = value; }
         public string Tacgia { get => tacgia; set => tacgia = value; }
         public DateTime Ngay { get => ngay; set => ngay = value; }
@@ -24,8 +25,9 @@ namespace WEB
         public string Theloai { get => theloai; set => theloai = value; }
         public string Anh { get => anh; set => anh = value; }
 
-        public Post(string tieude, string tacgia, DateTime ngay, string noidung, int luotxem,string theloai,string anh)
+        public Post(int id, string tieude, string tacgia, DateTime ngay, string noidung, int luotxem,string theloai,string anh)
         {
+            this.Id = id;
             this.Tieude = tieude;
             this.Tacgia = tacgia;
             this.Ngay = ngay;

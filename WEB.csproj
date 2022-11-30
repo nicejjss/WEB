@@ -69,12 +69,13 @@
   <ItemGroup>
     <Content Include="assets\css\asidenews.css" />
     <Content Include="assets\css\category.css" />
+    <Content Include="assets\css\customWait.css" />
     <Content Include="assets\css\gridview.css" />
     <Content Include="assets\css\index.css" />
     <Content Include="assets\css\listnews.css" />
+    <Content Include="assets\css\NavBar.css" />
     <Content Include="assets\css\post.css" />
     <Content Include="assets\css\signin_signup.css" />
-    <Content Include="assets\css\waitingForNews.css" />
     <Content Include="assets\css\writePost.css" />
     <Content Include="assets\img\mail.png" />
     <Content Include="assets\img\paperairplane.png" />

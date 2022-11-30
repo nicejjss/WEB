@@ -1,0 +1,35 @@
+﻿body {
+}
+
+.navbar ul {
+    list-style: none;
+    margin-right: 90px;
+    margin-top: -20px;
+}
+
+.navbar ul li a:hover {
+    background-color:aquamarine;
+    color:aliceblue;
+    position:relative;
+}
+
+.navbar ul li ul{
+    position:absolute;
+    display:none;
+    width:200px;
+    
+ 
+}
+
+.navbar ul li ul li{
+    width:100%;
+   
+}
+
+.navbar ul li:hover > ul{
+    display:initial;
+}
+.navbar ul li ul li a{
+    text-decoration:none;
+    left:-40px;
+}

@@ -89,6 +89,7 @@ header {
 .user-functions {
     list-style: none;
     display: flex;
+    
 }
 
 .user-link {
@@ -97,6 +98,7 @@ header {
     font-weight: 700;
     font-size: medium;
     transition: all 0.2s ease;
+    
 }
 
 .user-link:hover,

@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/gridview.css">
         <link rel="stylesheet" href="./assets/css/headerfooter.css">
+        <link rel="stylesheet" href="../assets/css/NavBar.css" />
         <title>MAGZ</title>
         <asp:ContentPlaceHolder ID="head" runat="server">
         </asp:ContentPlaceHolder>
@@ -30,10 +31,6 @@
                     </form>
                 </section>
 
-                <section id="postNews" runat="server" >
-                       
-                 </section>
-
                 <section class="col-3 col-m-12 user" id="user" runat="server" >
                   <!-- <section class='user-function user-link user-logined' runat='server' id='name'><a href='../User.aspx'></a></section> -->
 
@@ -52,6 +49,32 @@
                         </li>
                     </ul>
                 </section>
+
+              <%-- <section class="menu_bar" id="menu_bar">
+                    <nav class="navbar">
+                           <ul>
+                               <li><a>User</a>
+                                   <ul>
+                                       <li><a href="writePost.aspx">POST NEWS</a></li>
+                                       <li><a>UPDATE NEWS</a></li>
+                                       <li><a>DELETE NEWS</a></li>
+                                       <li><a href="Dangxuat.aspx">LOGOUT</a></li>
+                                   </ul>
+                               </li>
+                           </ul>
+                         <ul>
+                               <li><a>User</a>
+                                   <ul>
+                                       <li><a href="writePost.aspx">POST NEWS</a></li>
+                                       <li><a>UPDATE NEWS</a></li>
+                                       <li><a>DELETE NEWS</a></li>
+                                       <li><a>MANAGEMENT NEWS</a></li>
+                                       <li><a href="Dangxuat.aspx">LOGOUT</a></li>
+                                   </ul>
+                               </li>
+                           </ul>
+                    </nav>
+                </section>--%>
 
             </section>
             <section class="navigation">

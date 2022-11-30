@@ -19,6 +19,7 @@
                       <section class="new-header">
                           <a href="./Post.aspx?name=<%=postscate[i].Tieude%>">
                               <img src="./assets/img/posts/<%=postscate[i].Anh%>" alt="">
+                             
                           </a>
                       </section>
                       <section class="new-body">

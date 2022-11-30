@@ -1,0 +1,40 @@
+﻿body {
+}
+
+#container{
+    background-color:antiquewhite;
+}
+
+
+
+#container ul li ul li #contain{
+    background-color:aliceblue;
+ 
+    
+    
+}
+#container ul li ul li #images{
+    width:20%;
+    float:left;
+    height:auto;
+    text-align:center;
+}
+#container ul li ul li #content{
+    width:auto;
+    min-height:100px;
+}
+
+#container ul li ul li #footer{
+    margin-bottom:20px;
+}
+
+#container ul li ul li #footer #btn_sub,#btn_denied{
+    border-radius:15px;
+
+}
+#btn_sub:hover, #btn_denied:hover{
+    background-color:deeppink;
+}
+
+
+
