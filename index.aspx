@@ -267,19 +267,22 @@
                         <!-- <a class="aside-see-all" href="#">Xem Tất Cả</a> -->
                     </section>
                     <section class="aside-body">
+                        <% for (int i = 0; i < 3; i++)
+                            { %>
                        <section class="aside-item">
                           <section class="aside-item-img">
-                            <a href="./Post.aspx?id=">
-                                <img class="aside-img-link" src="./assets/img/posts/chaybo.jpg" alt="">
+                            <a href="./Post.aspx?name=<%=postswithview[i].Tieude %>">
+                                <img class="aside-img-link" src="./assets/img/posts/<%=postswithview[i].Anh %>" alt="">
                             </a>
                           </section>
                           <section class="aside-item-title">
-                            <a href="./Post.aspx?id=">
-                                Fusce Ullamcorper Elit At Felis Cursus Suscipit
+                            <a href="./Post.aspx?name=<%=postswithview[i].Tieude %>">
+                                <%=postswithview[i].Tieude %>
                             </a>
                           </section>
                        </section>
-                       <section class="aside-item">
+                        <%} %>
+<%--                       <section class="aside-item">
                         <section class="aside-item-img">
                           <a href="./Post.aspx?id=">
                               <img class="aside-img-link" src="./assets/img/posts/chaybo.jpg" alt="">
@@ -302,7 +305,7 @@
                               Fusce Ullamcorper Elit At Felis Cursus Suscipit
                           </a>
                         </section>
-                     </section>
+                     </section>--%>
                     </section>
                 </aside>
                 <section class="subcribe-box">

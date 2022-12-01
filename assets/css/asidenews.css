@@ -31,6 +31,11 @@
     width: 25%;
     margin: 0;
 }
+.aside-item-img a{
+    display: block;
+    width: 77px;
+    margin: 0;
+}
 .aside-img-link{
     width: 100%;
 }
