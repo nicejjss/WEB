@@ -147,7 +147,17 @@
                     <section class="item-header">Tin Mới Nhất</section>
                     <section class="item-body">
                         <ul class="list-news">
+                            <% for (int i = 0; i < 4; i++)
+                                {
+                                    %>
                             <li class="item-new">
+                                <a class="item-img" href="../Post.aspx?name=<%=posts[i].Tieude %>">
+                                    <img src="../assets/img/posts/<%=posts[i].Anh %>" alt="">
+                                </a>
+                                <a class="item-text" href="../Post.aspx?name=<%=posts[i].Tieude %>"><%=posts[i].Tieude %></a>
+                            </li>
+                            <%} %>
+                          <%--  <li class="item-new">
                                 <a class="item-img" href="../Post.aspx?id=">
                                     <img src="../assets/img/posts/maytinh.jpg" alt="">
                                 </a>
@@ -167,14 +177,7 @@
                                 </a>
                                 <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue
                                     Pharetra</a>
-                            </li>
-                            <li class="item-new">
-                                <a class="item-img" href="../Post.aspx?id=">
-                                    <img src="../assets/img/posts/maytinh.jpg" alt="">
-                                </a>
-                                <a class="item-text" href="../Post.aspx?id=">Donec Consequat Lorem Quis Augue
-                                    Pharetra</a>
-                            </li>
+                            </li>--%>
                         </ul>
                     </section>
                 </section>

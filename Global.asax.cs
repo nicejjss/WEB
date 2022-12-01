@@ -37,8 +37,22 @@ namespace WEB
                 "Thứ nhất, hôm đó xảy ra nhật thực kéo dài hơn 12 phút.Thứ hai, ngày hôm sau -23 / 12 - là đông chí, một ngày quan trọng của nhiều dân tộc cổ đại.Isia, lễ hội tôn vinh nữ thần Ai Cập Isis, được tổ chức ở cả Ai Cập và Hy Lạp vào thời điểm này. Hơn nữa, các pha của Mặt Trăng cũng bắt đầu vào ngày 22 / 12 năm đó. Theo nhóm chuyên gia, sự kết hợp các sự kiện này tạo ra một sự trùng hợp rất hiếm gặp và trở thành ngày khởi động đáng nhớ. Ngày khởi động cần thật đặc trưng, quan trọng và dễ nhận biết, Aristeidis Voulgaris, tác giả chính của nghiên cứu, trưởng nhóm dự án Tái dựng Chức năng của Cỗ máy Antikythera(FRAMe), cho biết. " +
                 "Có thể người tạo ra Antikythera đã chứng kiến ngày này và ghi nhớ các sự kiện vũ trụ. Để thực hiện các phép tính thời gian, người ta thường chọn một ngày gần đây trong quá khứ hơn là một ngày trong tương lai, nhóm nghiên cứu nhận định.",1001,"Máy Tính","maytinhco.jpg"));
 
+            Posts.Add(new Post("Hai tư liệu Việt là di sản châu Á - Thái Bình Dương","daoducloc",new DateTime(2020,01,02), "Bia ma nhai (Đà Nẵng) và bộ sưu tập Văn bản Hán Nôm (Hà Tĩnh) được công nhận là Di sản tư liệu khu vực châu Á - Thái Bình Dương. " +
+                "Thông tin được công bố sáng 26 / 11, trong Kỳ họp thứ 9 của Ủy ban Chương trình Ký ức thế giới khu vực châu Á - Thái Bình Dương của UNESCO(MOWCAP) tại thành phố Andong, Hàn Quốc. Bia ma nhai tại Ngũ Hành Sơn, Đà Nẵng gồm 78 bia, trong đó 76 tấm chữ Hán, " +
+                "hai tấm chữ Nôm.Đó là ngự bút, bia ký, tán, thơ văn, đề từ, đề danh, câu đối... của các vua, quan triều Nguyễn, cao tăng, quan khách... để lại trên các vách đá, hang động khi dừng chân ở Ngũ Hành Sơn từ nửa đầu thế kỷ 17 đến thập niên 1960 của thế kỷ 20. " +
+                "Chữ được viết theo nhiều kiểu như chân, hành, thảo, triện... Đặc biệt, có phần ngự bút của vua Minh Mạng, được ghi chép trong nhiều tư liệu lịch sử như Đại Nam nhất thống chí, Đại Nam thực lục, Đại Nam dư địa chí ước biên... " +
+                "Ông Bùi Văn Tiếng - Chủ tịch Hội Khoa học Lịch sử Đà Nẵng - nhận xét đây là những tư liệu giá trị, chân thực và đặc sắc đến từ nhiều tác giả. Vua Minh Mạng có nhiều bài thơ ngự chế, hai tấm bia khắc đại tự Vọng Giang đài và Vọng Hải đài thể hiện tư duy của người đứng đầu nhà Nguyễn. " +
+                "Ngoài ra, còn có thơ đề của Đào Tấn, Trương Quang Đản, Nguyễn Văn Mại, Nguyễn Trọng Hợp, Nguyễn Thuật, Cao Xuân Dục..., ông nói.",2000,"Giải Trí","giaitri.jpg"));
+
+            Posts.Add(new Post("Máy tính để bàn thiết kế tối giản của HP","daoducloc",new DateTime(2022,05,15), "HP M01 là mẫu máy tính để bàn doanh nghiệp mới với thiết kế tối giản, nhỏ gọn, tập trung vào hiệu năng và khả năng vận hành. " +
+                "Sản phẩm mới của HP mang triết lý &quot;tối giản để thêm tiện ích &quot;, sở hữu thiết kế nhỏ gọn hơn những sản phẩm phổ thông khác trên thị trường nhưng vẫn đầy đủ các cổng kết nối và khả năng nâng cấp.Máy phủ lớp sơn đen cứng cáp kết hợp vân hoa văn ở bề mặt phía trước.Bề mặt này còn bố trí đầy đủ những cổng kết nối cùng các phương thức kết nối không dây bluetooth và wifi để giúp tối ưu không gian bàn làm việc." +
+                "HP M01 được giới thiệu với 3 bộ vi xử lý i3, i5 và i7. Tất cả bộ vi xử lý đều thuộc thế hệ mới nhất của Intel để đẩy hiệu năng xử lý tác vụ lên cao. Lựa chọn cơ bản nhất là chip Intel Core i3-12100, " +
+                "đủ dùng cho những yêu cầu về nghiệp vụ văn phòng hay giải trí thông thường.Hai phiên bản còn lại dành cho những người dùng có nhu cầu cao hơn như chơi game hay xử lý đồ họa với chip Intel Core i5 và i7 thế hệ thứ 12. " +
+                "Với phiên bản sử dụng chip Intel Core i5, hãng cung cấp thêm hai phiên bản bộ nhớ lưu trữ SSD 512 GB hoặc SSD 256 GB.Cả ba tùy chọn cấu hình đều sử dụng card đồ họa tích hợp Intel UHD Graphics 730 và thanh RAM DDR4. Mẫu máy tính để bàn cho phép nâng cấp với hai cổng SATA 3 hỗ trợ gắn thêm ổ HDD 3.5 &quot;và SSD 2.5&quot; " +
+                "cùng khả năng nâng cấp RAM cao nhất lên tới 32 GB.",3051,"Máy Tính","hp.jpg"));
+
             Categories.Add(new Category("Máy Tính"));
-            Categories.Add(new Category("Xe Đạp"));
+            Categories.Add(new Category("Giải Trí"));
             Categories.Add(new Category("Khác"));
 
             Application["Users"] = Users;

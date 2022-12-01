@@ -78,6 +78,7 @@
     <Content Include="assets\img\mail.png" />
     <Content Include="assets\img\paperairplane.png" />
     <Content Include="assets\img\posts\chaybo.jpg" />
+    <Content Include="assets\img\posts\giaitri.jpg" />
     <Content Include="assets\img\posts\hacom.jpg" />
     <Content Include="assets\img\posts\mattoi.png" />
     <Content Include="assets\img\posts\maytinh.jpg" />
@@ -105,8 +106,6 @@
     <Content Include="MasterPage\assets\js\headerfooter.js" />
     <Content Include="Post.aspx" />
     <Content Include="Search.aspx" />
-    <Content Include="Style\login_register.css" />
-    <Content Include="Style\login_register.js" />
     <Content Include="User.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

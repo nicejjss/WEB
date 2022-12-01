@@ -11,9 +11,10 @@ namespace WEB.MasterPage
     public partial class HeaderFooter : System.Web.UI.MasterPage
     {
        public List<Category> cate = new List<Category>();
+        public List<Post> posts = new List<Post>();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //User
             if (!IsPostBack)
             {
 
@@ -29,17 +30,30 @@ namespace WEB.MasterPage
                     dangnhap.InnerHtml= "<a href='./Dangxuat.aspx'><section class='item-category-text'>Đăng Xuất</section></a>";
                 }
             }
+
+            //Categories
                 cate = (List<Category>)Application["Categories"];
             listcate.InnerHtml = "";
             for(int i = 0; i < cate.Count; i++)
             {
                 listcate.InnerHtml += "<li class='item-category'><a href='./Category.aspx?name="+cate[i].Ten+"'><section class='item-category-text'>"+cate[i].Ten+"</section></a></li>";
             }
-        }
 
-        protected void logout_Click(object sender, EventArgs e)
-        {
-
+            //Posts footer
+            posts = (List<Post>)Application["Posts"];
+            for(int i = 0; i < posts.Count; i++)
+            {
+                for(int j=i; j < posts.Count; j++)
+                {
+                    if(posts[i].Ngay < posts[j].Ngay)
+                    {
+                        Post x = new Post();
+                        x = posts[j];
+                        posts[j] = posts[i];
+                        posts[i] = x;
+                    }
+                }
+            }
         }
     }
 }

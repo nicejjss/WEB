@@ -10,16 +10,16 @@
             <section class="display-news col-m-12 col-8">
                 <section class="most-watched">
                     <section class="overlay">
-                        <img src="./assets/img/posts/maytinh.jpg" alt="">
+                        <img src="./assets/img/posts/<%=viewpost.Anh%>" alt="">
                     </section>
                     <section class="title-detail">
                         <section class="category" id="cate" runat="server">
-                            <a href="./Category.aspx?name=maytinh">Máy Tính</a>
+                            <a href="./Category.aspx?name=<%=viewpost.Theloai %>"><%=viewpost.Theloai %></a>
                         </section>
-                        <a class="link" href="./Post.aspx?id=">
-                            Xem nhiều dựa vào lượt xem của POSTTTTT.
+                        <a class="link" href="./Post.aspx?name=<%=viewpost.Tieude %>">
+                            <%=viewpost.Tieude %>
                         </a>
-                        <section class="date">04/03/2002</section>
+                        <section class="date"><%=viewpost.Ngay.ToString("d") %></section>
                     </section>
                     <section class="background"></section>
                 </section>

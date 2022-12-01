@@ -31,7 +31,7 @@ namespace WEB
                 }
                 if (dem == 0)
                 {
-                    p.InnerText = "*Tai khoan chua duoc dang ky";
+                    p.InnerText = "*Sai ten tai khoan hoac mat khau";
                 }
                 else
                 {

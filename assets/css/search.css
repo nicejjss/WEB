@@ -21,6 +21,9 @@
     text-decoration: none;
     font-weight:600;
 }
-.item-display{
-    padding:0;
+.post-date{
+    font-weight:600;
+}
+.item-display {
+    padding: 0;
 }
