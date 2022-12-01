@@ -24,7 +24,7 @@
                       </section>
                       <section class="new-body">
                           <a class="post-cate new-cate" href="./Category.aspx?name=<%=postscate[i].Theloai%>"><%=postscate[i].Theloai%></a>
-                          <span class="new-date post-date"><%=postscate[i].Ngay.ToString("d")%></span>
+                          <span class="new-date post-date"><%=postscate[i].Ngay.ToString("dd/MM/yyyy")%></span>
                           <section class="new-title">
                               <a class="new-link" href="./Post.aspx?name=<%=postscate[i].Tieude%>"><%=postscate[i].Tieude %></a>
                           </section>

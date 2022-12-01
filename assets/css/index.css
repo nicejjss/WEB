@@ -172,6 +172,16 @@
 .post-detail {
     line-height: 24px;
     margin: 10px 0;
+    height: 72px;
+    /* text-overflow: ellipsis; */
+    /* overflow: hidden; */
+    /* -webkit-line-clamp: 3; */
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    /* white-space: nowrap;*/
 }
 
 .post-footer {

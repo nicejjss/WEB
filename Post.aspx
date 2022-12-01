@@ -10,7 +10,7 @@
         <section class="content row">
             <section class="post col-m-12 col-8">
                 <section class="post-relate">
-                    <span class="post-date"><%=post.Ngay.ToString("d")%></span>
+                    <span class="post-date"><%=post.Ngay.ToString("dd/MM/yyyy hh:mm")%></span>
                     <a class="post-cate" href="./Category.aspx?name=<%=post.Theloai %>"><%=post.Theloai %></a>
                     <span class="post-author"><%=post.Tacgia %></span>
                 </section>

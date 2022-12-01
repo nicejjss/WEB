@@ -16,7 +16,7 @@ namespace WEB
             List<Post> Posts = new List<Post>();
             List<Category> Categories = new List<Category>();
 
-            Users.Add(new User("daoducloc","locdaoduc2002@gmail.com","123456",true));
+            Users.Add(new User("daoducloc","locdaoduc2002@gmail.com","1",true));
             Users.Add(new User("nguyena", "nguyena@gmail.com", "123456",false));
             Users.Add(new User("tranb", "tranb@gmail.com", "123456",false));
 
@@ -25,7 +25,7 @@ namespace WEB
                 "Đứng đầu ngôi vương hiện nay là siêu máy tính của Mỹ có tên Frontier, với năng lực tính toán 1, 102 exaFLOPS theo thang đo benchmark High Performance Linpack. " +
                 "Nhưng các cỗ máy với năng lực tính toán mạnh hơn cũng đang trong quá trình chế tạo và sẽ ra mắt trong tương lai không xa.", 12000, "Máy Tính","mattoi.png"));
 
-            Posts.Add(new Post("Máy tính chạy bằng tảo lục lam trong 6 tháng","nguyena",DateTime.Today,"Chuyên gia Christopher Howe tại Đại học Cambridge cùng các đồng nghiệp vận hành một máy tính trong 6 tháng với nguồn năng lượng là tảo lục lam. " +
+            Posts.Add(new Post("Máy tính chạy bằng tảo lục lam trong 6 tháng","nguyena",DateTime.Now,"Chuyên gia Christopher Howe tại Đại học Cambridge cùng các đồng nghiệp vận hành một máy tính trong 6 tháng với nguồn năng lượng là tảo lục lam. " +
                 "Nghiên cứu mới công bố trên tạp chí Energy & Environmental Science hôm 12/5. Trong nghiên cứu, vi khuẩn lam Synechocystis sp.PCC 6803 - thường gọi là tảo lục lam, có thể tạo ra oxy thông qua quá trình quang hợp khi tiếp xúc với ánh nắng - được đựng trong một hộp kín với kích thước tương đương pin AA làm bằng nhôm và nhựa trong. " +
                 "Máy tính được đặt trên bệ cửa sổ tại một ngôi nhà của nhóm nghiên cứu trong thời gian phong tỏa do Covid - 19 từ tháng 2 - 8 / 2021.Trong thời gian này, pin làm từ tảo lục lam đã cung cấp dòng điện liên tục qua cực dương và cực âm để vận hành một bộ vi xử lý. Máy tính hoạt động theo chu kỳ 45 phút.Nhóm nhà khoa học dùng nó để tính tổng các số nguyên liên tiếp nhằm mô phỏng công việc tính toán, đòi hỏi 0,3 microwatt điện, và 15 phút ở chế độ chờ, cần 0,24 microwatt. " +
                 "Bộ vi điều khiển đo đạc đầu ra của thiết bị và lưu trữ dữ liệu này trên đám mây để nhóm nghiên cứu phân tích. Howe cho biết, có hai giả thuyết tiềm năng về nguồn điện.Thứ nhất là bản thân vi khuẩn tạo ra các electron, từ đó sinh ra dòng điện. Thứ hai, vi khuẩn tạo ra các điều kiện khiến cực anode nhôm trong hộp bị ăn mòn trong phản ứng hóa học sản sinh electron.Thí nghiệm được tiến hành mà anode không mòn đáng kể. " +
@@ -50,6 +50,11 @@ namespace WEB
                 "đủ dùng cho những yêu cầu về nghiệp vụ văn phòng hay giải trí thông thường.Hai phiên bản còn lại dành cho những người dùng có nhu cầu cao hơn như chơi game hay xử lý đồ họa với chip Intel Core i5 và i7 thế hệ thứ 12. " +
                 "Với phiên bản sử dụng chip Intel Core i5, hãng cung cấp thêm hai phiên bản bộ nhớ lưu trữ SSD 512 GB hoặc SSD 256 GB.Cả ba tùy chọn cấu hình đều sử dụng card đồ họa tích hợp Intel UHD Graphics 730 và thanh RAM DDR4. Mẫu máy tính để bàn cho phép nâng cấp với hai cổng SATA 3 hỗ trợ gắn thêm ổ HDD 3.5 &quot;và SSD 2.5&quot; " +
                 "cùng khả năng nâng cấp RAM cao nhất lên tới 32 GB.",3051,"Máy Tính","hp.jpg"));
+
+            Posts.Add(new Post("Bộ phim Việt Huyền Sử Vua Đinh rút khỏi rạp với doanh thu 42 triệu đồng","tranb",new DateTime(2022,11,29), "Trao đổi với Tiền Phong, đạo diễn Anthony Võ cho biết anh bình thản đối diện trước thực tế bộ phim Huyền Sử Vua Đinh rút khỏi rạp chiếu. Đây là tình huống mà ê-kíp đã lường trước khi bộ phim không đạt doanh thu như kỳ vọng. " +
+                "Trước đó, đạo diễn anh Anthony Võ và ê - kíp đã trao đổi với hệ thống rạp là chỉ chiếu trong vòng một tuần.Sau một tuần, nhà rạp có thể rút phim nếu doanh thu không đạt yêu cầu. Sau 10 ngày công chiếu, bộ phim Huyền Sử Vua Đinh chỉ đạt doanh thu 42 triệu đồng(theo số liệu từ Box Office Vietnam - đơn vị kiểm toán doanh thu phòng vé độc lập) trở thành một trong những bộ phim có doanh thu thấp nhất trong lịch sử điện ảnh Việt. " +
+                "Đạo diễn Anthony Võ tâm sự anh ghi nhận những ý kiến đóng góp của khán giả về bộ phim Huyền Sử Vua Đinh và cũng vui khi còn nhiều người quan tâm đến phim lịch sử quân sự. “Tôi hy vọng trong thời gian tới có nhiều nhà đầu tư về kinh phí và công sức để cho ra những tác phẩm điện ảnh lịch sử quân sự hay cho Việt Nam”, đạo diễn Anthony Võ nói. &quot;Sau thất bại của bộ phim Huyền Sử Vua Đinh, " +
+                "tôi rút ra kinh nghiệm đó là không nên tin tưởng vào bất cứ lời hứa hẹn của đơn vị nào khi đưa phim ra rạp&quot;, nam đạo diễn nhấn mạnh.",1235,"Giải Trí","vuadinh.png"));
 
             Categories.Add(new Category("Máy Tính"));
             Categories.Add(new Category("Giải Trí"));

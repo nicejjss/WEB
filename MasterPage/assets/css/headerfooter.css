@@ -552,8 +552,11 @@ footer {
         /* transition: all 0.2s ease; */
     }
     .item-new {
-        justify-content: space-between;
+        justify-content: flex-start;
         width: fit-content;
+    }
+    .item-text{
+        margin-left: 15px !important;
     }
 
 }
