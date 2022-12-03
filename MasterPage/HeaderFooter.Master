@@ -2,7 +2,6 @@
     Inherits="WEB.MasterPage.HeaderFooter" %>
     <!DOCTYPE html>
     <html>
-
     <head runat="server">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,8 +22,8 @@
                 </section>
                 <section class="col-6 col-m-12 search">
                     <form class="searchform" action="./Search.aspx" method="get">
-                        <input name="searchinput" class="searchinput" type="text" placeholder="Search somthing...">
-                        <button class="searchbtn">
+                        <input id="inputsearch" name="searchinput" class="searchinput" type="text" placeholder="Search somthing...">
+                        <button class="searchbtn" onclick="return Change()">
                             <img class="searchimg" src="../MasterPage/assets/img/search.png" alt="search">
                         </button>
                     </form>
@@ -133,7 +132,7 @@
                         </a>
                     </section>
                 </section>
-                <section class="col-3 col-m-6 col-s-12 item-footer ">
+             <%--   <section class="col-3 col-m-6 col-s-12 item-footer ">
                     <section class="item-header">Nhận Thông Báo</section>
                     <section class="item-body">
                         <section class="text">Đăng ký để nhận được tin tức mới nhất.</section>
@@ -142,7 +141,7 @@
                             <input type="submit" class="sub-btn" value="Subcribe">
                         </form>
                     </section>
-                </section>
+                </section>--%>
                 <section class="col-3 col-m-6 col-s-12 item-footer ">
                     <section class="item-header">Tin Mới Nhất</section>
                     <section class="item-body">
@@ -216,7 +215,7 @@
                 </section>
             </section>
         </footer>
-        <script src="../MasterPage/assets/js/headerfooter.js"></script>
+        <script type="text/javascript"  src="../MasterPage/assets/js/headerfooter.js"></script>
     </body>
 
     </html>

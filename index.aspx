@@ -277,7 +277,7 @@
                           </section>
                           <section class="aside-item-title">
                             <a href="./Post.aspx?name=<%=postswithview[i].Tieude %>">
-                                <%=postswithview[i].Tieude %>
+                                <%=postswithview[i].Tieude%>
                             </a>
                           </section>
                        </section>
@@ -308,7 +308,7 @@
                      </section>--%>
                     </section>
                 </aside>
-                <section class="subcribe-box">
+<%--                <section class="subcribe-box">
                     <section class="subcribe-img">
                         <img src="./assets/img/mail.png" alt="">
                     </section>
@@ -321,7 +321,7 @@
                         </button>
                     </form>
                     <p>By subscribing you will receive new articles in your email.</p>
-                </section>
+                </section>--%>
             </section>
         </section>
     </asp:Content>

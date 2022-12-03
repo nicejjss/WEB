@@ -93,7 +93,6 @@
     <Content Include="Dangxuat.aspx" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
-    <Content Include="listMember.xml" />
     <Content Include="MasterPage\assets\css\gridview.css" />
     <Content Include="MasterPage\assets\css\headerfooter.css" />
     <Content Include="MasterPage\assets\img\close.png" />

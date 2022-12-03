@@ -13,3 +13,24 @@ function ShowHideNav(){
         overlay.classList.remove("soverlay-show");
       }
 }
+
+
+function Change() {
+    var input = document.getElementById("inputsearch");
+
+    if (input.value != "") {
+
+        input.value = input.value.replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+
+        document.getElementById("inputsearch").value = input.value;
+
+        return true;
+    }
+    else {
+        alert("khong duoc de trong ");
+
+        input.focus = true;
+
+        return false
+    }
+}

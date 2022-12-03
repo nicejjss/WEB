@@ -14,7 +14,7 @@ namespace WEB
         string noidung;
         int luotxem;
         string anh;
-
+        bool ispublic;
 
         public string Tieude { get => tieude; set => tieude = value; }
         public string Tacgia { get => tacgia; set => tacgia = value; }
@@ -23,8 +23,9 @@ namespace WEB
         public int Luotxem { get => luotxem; set => luotxem = value; }
         public string Theloai { get => theloai; set => theloai = value; }
         public string Anh { get => anh; set => anh = value; }
+        public bool Ispublic { get => ispublic; set => ispublic = value; }
 
-        public Post(string tieude, string tacgia, DateTime ngay, string noidung, int luotxem,string theloai,string anh)
+        public Post(string tieude, string tacgia, DateTime ngay, string noidung, int luotxem, string theloai, string anh, bool ispublic)
         {
             this.Tieude = tieude;
             this.Tacgia = tacgia;
@@ -33,6 +34,7 @@ namespace WEB
             this.Luotxem = luotxem;
             this.Theloai = theloai;
             this.Anh = anh;
+            this.Ispublic = ispublic;
         }
 
         public Post()

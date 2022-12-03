@@ -10,7 +10,8 @@ namespace WEB
     public partial class Category1 : System.Web.UI.Page
     {
         public List<Post> postscate=new List<Post>();
-       public int dem=0;
+        public List<Post> postswithview = new List<Post>();
+        public int dem=0;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,11 +22,26 @@ namespace WEB
             //postscate = (List<Post>)Application["Posts"];
             for (int i = 0; i < posts.Count; i++)
             {
+                postswithview.Add(posts[i]);
                 if (posts[i].Theloai == theloai)
                 {
                     postscate.Add(posts[i]);
                     dem++;
                     //posts.Add(postscate[i]);
+                }
+            }
+
+            for (int i = 0; i < postswithview.Count-1; i++)
+            {
+                for (int j = i+1; j < postswithview.Count; j++)
+                {
+                    if (postswithview[i].Luotxem < postswithview[j].Luotxem)
+                    {
+                        Post x = new Post();
+                        x = postswithview[j];
+                        postswithview[j] = postswithview[i];
+                        postswithview[i] = x;
+                    }
                 }
             }
         }
