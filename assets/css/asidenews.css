@@ -129,5 +129,8 @@
     .subcribe-box{
         height: fit-content;
     }
+    .aside-item-img a{
+        width: 100%;
+    }
     
 }
