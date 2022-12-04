@@ -7,6 +7,7 @@
            <section class="about-header">
                <h1>Về Chúng Tôi</h1>
               </section>
-              <section class="about-body"></section>
+              <section class="about-body">
+              </section>
      </section>
 </asp:Content>
