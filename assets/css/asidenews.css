@@ -120,6 +120,10 @@
     color: var(--footer-color);
 }
 
+.sticky{
+    position: sticky;
+    top: 10px;
+}
 
 @media screen and (max-width:700px) {
     .subcribe-box{

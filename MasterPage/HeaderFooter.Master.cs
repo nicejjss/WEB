@@ -22,10 +22,16 @@ namespace WEB.MasterPage
                 if (Session["name"] != null)
                 {
                     string ten = Session["name"].ToString();
-                    user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='u-link' href='../User.aspx'>" +
-                                             "Welcome: " + ten + "</a></section>" +
-                                      "<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='logout-link' href='Dangxuat.aspx" +
-                                      "'>Đăng Xuất</a></section>";
+                    user.InnerHtml = "<section class='user-function user-link user-logined' runat='server' id='name'><section class='u-link' id='u-link' >" +
+                                             "Welcome: " + ten + "</section>" +
+                                              "<ul class='u-menu'>" +
+                                                    "<li class='u-item'><a href=\"writePost.aspx\">Thêm Tin</a></li>\r\n" +
+                                                    "<li class='u-item'><a href=\"waitingForNews.aspx\">Quản Lý Tin</a></li>" +
+                                                    "<li class='u-item'><a href=\"Dangxuat.aspx\">Đăng Xuất</a></li>" +
+                                                    "</ul>" +
+                                             "</section>";
+                                      //"<section class='user-function user-link user-logined' runat='server' id='name'><a class='u-link' id='logout-link' href='Dangxuat.aspx" +
+                                      //"'>Đăng Xuất</a></section>";
                     dangky.InnerHtml = "<a href='./User.aspx'><section class='item-category-text'>Welcome: "+ten+"</section></a>";  
                     dangnhap.InnerHtml= "<a href='./Dangxuat.aspx'><section class='item-category-text'>Đăng Xuất</section></a>";
                 }

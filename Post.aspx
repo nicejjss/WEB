@@ -25,7 +25,7 @@
                 </section>
                 <section style="margin-top: 20px;">Lượt xem: <%=post.Luotxem%></section>
             </section>
-            <section class="display-news col-s-12 col-m-6 col-4">
+            <section class="display-news sticky col-s-12 col-m-6 col-4">
                 <aside class="popular-news">
                     <section class="aside-title">
                         <section class="item-header aside-title-header">Tin Nổi Bật</section>

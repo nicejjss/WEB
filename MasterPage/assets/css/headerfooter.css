@@ -123,6 +123,45 @@ header {
 .user-logined {
     text-align: right;
     cursor: pointer;
+    position: relative;
+}
+
+.u-menu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 0 0 3px 0px #bdbdbd;
+}
+.user-link:hover .u-menu{
+    display: block;
+    transition: all 0.2s ease;
+}
+.u-menu::before{
+    content: "";
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 8px solid #e3e3e3;
+    right: 20px;
+    top: -18px;
+}
+.u-item{
+    padding: 5px 0;
+}
+
+.u-item a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.u-item:hover a,
+.u-item:active a{
+    color: var(--primary-color);
 }
 
 /* NAVIGATION */
