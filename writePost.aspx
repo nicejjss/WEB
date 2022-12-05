@@ -19,7 +19,7 @@
                  <div class="contain_input">
                  <label id="lb_file">Ảnh: </label> 
                  <input class="contain_data" runat="server" type="file" name="postimg" id="postimg">
-
+                 <input type="file" id="txtFile" name="txtFile" runat="server">
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
             </div>
             <div class="contain_input contain_img">
