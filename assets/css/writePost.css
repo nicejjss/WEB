@@ -6,4 +6,64 @@
 .content{
     max-width: var(--max-width);
     text-align: center;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+}
+#title_contain{
+    font-size: 48px;
+}
+.contain_input{
+    margin: 20px 0;
+    display: flex;
+}
+.contain_input label{
+    font-weight: 600;
+    font-size: 30px;
+    width: 30%;
+    text-align: left;
+}
+.contain_data{
+    width: 70%;
+    height: 42px;
+    font-size: 24px;
+    padding-left: 10px;
+}
+.contain_img{
+    text-align: right;
+    display: unset;
+}
+.contain_input img{
+    width: 50%;
+    margin: 0;
+}
+.contain_input textarea{
+    height: 200px;
+}
+.contain_body{
+    display: flex;
+    flex-direction: column;
+    /* align-items: unset; */
+    padding: 0 100px;
+}
+
+.btn{
+    padding: 10px;
+    font-size: 15px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    /* border: 1px solid; */
+    margin: 0 5px;
+    border-radius: 2px;
+    width: 65px;
+    cursor: pointer;
+}
+.btn-cancel{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+
+}
+.btn-cancel a{
+    display: block;
+    color: var(--primary-color);
 }

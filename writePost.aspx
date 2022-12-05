@@ -4,37 +4,38 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container content">
-    <form id="form1" runat="server" method="post" enctype="multipart/form-data">
+    <form id="form1" runat="server" method="post" action="./index.aspx">
         <div id="contain">
             <h2 id="title_contain">PLEASE WRITE HERE</h2>
-            <div class="conain_body">
+            <div class="contain_body">
                 <div class="contain_input">
-                    <label>Title:</label>
-                 <input type="text" id="news_title" placeholder="Write your title here !" name="news_title" />
+                    <label>Tiêu Đề:</label>
+                 <input class="contain_data" type="text" id="title" placeholder="Ghi Tiêu Đề" name="news_title" />
                 </div>
                 <div class="contain_input">
-                     <label>Author:</label>
-                 <input type="text" id="news_author" placeholder="What is the author ?" name="news_author"/>
-                </div>
-                <div class="contain_input">
-                     <label>Category:</label>
-                 <input type="text" id="news_category" placeholder="What is the category ?" name="news_category"/>
+                     <label>Thể Loại:</label>
+                 <select class="contain_data" type="text" runat="server" id="category" placeholder="Chọn Thể Loại" name="news_category"></select>
                 </div>
                  <div class="contain_input">
-                <p id="text_content">WRITE YOUR CONTENT HERE !</p>
-                <textarea title="content" id="news_content" name="news_content"></textarea>
-            </div>
-                <div class="contain_input">
-                 <label id="lb_file">CHOOSE YOUR IMAGE : </label> 
-                 <input runat="server" type="file" name="postimg" id="postimg">
+                 <label id="lb_file">Ảnh: </label> 
+                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg">
+
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
+            </div>
+            <div class="contain_input contain_img">
+                <img src="./assets/img/posts/chaybo.jpg" alt="" srcset="" width="">
+            </div>
+                 <div class="contain_input">
+                <label id="text_content">Nội Dung:</label>
+                <textarea class="contain_data" title="content" id="news_content" name="news_content"></textarea>
             </div>
             </div>
            
             
             <div id="lb_button">
-                <asp:Button  ID="news_submit" Text="POST" runat="server"/>
-                <button type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
+                <!-- <asp:Button  ID="news_submit" Text="POST" runat="server"/> -->
+                <input class="btn btn-submit" type="submit" value="POST">
+                <button class="btn btn-cancel" type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
             </div>
         </div>
     </form>
