@@ -108,6 +108,7 @@
     <Content Include="Search.aspx" />
     <Content Include="User.aspx" />
     <Content Include="Web.config" />
+    <Content Include="writePost.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -188,6 +189,13 @@
       <DependentUpon>User.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="writePost.aspx.cs">
+      <DependentUpon>writePost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writePost.aspx.designer.cs">
+      <DependentUpon>writePost.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage\HeaderFooter.Master" />
