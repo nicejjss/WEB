@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container content">
-    <form id="form1" runat="server" method="post" action="./index.aspx">
+    <form id="form1" runat="server" method="post" action="">
         <div id="contain">
             <h2 id="title_contain">PLEASE WRITE HERE</h2>
             <div class="contain_body">
@@ -14,12 +14,12 @@
                 </div>
                 <div class="contain_input">
                      <label>Thể Loại:</label>
-                 <select class="contain_data" type="text" runat="server" id="category" placeholder="Chọn Thể Loại" name="news_category"></select>
+                 <select class="contain_data" type="text" runat="server" id="category" placeholder="Chọn Thể Loại" name="news_category">
+                 </select>
                 </div>
                  <div class="contain_input">
                  <label id="lb_file">Ảnh: </label> 
                  <input class="contain_data" runat="server" type="file" name="postimg" id="postimg">
-                 <input type="file" id="txtFile" name="txtFile" runat="server">
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
             </div>
             <div class="contain_input contain_img">
