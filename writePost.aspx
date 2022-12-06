@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container content">
-    <form id="form1" runat="server" method="post">
+    <form id="form1" runat="server" method="post" action="AddPost.aspx">
         <div id="contain">
             <h2 id="title_contain">PLEASE WRITE HERE</h2>
             <div class="contain_body">
@@ -32,8 +32,8 @@
             </div>
            
             <div id="lb_button">
-                 <asp:Button  ID="news_submit" Text="POST" runat="server" onclick="return Checkpost"/> 
-              <%--  <input class="btn btn-submit" runat="server" type="button" value="POST" id="submit" onclick="return Checkpost()">--%>
+                 <%--<asp:Button  ID="news_submit" Text="POST" runat="server" onclick="return Checkpost()"/>--%> 
+                <input class="btn btn-submit" runat="server" type="submit" value="POST" id="submit" onclick="Checkpost">
                 <button class="btn btn-cancel" type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
             </div>
         </div>
