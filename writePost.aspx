@@ -19,7 +19,7 @@
                 </div>
                  <div class="contain_input">
                  <label id="lb_file">Ảnh: </label> 
-                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg" onchange="checkout()">
+                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg" onchange="Changeimg()">
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
             </div>
             <div class="contain_input contain_img">
@@ -32,8 +32,8 @@
             </div>
            
             <div id="lb_button">
-                <!-- <asp:Button  ID="news_submit" Text="POST" runat="server"/> -->
-                <input class="btn btn-submit" type="submit" value="POST" onclick="return Check()">
+                 <asp:Button  ID="news_submit" Text="POST" runat="server" onclick="return Checkpost"/> 
+              <%--  <input class="btn btn-submit" runat="server" type="button" value="POST" id="submit" onclick="return Checkpost()">--%>
                 <button class="btn btn-cancel" type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
             </div>
         </div>
