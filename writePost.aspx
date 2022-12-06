@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container content">
-    <form id="form1" runat="server" method="post" action="">
+    <form id="form1" runat="server" method="post">
         <div id="contain">
             <h2 id="title_contain">PLEASE WRITE HERE</h2>
             <div class="contain_body">
@@ -19,11 +19,11 @@
                 </div>
                  <div class="contain_input">
                  <label id="lb_file">Ảnh: </label> 
-                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg" onchange="Changeimg()">
+                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg" onchange="checkout()">
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
             </div>
             <div class="contain_input contain_img">
-                <img id="imgdisplay" src="" alt="" srcset="" >
+                <img id="imgdisplay">
             </div>
                  <div class="contain_input">
                 <label id="text_content">Nội Dung:</label>
