@@ -12,10 +12,13 @@ namespace WEB
         protected void Page_Load(object sender, EventArgs e)
         {
             List<Category> categories = (List<Category>)Application["Categories"];
-            for (int i = 0; i < categories.Count; i++)
+            if (!IsPostBack)
             {
-                ListItem item = new ListItem(categories[i].Ten, categories[i].Ten);
-                category.Items.Add(item);
+                for (int i = 0; i < categories.Count; i++)
+                {
+                    ListItem item = new ListItem(categories[i].Ten, categories[i].Ten);
+                    category.Items.Add(item);
+                }
             }
         }
     }

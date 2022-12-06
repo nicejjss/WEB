@@ -18,7 +18,7 @@ function ShowHideNav(){
 function Change() {
     var input = document.getElementById("inputsearch");
 
-    if (input.value != "") {
+    if (input.value.trim() != "") {
 
         input.value = input.value.replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
 

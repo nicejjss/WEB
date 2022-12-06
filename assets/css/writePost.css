@@ -12,6 +12,9 @@
 #title_contain{
     font-size: 48px;
 }
+#postimg{
+    padding: 0;
+}
 .contain_input{
     margin: 20px 0;
     display: flex;

@@ -19,11 +19,11 @@
                 </div>
                  <div class="contain_input">
                  <label id="lb_file">Ảnh: </label> 
-                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg">
+                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg" onchange="Changeimg()">
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
             </div>
             <div class="contain_input contain_img">
-                <img src="./assets/img/posts/chaybo.jpg" alt="" srcset="" width="">
+                <img id="imgdisplay" src="" alt="" srcset="" >
             </div>
                  <div class="contain_input">
                 <label id="text_content">Nội Dung:</label>
@@ -31,13 +31,13 @@
             </div>
             </div>
            
-            
             <div id="lb_button">
                 <!-- <asp:Button  ID="news_submit" Text="POST" runat="server"/> -->
-                <input class="btn btn-submit" type="submit" value="POST">
+                <input class="btn btn-submit" type="submit" value="POST" onclick="return Check()">
                 <button class="btn btn-cancel" type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
             </div>
         </div>
     </form>
+    <script src="./assets/js/writePost.js"></script>
 </div>
 </asp:Content>
