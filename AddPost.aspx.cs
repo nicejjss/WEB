@@ -14,12 +14,12 @@ namespace WEB
         {
             string tieude = Request.Form["news_title"];
             string theloai = Request.Form["news_category"];
-            string tacgia = Session["name"].ToString();
+            string tacgia = "daoducloc";
             DateTime ngay = DateTime.Now;
             string noidung = Request.Form["news_content"];
             bool ispublic = false;
             int luotxem = 0;
-            HttpPostedFile file = Request.Files["postimg"];
+            HttpPostedFile file = Request.Files["ctl00$ContentPlaceHolder1$postimg"];
             string anh = file.FileName;
             if (tieude.Trim() == "" || noidung.Trim() == "" || anh.Trim() == "")
             {
@@ -34,7 +34,6 @@ namespace WEB
                     if (!File.Exists(@"~\assets\img\posts\" + file.FileName))
                     {
                         file.SaveAs(fpath + file.FileName);
-                        anh = file.FileName;
                     }
                 }
                 Post post = new Post(tieude, tacgia, ngay, noidung, luotxem, theloai, anh, ispublic);

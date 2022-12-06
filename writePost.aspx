@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container content">
-    <form id="form1" runat="server" method="post" action="AddPost.aspx">
+    <form id="form1" runat="server" action="AddPost.aspx" onchange="Changeimg()">
         <div id="contain">
             <h2 id="title_contain">PLEASE WRITE HERE</h2>
             <div class="contain_body">
@@ -14,12 +14,12 @@
                 </div>
                 <div class="contain_input">
                      <label>Thể Loại:</label>
-                 <select class="contain_data" type="text" runat="server" id="category" placeholder="Chọn Thể Loại" name="news_category">
+                 <select class="contain_data" runat="server" id="category" placeholder="Chọn Thể Loại" name="news_category">
                  </select>
                 </div>
                  <div class="contain_input">
                  <label id="lb_file">Ảnh: </label> 
-                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg" onchange="Changeimg()">
+                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg">
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
             </div>
             <div class="contain_input contain_img">
@@ -33,7 +33,7 @@
            
             <div id="lb_button">
                  <%--<asp:Button  ID="news_submit" Text="POST" runat="server" onclick="return Checkpost()"/>--%> 
-                <input class="btn btn-submit" runat="server" type="submit" value="POST" id="submit" onclick="Checkpost">
+                <input class="btn btn-submit" runat="server" type="submit" value="POST" id="submit" onclick="return Checkpost()">
                 <button class="btn btn-cancel" type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
             </div>
         </div>
