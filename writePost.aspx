@@ -34,7 +34,7 @@
             <div id="lb_button">
                  <%--<asp:Button  ID="news_submit" Text="POST" runat="server" onclick="return Checkpost()"/>--%> 
                 <input class="btn btn-submit" runat="server" type="submit" value="POST" id="submit" onclick="return Checkpost()">
-                <button class="btn btn-cancel" type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
+                <button class="btn btn-cancel" runat="server" onclick="asd" type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
             </div>
         </div>
     </form>
