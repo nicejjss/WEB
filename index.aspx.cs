@@ -8,6 +8,7 @@ namespace WEB
         public Post viewpost = new Post();
         public List<Post> allposts = new List<Post>();
         public List<Post> postswithview = new List<Post>();
+        public int dem = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -31,10 +32,12 @@ namespace WEB
                     if (posts[i].Tieude != viewpost.Tieude)
                     {
                         allposts.Add(posts[i]);
+                        dem++;
                     }
                 }
                 for (int i = 0; i < allposts.Count-1; i++)
                 {
+                
                     for (int j = i+1; j < allposts.Count; j++)
                     {
                         if (allposts[i].Ngay < allposts[j].Ngay)

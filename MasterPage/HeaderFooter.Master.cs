@@ -26,7 +26,7 @@ namespace WEB.MasterPage
                                              "Welcome: " + ten + "</section>" +
                                               "<ul class='u-menu'>" +
                                                     "<li class='u-item'><a href=\"writePost.aspx\">Thêm Tin</a></li>\r\n" +
-                                                    "<li class='u-item'><a href=\"waitingForNews.aspx\">Quản Lý Tin</a></li>" +
+                                                    "<li class='u-item'><a href=\"ManagementPosts.aspx\">Quản Lý Tin</a></li>" +
                                                     "<li class='u-item'><a href=\"Dangxuat.aspx\">Đăng Xuất</a></li>" +
                                                     "</ul>" +
                                              "</section>";

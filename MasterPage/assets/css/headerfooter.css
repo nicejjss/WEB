@@ -150,6 +150,15 @@ header {
     right: 20px;
     top: -18px;
 }
+.u-menu::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
 .u-item{
     padding: 5px 0;
 }

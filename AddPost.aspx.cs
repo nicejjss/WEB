@@ -27,16 +27,33 @@ namespace WEB
                 if (file.ContentLength > 0)
                 {
                     string fpath = Server.MapPath(@"~\assets\img\posts\");
-                    if (!File.Exists(@"~\assets\img\posts\" + file.FileName))
+                    if (File.Exists(@"~\assets\img\posts\" + file.FileName)==true)
                     {
-                        file.SaveAs(fpath + file.FileName);
+                        Response.Redirect("index.aspx");
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('Trung ten file anh da ton tai,Doi ten!!!')</script>");
                     }
                 }
-                Post post = new Post(tieude, tacgia, ngay, noidung, luotxem, theloai, anh, ispublic);
+
                 List<Post> posts = (List<Post>)Application["Posts"];
+                int dem;
+                if (posts.Count == 0)
+                {
+                    dem = 1;
+                }
+                else
+                {
+                    dem = 1+posts.Count;
+                }
+                Post post = new Post(dem,tieude, tacgia, ngay, noidung, luotxem, theloai, anh, ispublic);
+
                 posts.Add(post);
+
                 Application["Posts"] = posts;
-                Response.Redirect("index.aspx");
+
+                Response.Redirect("ManagementPosts.aspx");
             }
             else
             {

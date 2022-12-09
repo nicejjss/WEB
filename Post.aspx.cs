@@ -13,23 +13,35 @@ namespace WEB
         public List<Post> postswithview = new List<Post>();
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            string tieude = Request.QueryString["name"];
+            string tieude=Request.QueryString["name"];
             List<Post> posts = (List<Post>)Application["Posts"];
-           
 
-            for (int i = 0; i < posts.Count; i++)
+            if(string.IsNullOrEmpty(Request.QueryString["detail"])== false)
             {
-                postswithview.Add(posts[i]);
-                if(posts[i].Tieude == tieude)
+                int id = int.Parse(Request.QueryString["detail"]);
+                for (int i = 0; i < posts.Count; i++)
                 {
-                    post = posts[i];
-                    post.Luotxem++;
-                    //break;
+                    postswithview.Add(posts[i]);
+                    if (posts[i].Id == id)
+                    {
+                        post = posts[i];
+                        //break;
+                    }
                 }
             }
-
-         
+            else
+            {
+                for (int i = 0; i < posts.Count; i++)
+                {
+                    postswithview.Add(posts[i]);
+                    if (posts[i].Tieude == tieude)
+                    {
+                        post = posts[i];
+                        post.Luotxem++;
+                        //break;
+                    }
+                }
+            }
             for (int i = 0; i < postswithview.Count; i++)
             {
                 for (int j = i; j < postswithview.Count; j++)

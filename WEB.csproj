@@ -95,6 +95,7 @@
     <Content Include="Dangxuat.aspx" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
+    <Content Include="ManagementPosts.aspx" />
     <Content Include="MasterPage\assets\css\gridview.css" />
     <Content Include="MasterPage\assets\css\headerfooter.css" />
     <Content Include="MasterPage\assets\img\close.png" />
@@ -165,6 +166,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementPosts.aspx.cs">
+      <DependentUpon>ManagementPosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementPosts.aspx.designer.cs">
+      <DependentUpon>ManagementPosts.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage\HeaderFooter.Master.cs">
       <DependentUpon>HeaderFooter.Master</DependentUpon>

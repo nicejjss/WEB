@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./assets/css/index.css">
     </asp:Content>
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <section class="content row">
+        <section class="content row" onload="onChange">
             <section class="display-news col-m-12 col-8">
                 <section class="most-watched">
                     <section class="overlay">
@@ -28,8 +28,11 @@
                 </section>
                 <section class="lastest-news row">
                     <section class="list-posts col-s-12 col-6 row">
-                        <% for (int i = 0; i <=1; i++)
-                            {%>
+                        <% if(dem >= 2)
+                            for (int i = 0; i <= 1; i++)
+                            {
+                                if (allposts[i] != null)
+                                {%>
                         <section class="post col-12">
                             <section class="post-header">
                                 <img class="post-img" src="./assets/img/posts/<%=allposts[i].Anh %>" alt="">
@@ -39,7 +42,7 @@
                                     <%=allposts[i].Ngay.ToString("dd/MM/yyyy") %>
                                 </section>
                                 <span> <a class="post-cate" href="./Categogy.aspx?name=<%=allposts[i].Theloai %>"><%=allposts[i].Theloai %></a></span>
-                                <section class="post-title"><a href="./Post.aspx?name=<%=allposts[i].Tieude %>"><%=allposts[i].Tieude %></a></section>
+                                <section class="post-title"><a href="./Post.aspx?name=<%=allposts[i].Tieude%>"><%=allposts[i].Tieude %></a></section>
                                 <section class="post-detail"><%=allposts[i].Noidung %></section>
                                 <section class="post-footer">
                                     <a class="post-footer-link" href="./Post.aspx?name=<%=allposts[i].Tieude %>">
@@ -48,7 +51,8 @@
                                 </section>
                             </section>
                         </section>
-                        <%} %>
+                        <%}
+                            } %>
                     <%--    <section class="post col-12">
                             <section class="post-header">
                                 <img class="post-img" src="./assets/img/posts/maytinh.jpg" alt="">
@@ -72,8 +76,11 @@
                         </section>--%>
                     </section>
                     <section class="list-posts col-s-12 col-6 row">
-                         <% for (int i = 2; i <=3; i++)
-                            {%>
+                         <% if (allposts.Count >= 4)
+                                 for (int i = 2; i <= 3; i++)
+                                 {
+                                     if (allposts[i] != null)
+                                     {%>
                         <section class="post col-12">
                             <section class="post-header">
                                 <img class="post-img" src="./assets/img/posts/<%=allposts[i].Anh %>" alt="">
@@ -92,7 +99,8 @@
                                 </section>
                             </section>
                         </section>
-                        <%} %>
+                        <%}
+                                }%>
               <%--          <section class="post col-12">
                             <section class="post-header">
                                 <img class="post-img" src="./assets/img/posts/maytinh.jpg" alt="">
@@ -324,4 +332,11 @@
                 </section>--%>
             </section>
         </section>
+    <script>
+        function onChange(){
+  var a = document.getElementsByTagName("a");
+   a.value =a.value.replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;").replace(/'/g,"&apos;");
+   document.getElementsByTagName("a").value = a.value;
+}
+    </script>
     </asp:Content>
