@@ -33,8 +33,16 @@
                         <a class="function function-detail" href="./Post.aspx?detail=<%=postsname[i].Id %>"><button class="btn btn-detail">Chi Tiết</button></a>
                     </td>
                     <td>
-                        <%if (postsname[i].Ispublic == true) Response.Write("<a href='./ManagementPosts.aspx?disallow="+postsname[i].Id+"'>Đã Đăng</a>");
-                            else Response.Write("<a href='./ManagementPosts.aspx?allow="+postsname[i].Id+"'>Chưa Đăng</a>");%>                        
+                        <%  if (Session["admin"].ToString() == "True")
+                            {
+                                if (postsname[i].Ispublic == true) Response.Write("<a href='./ManagementPosts.aspx?disallow=" + postsname[i].Id + "'>Đã Đăng</a>");
+                                else Response.Write("<a href='./ManagementPosts.aspx?allow=" + postsname[i].Id + "'>Chưa Đăng</a>");
+                            }
+                            else { 
+                                if (postsname[i].Ispublic == true) Response.Write("Đã Đăng");
+                                else Response.Write("Chưa Đăng");
+                            }
+                                %>                        
                     </td>
                 </tr>
                 <%}

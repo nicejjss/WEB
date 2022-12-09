@@ -46,7 +46,14 @@ namespace WEB.MasterPage
             }
 
             //Posts footer
-            posts = (List<Post>)Application["Posts"];
+            List<Post> allowposts= (List<Post>)Application["Posts"];
+            for(int i = 0; i < allowposts.Count; i++)
+            {
+                if(allowposts[i].Ispublic == true)
+                {
+                    posts.Add(allowposts[i]);
+                }
+            }
             for(int i = 0; i < posts.Count; i++)
             {
                 for(int j=i; j < posts.Count; j++)
