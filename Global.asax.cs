@@ -62,6 +62,7 @@ namespace WEB
 
             Application["Users"] = Users;
             Application["Posts"] = Posts;
+            Application["Disposts"] = null;
             Application["Categories"] = Categories;
         }
         protected void Session_Start(object sender, EventArgs e)

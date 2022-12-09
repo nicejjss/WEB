@@ -23,7 +23,7 @@ namespace WEB
             for (int i = 0; i < posts.Count; i++)
             {
                 postswithview.Add(posts[i]);
-                if (posts[i].Theloai == theloai)
+                if (posts[i].Theloai == theloai && posts[i].Ispublic == true)
                 {
                     postscate.Add(posts[i]);
                     dem++;

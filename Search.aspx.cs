@@ -23,7 +23,7 @@ namespace WEB
             List <Post> posts = (List<Post>)Application["Posts"];
             for(int i =0;i < posts.Count; i++)
             {
-                if (posts[i].Tieude.ToLower().Contains(timkiem.ToLower())==true)
+                if (posts[i].Tieude.ToLower().Contains(timkiem.ToLower())==true && posts[i].Ispublic == true)
                 {
                     dem++;
                     postssearch.Add(posts[i]);

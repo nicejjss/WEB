@@ -18,7 +18,11 @@ namespace WEB
                 viewpost = posts[0];
                 for (int i = 0; i < posts.Count; i++)
                 {
-                    postswithview.Add(posts[i]);
+
+                    if (posts[i].Ispublic == true)
+                    {
+                        postswithview.Add(posts[i]);
+                    }
 
                     if (posts[i].Luotxem > viewpost.Luotxem)
                     {
@@ -29,7 +33,7 @@ namespace WEB
                 //Post theo TG
                 for (int i = 0; i < posts.Count; i++)
                 {
-                    if (posts[i].Tieude != viewpost.Tieude)
+                    if (posts[i].Tieude != viewpost.Tieude && posts[i].Ispublic==true)
                     {
                         allposts.Add(posts[i]);
                         dem++;
