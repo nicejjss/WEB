@@ -26,14 +26,11 @@ namespace WEB
                 string anh = file.FileName;
                 if (file.ContentLength > 0)
                 {
+                  
                     string fpath = Server.MapPath(@"~\assets\img\posts\");
-                    if (File.Exists(@"~\assets\img\posts\" + file.FileName)==true)
+                    if (!File.Exists(@"D:\Csharpdocument\BTL\WEB\assets\img\posts\"+file.FileName))
                     {
-                        Response.Redirect("index.aspx");
-                    }
-                    else
-                    {
-                        Response.Write("<script>alert('Trung ten file anh da ton tai,Doi ten!!!')</script>");
+                        file.SaveAs(fpath + file.FileName);
                     }
                 }
 
