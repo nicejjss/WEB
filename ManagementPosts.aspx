@@ -1,9 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true" CodeBehind="ManagementPosts.aspx.cs" Inherits="WEB.ManagementPosts" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="./assets/css/manegementposts.css">
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div id="container" class="content">
+    <form runat="server">
+         <asp:Button ID="sort" runat="server" OnClick="sort_Click" Text="Sort Alphabet" />
+        <asp:Button ID="sort1" runat="server" OnClick="sort1_Click" Text="Sort Author" />
+    </form>
+    
+     <div id="container" class="content" runat="server">
+        
         <table>
             <thead>
                 <tr>
@@ -30,6 +37,7 @@
                        <td><%=postsname[i].Ngay.ToString("dd/MM/yyyy")%></td>
                     <td>
                         <a class="function function-delete" href="./ManagementPosts.aspx?delete=<%=postsname[i].Id%>"><button class="btn btn-delete">Xoá</button></a>
+                        <a class="function function-delete" href="./writePost.aspx?update=<%=postsname[i].Id%>"><button class="btn btn-delete">Sửa</button></a>
                         <a class="function function-detail" href="./Post.aspx?detail=<%=postsname[i].Id %>"><button class="btn btn-detail">Chi Tiết</button></a>
                     </td>
                     <td>
@@ -48,17 +56,7 @@
                 <%}
                     }
                     else Response.Write("Ban chua dang tin len"); %>
-        <%--        <tr>
-                    <td>1</td>
-                    <td><img src="./assets/img/posts/chaybo.jpg" width="150" alt=""></td>
-                    <td>Tieu de</td>
-                    <td>Tac gia</td>
-                    <td>
-                       <a class="function function-delete" href="./ManagementPosts.aspx?delete=2"><button class="btn btn-delete">Xóa</button></a>
-                       <a class="function function-detail" href="./Post.aspx?detail=1"><button class="btn btn-detail">Chi Tiết</button></a>
-                    </td>
-                    <td><a href="./ManagementPosts.aspx?allow=1">disallow</a></td>
-                </tr>--%>
+      
             </tbody>
         </table>
     </div>
