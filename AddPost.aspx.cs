@@ -28,7 +28,7 @@ namespace WEB
                 {
                   
                     string fpath = Server.MapPath(@"~\assets\img\posts\");
-                    if (!File.Exists(@"D:\Csharpdocument\BTL\WEB\assets\img\posts\"+file.FileName))
+                    if (!File.Exists(@"~\assets\img\posts\"+file.FileName))
                     {
                         file.SaveAs(fpath + file.FileName);
                     }
