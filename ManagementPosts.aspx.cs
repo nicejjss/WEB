@@ -110,7 +110,7 @@ namespace WEB
 
                 for (int j = i + 1; j < postsname.Count; j++)
                 {
-                    if (postsname[i].Noidung[0] < postsname[j].Noidung[0])
+                    if (postsname[i].Tieude[0] < postsname[j].Tieude[0])
                     {
                         Post x = new Post();
                         x = postsname[j];

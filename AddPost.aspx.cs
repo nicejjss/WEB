@@ -14,7 +14,7 @@ namespace WEB
         {
             List<Post> posts = (List<Post>)Application["Posts"];
             //int ID = int.Parse(Request.Form["saveId"]);
-            string ID = Request.Form.Get("saveId").ToString();
+            int ID = int.Parse(Request.Form.Get("saveId").ToString());
             string ten = Session["name"] as string;
             string tieude = Request.Form.Get("news_title").ToString();
             string theloai = Request.Form["ctl00$ContentPlaceHolder1$category"];
@@ -34,12 +34,13 @@ namespace WEB
                     file.SaveAs(fpath + file.FileName);
                 }
             }
-            if (ID != null)
+            if (ID != 0)
             {
-                int saveID = int.Parse(ID);
+               
+
                 for (int i = 0; i < posts.Count; i++)
                 {
-                    if (posts[i].Id == saveID)
+                    if (posts[i].Id == ID)
                     {
 
                         posts[i].Tieude = tieude;

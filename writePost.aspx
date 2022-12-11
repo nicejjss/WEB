@@ -20,7 +20,7 @@
                 </div>
                  <div class="contain_input">
                  <label id="lb_file">Ảnh: </label> 
-                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg" >
+                 <input class="contain_data" runat="server" type="file" name="postimg" id="postimg"  >
                     <%--<asp:FileUpload ID="postimg" runat="server" CssClass="contain_data" />--%>
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
             </div>
@@ -29,7 +29,7 @@
             </div>
                  <div class="contain_input">
                 <label id="text_content">Nội Dung:</label>
-                <textarea class="contain_data" runat="server" title="content" id="news_content" name="news_content"> <%=post.Noidung %></textarea>
+                <textarea class="contain_data"  title="content" id="news_content" name="news_content"> <%=post.Noidung %></textarea>
             </div>
             </div>
            
