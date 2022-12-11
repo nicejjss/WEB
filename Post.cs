@@ -8,6 +8,7 @@ namespace WEB
     public class Post
     {
         int id;
+        int like;
         string tieude;
         string tacgia;
         string theloai;
@@ -26,8 +27,9 @@ namespace WEB
         public string Anh { get => anh; set => anh = value; }
         public bool Ispublic { get => ispublic; set => ispublic = value; }
         public int Id { get => id; set => id = value; }
+        public int Like { get => like; set => like = value; }
 
-        public Post(int id, string tieude, string tacgia, DateTime ngay, string noidung, int luotxem, string theloai, string anh, bool ispublic)
+        public Post(int id,int like, string tieude, string tacgia, DateTime ngay, string noidung, int luotxem, string theloai, string anh, bool ispublic)
         {
             this.Tieude = tieude;
             this.Tacgia = tacgia;
@@ -38,6 +40,7 @@ namespace WEB
             this.Anh = anh;
             this.Ispublic = ispublic;
             this.id = id;
+            this.Like=like;
         }
 
         public Post()

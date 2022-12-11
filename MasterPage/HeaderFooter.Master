@@ -39,6 +39,9 @@
                         <li class="user-function">
                             <a class="user-link" href="./Dangnhap.aspx" >ĐĂNG NHẬP</a>
                         </li>
+                        <li>
+                            <p id="activeuser" runat="server"></p>
+                        </li>
                          <%--<li class="user-function">
                              <form>
                                  <button class="user-link" type="submit" value="true" name="btnLogout" id="btnLogout" runat="server">THOÁT</button>

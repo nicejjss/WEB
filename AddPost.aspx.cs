@@ -15,6 +15,7 @@ namespace WEB
             List<Post> posts = (List<Post>)Application["Posts"];
             //int ID = int.Parse(Request.Form["saveId"]);
             int ID = int.Parse(Request.Form.Get("saveId").ToString());
+            int like = 0;
             string ten = Session["name"] as string;
             string tieude = Request.Form.Get("news_title").ToString();
             string theloai = Request.Form["ctl00$ContentPlaceHolder1$category"];
@@ -66,7 +67,7 @@ namespace WEB
                 {
                     dem = 1+posts.Count;
                 }
-                Post post = new Post(dem,tieude, tacgia, ngay, noidung, luotxem, theloai, anh, ispublic);
+                Post post = new Post(dem,like,tieude, tacgia, ngay, noidung, luotxem, theloai, anh, ispublic);
 
                 posts.Add(post);
 

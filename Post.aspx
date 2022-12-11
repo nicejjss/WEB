@@ -24,6 +24,14 @@
                     </section>
                 </section>
                 <section style="margin-top: 20px;">Lượt xem: <%=post.Luotxem%></section>
+              
+                <section style="margin-top: 20px;">
+                     <form runat="server">
+                         <button runat="server" id="Button1"  onserverclick="like_ServerClick">Like : <%=post.Like%></button>
+                    </form>
+                </section>
+               
+                
             </section>
             <section class="display-news sticky col-s-12 col-m-6 col-4">
                 <aside class="popular-news">
