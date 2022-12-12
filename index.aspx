@@ -155,7 +155,7 @@
                     <section class="another-new">
                         <section class="new-header">
                             <a href="./Post.aspx?name=<%=allposts[i].Tieude%>">
-                                <img src="./assets/img/posts/<%=allposts[i].Anh %>" alt="">
+                                <img src="./assets/img/posts/<%=allposts[i].Anh%>" alt="">
                             </a>
 
                         </section>
@@ -163,7 +163,7 @@
                             <a class="post-cate new-cate" href="./Category.aspx?name=<%=allposts[i].Theloai%>"><%=allposts[i].Theloai%></a>
                             <span class="new-date post-date"><%=allposts[i].Ngay.ToString("dd/MM/yyyy") %></span>
                             <section class="new-title">
-                                <a class="new-link" href="./Post.aspx?name="<%=allposts[i].Tieude%>"><%=allposts[i].Tieude%></a>
+                                <a class="new-link" href="./Post.aspx?name=<%=allposts[i].Tieude%>"><%=allposts[i].Tieude%></a>
                             </section>
                             <section class="new-detail"><%=allposts[i].Noidung %></section>
                         </section>
@@ -284,7 +284,7 @@
                             </a>
                           </section>
                           <section class="aside-item-title">
-                            <a href="./Post.aspx?name=<%=postswithview[i].Tieude %>">
+                            <a href="./Post.aspx?name=<%=postswithview[i].Tieude%>">
                                 <%=postswithview[i].Tieude%>
                             </a>
                           </section>

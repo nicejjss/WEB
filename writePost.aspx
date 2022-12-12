@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container content">
-    <form id="form1" runat="server" action="AddPost.aspx" onchange="Changeimg()">
+    <form id="form1" runat="server" action="AddPost.aspx" enctype="multipart/form-data" onchange="Changeimg()">
         <div id="contain">
             <h2 id="title_contain">PLEASE WRITE HERE</h2>
             <div class="contain_body">

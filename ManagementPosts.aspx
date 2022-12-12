@@ -29,8 +29,9 @@
                     <td><%=postsname[i].Tacgia %></td>
                        <td><%=postsname[i].Ngay.ToString("dd/MM/yyyy")%></td>
                     <td>
-                        <a class="function function-delete" href="./ManagementPosts.aspx?delete=<%=postsname[i].Id%>"><button class="btn btn-delete">Xoá</button></a>
                         <a class="function function-detail" href="./Post.aspx?detail=<%=postsname[i].Id %>"><button class="btn btn-detail">Chi Tiết</button></a>
+                        <a class="function function-delete" href="./writePost.aspx?update=<%=postsname[i].Id%>"><button class="btn btn-delete">Sửa</button></a>
+                        <a class="function function-delete" href="./ManagementPosts.aspx?delete=<%=postsname[i].Id%>"><button class="btn btn-delete">Xoá</button></a>
                     </td>
                     <td>
                         <%  if (Session["admin"].ToString() == "True")

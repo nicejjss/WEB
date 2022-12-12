@@ -19,7 +19,7 @@ tbody::before{
 }
 th{
     font-size: 20px;
-    padding:  0 5px;
+    padding:  0 2px;
 }
 td{
     white-space: nowrap;

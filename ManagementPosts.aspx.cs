@@ -32,6 +32,7 @@ namespace WEB
                         }
                     }
                 }
+
                 if (string.IsNullOrEmpty(Request.QueryString["delete"]) == false)
                 {
                     int id = int.Parse(Request.QueryString["delete"]);
@@ -45,6 +46,7 @@ namespace WEB
                     Application["Posts"] = posts;
                     Response.Redirect("Managementposts.aspx");
                 }
+
                 if (string.IsNullOrEmpty(Request.QueryString["disallow"]) == false)
                 {
                     Changestatus("disallow");
@@ -57,6 +59,7 @@ namespace WEB
                     //    }
                     //}
                 }
+
                 if (string.IsNullOrEmpty(Request.QueryString["allow"]) == false)
                 {
                     Changestatus("allow");
