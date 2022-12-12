@@ -104,6 +104,40 @@ namespace WEB
             Application["Posts"] = posts;
             Response.Redirect("Managementposts.aspx");
         }
+
+        protected void Btn_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i < postsname.Count; i++)
+            {
+                for(int j = i; j < postsname.Count; j++)
+                {
+                    if(postsname[i].Ngay < postsname[j].Ngay)
+                    {
+                        Post post = new Post();
+                        post = postsname[i];
+                        postsname[i] = postsname[j];
+                        postsname[j] = post;
+                    }
+                }
+            }
+        }
+
+        protected void Button1_ServerClick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < postsname.Count; i++)
+            {
+                for (int j = i; j < postsname.Count; j++)
+                {
+                    if (postsname[i].Luotxem < postsname[j].Luotxem)
+                    {
+                        Post post = new Post();
+                        post = postsname[i];
+                        postsname[i] = postsname[j];
+                        postsname[j] = post;
+                    }
+                }
+            }
+        }
         //protected void BindGrid()
         //{
         //    GridView1.DataSource = (DataTable)ViewState["Customers"];

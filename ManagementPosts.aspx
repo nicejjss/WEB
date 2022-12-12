@@ -1,9 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true" CodeBehind="ManagementPosts.aspx.cs" Inherits="WEB.ManagementPosts" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HeaderFooter.Master" AutoEventWireup="true" CodeBehind="ManagementPosts.aspx.cs" Inherits="WEB.ManagementPosts" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="./assets/css/manegementposts.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div id="container" class="content">
+         <form runat="server"><button runat="server" class="btn-sort" id="sort" onserverclick="Btn_Click">Ngay</button>
+             <button runat="server" class="btn-sort" id="Button1" onserverclick="Button1_ServerClick">Luot xem</button>
+         </form>
         <table>
             <thead>
                 <tr>

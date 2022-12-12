@@ -37,6 +37,16 @@ td{
     cursor: pointer;
     transition: all 0.2s ease;
 }
+.btn-sort{
+    padding: 10px;
+    background-color: var(--primary-color);
+    /* border: 1px solid var(--primary-color); */
+    border-radius: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .btn-delete{
     border:  1px solid red;
 }
