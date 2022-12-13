@@ -128,7 +128,24 @@ namespace WEB
             {
                 for (int j = i; j < postsname.Count; j++)
                 {
-                    if (postsname[i].Luotxem < postsname[j].Luotxem)
+                    if (postsname[i].Id > postsname[j].Id)
+                    {
+                        Post post = new Post();
+                        post = postsname[i];
+                        postsname[i] = postsname[j];
+                        postsname[j] = post;
+                    }
+                }
+            }
+        }
+
+        protected void Button2_ServerClick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < postsname.Count; i++)
+            {
+                for (int j = i; j < postsname.Count; j++)
+                {
+                    if (postsname[i].Tieude.CompareTo(postsname[j].Tieude) > 0)
                     {
                         Post post = new Post();
                         post = postsname[i];

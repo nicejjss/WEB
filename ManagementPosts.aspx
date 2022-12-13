@@ -6,7 +6,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div id="container" class="content">
          <form runat="server"><button runat="server" class="btn-sort" id="sort" onserverclick="Btn_Click">Ngay</button>
-             <button runat="server" class="btn-sort" id="Button1" onserverclick="Button1_ServerClick">Luot xem</button>
+             <button runat="server" class="btn-sort" id="Button1" onserverclick="Button1_ServerClick">ID</button>
+             <button runat="server" class="btn-sort" id="Button2" onserverclick="Button2_ServerClick">A-Z</button>
          </form>
         <table>
             <thead>
