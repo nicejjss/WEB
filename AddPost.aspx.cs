@@ -15,11 +15,11 @@ namespace WEB
             string ten = Session["name"] as string;
             if (ten != null)
             {
-                string tieude = Request.Form.Get("news_title").ToString();
+                string tieude = Request.Form.Get("ctl00$ContentPlaceHolder1$title");
                 string theloai = Request.Form["ctl00$ContentPlaceHolder1$category"];
                 string tacgia = Session["name"].ToString();
                 DateTime ngay = DateTime.Now;
-                string noidung = Request.Form["news_content"];
+                string noidung = Request.Form["ctl00$ContentPlaceHolder1$news_content"];
                 bool ispublic = false;
                 int luotxem = 0;
                 HttpPostedFile file = Request.Files["ctl00$ContentPlaceHolder1$postimg"];

@@ -18,11 +18,39 @@ namespace WEB
             {
                 List<Category> categories = (List<Category>)Application["Categories"];
 
+                int id = int.Parse(Request.QueryString["update"]);
+
+                List<Post> posts = (List<Post>)Application["Posts"];
+
+                Post post = new Post();
+                for(int i = 0;i < posts.Count; i++){
+                    if(id == posts[id].Id)
+                    {
+                        post = posts[i];
+                        break;
+                    }
+                }
+
                 for (int i = 0; i < categories.Count; i++)
                 {
                     ListItem item = new ListItem(categories[i].Ten, categories[i].Ten);
+                    if(item.Value == post.Theloai)
+                    {
+                        item.Selected = true;
+                    }
                     category.Items.Add(item);
                 }
+
+                title.Value = post.Tieude;
+
+                news_content.Value = post.Noidung;
+
+                imgdisplay.Src = @"~assets\img\posts\" + post.Anh;
+
+
+
+
+
             }
             else
             {

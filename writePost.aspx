@@ -10,7 +10,7 @@
             <div class="contain_body">
                 <div class="contain_input">
                     <label>Tiêu Đề:</label>
-                 <input class="contain_data" type="text" id="title" placeholder="Ghi Tiêu Đề" name="news_title" />
+                 <input runat="server" class="contain_data" type="text" id="title" placeholder="Ghi Tiêu Đề" name="news_title" />
                 </div>
                 <div class="contain_input">
                      <label>Thể Loại:</label>
@@ -23,11 +23,11 @@
                 <%-- <asp:FileUpload ID="news_file" runat="server"/>--%>
             </div>
             <div class="contain_input contain_img">
-                <img id="imgdisplay">
+                <img runat="server" id="imgdisplay">
             </div>
                  <div class="contain_input">
                 <label id="text_content">Nội Dung:</label>
-                <textarea class="contain_data" title="content" id="news_content" name="news_content"></textarea>
+                <textarea runat="server" class="contain_data" title="content" id="news_content" name="news_content"></textarea>
             </div>
             </div>
            
