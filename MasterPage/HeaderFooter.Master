@@ -125,11 +125,11 @@
                         <section class="infomation text">
                             MAGZ chúng tôi cung cấp cho các bạn các tin tức mới nhất.
                         </section>
-                        <a href="./About.aspx">
+                        <%--<a href="./About.aspx">
                             <button class="infor-btn">
                                 Aubout Us
                             </button>
-                        </a>
+                        </a>--%>
                     </section>
                 </section>
              <%--   <section class="col-3 col-m-6 col-s-12 item-footer ">

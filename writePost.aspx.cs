@@ -11,6 +11,8 @@ namespace WEB
     public partial class writePost : System.Web.UI.Page
     {
 
+
+      public  Post post = new Post();
         protected void Page_Load(object sender, EventArgs e)
         {
             string ten = Session["name"] as string;
@@ -18,38 +20,37 @@ namespace WEB
             {
                 List<Category> categories = (List<Category>)Application["Categories"];
 
-                int id = int.Parse(Request.QueryString["update"]);
-
                 List<Post> posts = (List<Post>)Application["Posts"];
 
-                Post post = new Post();
-                for(int i = 0;i < posts.Count; i++){
-                    if(id == posts[id].Id)
+           
+                if (string.IsNullOrEmpty(Request.QueryString["update"]) == false)
+                {
+                  
+                    int id = int.Parse(Request.QueryString["update"]);
+                    form1.Action = "UpdatePosts.aspx?update="+id;
+                    for (int i = 0; i < posts.Count; i++)
                     {
-                        post = posts[i];
-                        break;
+                        if (posts[i].Id == id)
+                        {
+                            post = posts[i];
+                            //break;
+                        }
                     }
-                }
 
+                    imgdisplay.Src = "~/assets/img/posts/" + post.Anh;
+                    title.Value = post.Tieude;
+                    news_content.InnerText = post.Noidung;
+                    submit.Value = "Update";
+                }
                 for (int i = 0; i < categories.Count; i++)
                 {
                     ListItem item = new ListItem(categories[i].Ten, categories[i].Ten);
-                    if(item.Value == post.Theloai)
+                    if (item.Value == post.Theloai)
                     {
                         item.Selected = true;
                     }
                     category.Items.Add(item);
                 }
-
-                title.Value = post.Tieude;
-
-                news_content.Value = post.Noidung;
-
-                imgdisplay.Src = @"~assets\img\posts\" + post.Anh;
-
-
-
-
 
             }
             else

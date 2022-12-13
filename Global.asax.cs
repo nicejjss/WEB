@@ -68,6 +68,7 @@ namespace WEB
         {
             Session["name"] = null;
             Session["admin"] = false;
+            Session["time_login"] = 0;
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

@@ -113,6 +113,7 @@
     <Content Include="MasterPage\assets\js\headerfooter.js" />
     <Content Include="Post.aspx" />
     <Content Include="Search.aspx" />
+    <Content Include="UpdatePosts.aspx" />
     <Content Include="User.aspx" />
     <Content Include="Web.config" />
     <Content Include="writePost.aspx" />
@@ -201,6 +202,13 @@
     </Compile>
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePosts.aspx.cs">
+      <DependentUpon>UpdatePosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePosts.aspx.designer.cs">
+      <DependentUpon>UpdatePosts.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
