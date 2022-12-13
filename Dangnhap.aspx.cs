@@ -37,6 +37,7 @@ namespace WEB
                 {
                     Session["name"] = user.Ten;
                     Session["admin"] = user.IsAdmin;
+                    Session["login_time"] = DateTime.Now;
                     Response.Redirect("index.aspx");
                 }
             }

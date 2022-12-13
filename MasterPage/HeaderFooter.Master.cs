@@ -68,8 +68,8 @@ namespace WEB.MasterPage
                 }
             }
 
-            string activeUser = Application["ActiveUser"].ToString();
-            activeuser.InnerHtml = activeUser;
+            //string activeUser = Application["ActiveUser"].ToString();
+            //activeuser.InnerHtml = activeUser;
         }
     }
 }

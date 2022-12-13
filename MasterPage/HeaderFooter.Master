@@ -39,8 +39,8 @@
                         <li class="user-function">
                             <a class="user-link" href="./Dangnhap.aspx" >ĐĂNG NHẬP</a>
                         </li>
-                        <li>
-                            <p id="activeuser" runat="server"></p>
+                         <li>
+                            <%--<p id="activeuser" runat="server"></p>--%>
                         </li>
                          <%--<li class="user-function">
                              <form>
@@ -50,7 +50,7 @@
                         </li>--%>
                     </ul>
                 </section>
-
+               
             </section>
             <section class="navigation">
                 <section class="cate-width">

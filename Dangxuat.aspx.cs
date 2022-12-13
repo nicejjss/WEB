@@ -11,6 +11,12 @@ namespace WEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["login_time"] != null)
+            {
+                DateTime loginTime = (DateTime)Session["login_time"];
+                var loginTimeDurationInMinutes = (DateTime.Now - loginTime).Seconds;
+                timer.InnerHtml = "Thời gian đăng nhập là " + loginTimeDurationInMinutes.ToString() + "s";
+            }
             Session.Abandon();
             Response.Redirect("index.aspx");
         }

@@ -27,7 +27,18 @@ function CheckError() {
     let txtMatKhau = document.getElementById("txtMatKhau").value;
     let txtLMatKhau = document.getElementById("txtNLMatKhau").value;
     let error = document.getElementById("p");
+    //var reEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    //var rePass = /^[a-z0-9A-Z]{8,}$/;
+    //var reName = /^[a-z0-9A-Z]{3,16}$/;
+
     switch (true) {
+        //case (!reName.test(txtTenTK)): error.innerText = "Tên đăng nhập không đúng định dạng ";
+        //    return false; break;
+        ////check email : phải có @ , @ không được đứng đầu, phải có 1 dấu chấm, phải có ít nhất 1 ký tự giữa @ và . , phải có ít nhất 1 ký tự sau dấu . , không có khoảng trắng 
+        //case (!reEmail.test(txtEmail)): error.innerText = "*Email không đúng định dạng ; VD : Thang17062002@gmail.com";
+        //    return false; break;
+        //case (!rePass.test(txtMatKhau)): error.innerText = "*Mật khẩu tối thiếu 8 ký tự , ít nhất một chữ cái và một số";
+        //    return false; break;
         case (txtMatKhau == "" || txtEmail == "" || txtTenTK == "" || txtLMatKhau == ""):
             error.innerText = "*Khong duoc de trong Du Lieu";
             return false; break;

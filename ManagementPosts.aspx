@@ -4,10 +4,10 @@
    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
+   <%-- <form runat="server">
          <asp:Button ID="sort" runat="server" OnClick="sort_Click" Text="Sort Alphabet" />
         <asp:Button ID="sort1" runat="server" OnClick="sort1_Click" Text="Sort Author" />
-    </form>
+    </form>--%>
     
      <div id="container" class="content" runat="server">
         
@@ -37,7 +37,7 @@
                        <td><%=postsname[i].Ngay.ToString("dd/MM/yyyy")%></td>
                     <td>
                         <a class="function function-delete" href="./ManagementPosts.aspx?delete=<%=postsname[i].Id%>"><button class="btn btn-delete">Xoá</button></a>
-                        <a class="function function-delete" href="./writePost.aspx?update=<%=postsname[i].Id%>"><button class="btn btn-delete">Sửa</button></a>
+                       <%-- <a class="function function-delete" href="./writePost.aspx?update=<%=postsname[i].Id%>"><button class="btn btn-delete">Sửa</button></a>--%>
                         <a class="function function-detail" href="./Post.aspx?detail=<%=postsname[i].Id %>"><button class="btn btn-detail">Chi Tiết</button></a>
                     </td>
                     <td>

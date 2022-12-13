@@ -8,7 +8,7 @@
         <div id="contain">
             <h2 id="title_contain">PLEASE WRITE HERE</h2>
             <div class="contain_body">
-                <input type="number" id="saveId" name="saveId" value="<%=post.Id%>" />
+               <%-- <input type="number" id="saveId" name="saveId" value="<%=post.Id%>" />--%>
                 <div class="contain_input">
                     <label>Tiêu Đề:</label>
                  <input class="contain_data" type="text" id="title" placeholder="Ghi Tiêu Đề" name="news_title"  value="<%=post.Tieude %>" />
@@ -36,7 +36,7 @@
             <div id="lb_button">
                  <%--<asp:Button  ID="news_submit" Text="POST" runat="server" onclick="return Checkpost()"/>--%> 
                 <input class="btn btn-submit" runat="server" type="submit" value="POST" id="submit" onclick="return Checkpost()">
-                <input class="btn btn-submit" runat="server" type="submit" value="UPDATE" id="submit1" onclick="return Checkpost()">
+               <%-- <input class="btn btn-submit" runat="server" type="submit" value="UPDATE" id="submit1" onclick="return Checkpost()">--%>
                 <button class="btn btn-cancel" runat="server" onclick="asd" type="button"  id="news_back"><a href="index.aspx" style="text-decoration:none;">BACK</a></button>
             </div>
         </div>

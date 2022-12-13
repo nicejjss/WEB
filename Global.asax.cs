@@ -69,6 +69,7 @@ namespace WEB
         {
             Session["name"] = null;
             Session["admin"] = false;
+            Session["login_time"] = null;
             Application.Lock();
             Application["ActiveUser"] = (Convert.ToInt32(Application["ActiveUser"])) + 2;
             Application.UnLock();

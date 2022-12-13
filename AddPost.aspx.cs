@@ -14,7 +14,7 @@ namespace WEB
         {
             List<Post> posts = (List<Post>)Application["Posts"];
             //int ID = int.Parse(Request.Form["saveId"]);
-            int ID = int.Parse(Request.Form.Get("saveId").ToString());
+            //int ID = int.Parse(Request.Form.Get("saveId").ToString());
             int like = 0;
             string ten = Session["name"] as string;
             string tieude = Request.Form.Get("news_title").ToString();
@@ -35,26 +35,27 @@ namespace WEB
                     file.SaveAs(fpath + file.FileName);
                 }
             }
-            if (ID != 0)
-            {
+            //if (ID != 0)
+            //{
                
 
-                for (int i = 0; i < posts.Count; i++)
-                {
-                    if (posts[i].Id == ID)
-                    {
+            //    for (int i = 0; i < posts.Count; i++)
+            //    {
+            //        if (posts[i].Id == ID)
+            //        {
 
-                        posts[i].Tieude = tieude;
-                        posts[i].Theloai = theloai;
-                        posts[i].Tacgia = tacgia;
-                        posts[i].Noidung = noidung;
-                        posts[i].Anh = anh;                                                     
-                    }
-                }
-                Response.Redirect("ManagementPosts.aspx");
+            //            posts[i].Tieude = tieude;
+            //            posts[i].Theloai = theloai;
+            //            posts[i].Tacgia = tacgia;
+            //            posts[i].Noidung = noidung;
+            //            posts[i].Anh = anh;                                                     
+            //        }
+            //    }
+            //    Response.Redirect("ManagementPosts.aspx");
 
-            }
-            else  if (ten != null)
+            //}
+            //else
+            if (ten != null)
             {
              
                 
